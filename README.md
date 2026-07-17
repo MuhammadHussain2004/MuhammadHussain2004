@@ -96,7 +96,7 @@
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=MuhammadHussain2004&theme=react-dark&bg_color=0D1117&color=00D9FF&line=00D9FF&point=FFFFFF&area=true&hide_border=true" alt="Contribution Graph" width="100%"/>
+[![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MuhammadHussain2004&theme=radical)](https://github.com/MuhammadHussain2004)
 
 </div>
 
