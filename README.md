@@ -96,6 +96,12 @@
 
 <div align="center">
 
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=MuhammadHussain2004&theme=react-dark&bg_color=0D1117&color=00D9FF&line=00D9FF&point=FFFFFF&area=true&hide_border=true" alt="Contribution Graph" width="100%"/>
+
+</div>
+
+<div align="center">
+
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhammadHussain2004&theme=radical&background=0D1117&border=00D9FF&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&sideLabels=C9D1D9&dates=C9D1D9&hide_border=false" alt="GitHub Streak"/>
 
 </div>
