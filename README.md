@@ -2,7 +2,7 @@
 
 # <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30"> Hey, I'm Muhammad Hussain Khan Lodhi
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=MERN+Stack+Developer;BSCS+Student;10Pearls+10Shine+Alumnus;Building+Full-Stack+Apps+%F0%9F%94%A5;Currently+Learning+at+SMIT+%F0%9F%A7%A0)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=MERN+Stack+Developer;BSCS+Graduate;10Pearls+10Shine+Alumnus;Building+Full-Stack+Apps+%F0%9F%94%A5;Currently+Learning+at+SMIT+%F0%9F%A7%A0)](https://git.io/typing-svg)
 
 <img src="https://komarev.com/ghpvc/?username=MuhammadHussain2004&style=for-the-badge&color=00d9ff" alt="Profile Views"/>
 
@@ -20,12 +20,17 @@
   <td><b>Data</b></td>
 </tr>
 <tr>
-  <td><b>Frontend</b></td>
+  <td><b>Languages</b></td>
   <td>
     <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
     <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
     <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" />
     <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" />
+  </td>
+</tr>
+<tr>
+  <td><b>Frontend</b></td>
+  <td>
     <img src="https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black" />
     <img src="https://img.shields.io/badge/-Next.js-000000?style=flat&logo=nextdotjs&logoColor=white" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" />
@@ -39,7 +44,7 @@
   </td>
 </tr>
 <tr>
-  <td><b>Databases</b></td>
+  <td><b>Databases & ORM</b></td>
   <td>
     <img src="https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" />
     <img src="https://img.shields.io/badge/-PostgreSQL-4479A1?style=flat&logo=postgresql&logoColor=white" />
@@ -47,23 +52,33 @@
   </td>
 </tr>
 <tr>
-  <td><b>DevOps & Tools</b></td>
+  <td><b>Version Control & CI/CD</b></td>
   <td>
     <img src="https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white" />
     <img src="https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Vercel-000000?style=flat&logo=vercel&logoColor=white" />
-    <img src="https://img.shields.io/badge/-SonarQube-4E9BCD?style=flat&logo=sonarqube&logoColor=white" />
-    <img src="https://img.shields.io/badge/-VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white" />
+    <img src="https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white" />
   </td>
 </tr>
 <tr>
-  <td><b>Currently Learning</b></td>
+  <td><b>DevOps & Deployment</b></td>
   <td>
-    <img src="https://img.shields.io/badge/-Modern_Web_%26_App_Dev-01D277?style=flat&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Unit_Testing-9B59B6?style=flat&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Full_Stack_Architecture-FF6600?style=flat&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Vercel-000000?style=flat&logo=vercel&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Railway-0B0D0E?style=flat&logo=railway&logoColor=white" />
+  </td>
+</tr>
+<tr>
+  <td><b>Testing & Code Quality</b></td>
+  <td>
+    <img src="https://img.shields.io/badge/-SonarQube-4E9BCD?style=flat&logo=sonarqube&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Unit_Testing-6DA55F?style=flat&logo=testinglibrary&logoColor=white" />
+  </td>
+</tr>
+<tr>
+  <td><b>Tools</b></td>
+  <td>
+    <img src="https://img.shields.io/badge/-VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white" />
   </td>
 </tr>
 </table>
@@ -72,7 +87,7 @@
 
 ## About Me
 
-- 🎓 BSCS Student at **Sindh Madressatul Islam University** (CGPA 3.5/4.0)
+- 🎓 BSCS Graduate from **Sindh Madressatul Islam University** (CGPA 3.5/4.0)
 - 💼 Completed internship at **10Pearls** (10Shine Program) — built a full-stack Notes app with authentication, CRUD functionality, unit testing & SonarQube integration
 - 📚 Currently enrolled in **Saylani Mass IT Training (SMIT)** — Modern Web & App Development
 - 🌱 Actively building projects with the **MERN Stack**
@@ -85,21 +100,13 @@
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=MuhammadHussain2004&show_icons=true&theme=radical&include_all_commits=true&count_private=true&border_radius=10&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=C9D1D9&border_color=00D9FF&hide_border=false&rank_icon=github" alt="GitHub Stats"/>
-&nbsp;&nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadHussain2004&layout=compact&langs_count=8&theme=radical&border_radius=10&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&border_color=00D9FF" alt="Top Languages"/>
-
-</div>
-
-<div align="center">
-
 <img src="https://streak-stats.demolab.com/?user=MuhammadHussain2004&theme=radical&background=0D1117&border=00D9FF&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&sideLabels=C9D1D9&dates=C9D1D9&hide_total_contributions=false" alt="GitHub Streak"/>
 
 </div>
 
 <div align="center">
 
-[![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MuhammadHussain2004&theme=radical)](https://github.com/MuhammadHussain2004)
+<img src="https://github-profile-trophy.vercel.app/?username=MuhammadHussain2004&theme=radical&no-frame=true&no-bg=false&margin-w=10&row=1&column=6" alt="GitHub Trophies"/>
 
 </div>
 
@@ -119,7 +126,11 @@
 
 <div align="center">
 
-<p align="center"><i>while (!success) { attempt++; }</i></p>
+<br>
+
+[![Quote SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=2500&pause=800&color=00D9FF&center=true&vCenter=true&width=500&height=50&lines=while+(!success)+%7B+attempt%2B%2B%3B+%7D)](https://git.io/typing-svg)
+
+<br>
 
 ⭐ **From [Muhammad Hussain Khan Lodhi](https://github.com/MuhammadHussain2004)**
 
