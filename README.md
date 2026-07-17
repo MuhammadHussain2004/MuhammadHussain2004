@@ -104,12 +104,6 @@
 
 </div>
 
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=MuhammadHussain2004&theme=radical&no-frame=true&no-bg=false&margin-w=10&row=1&column=6" alt="GitHub Trophies"/>
-
-</div>
-
 ---
 
 ## How to Reach Me
@@ -128,7 +122,7 @@
 
 <br>
 
-[![Quote SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=2500&pause=800&color=00D9FF&center=true&vCenter=true&width=500&height=50&lines=while+(!success)+%7B+attempt%2B%2B%3B+%7D)](https://git.io/typing-svg)
+[![Quote SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=550&height=60&lines=while+%28%21success%29+%7B+attempt%2B%2B%3B+%7D)](https://git.io/typing-svg)
 
 <br>
 
