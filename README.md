@@ -6,10 +6,6 @@
 
 <img src="https://komarev.com/ghpvc/?username=MuhammadHussain2004&style=for-the-badge&color=00d9ff" alt="Profile Views"/>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
-</p>
-
 </div>
 
 ## **Tech Stack & Tools**
@@ -100,7 +96,7 @@
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com/?user=MuhammadHussain2004&theme=radical&background=0D1117&border=00D9FF&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&sideLabels=C9D1D9&dates=C9D1D9&hide_total_contributions=false" alt="GitHub Streak"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhammadHussain2004&theme=radical&background=0D1117&border=00D9FF&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&sideLabels=C9D1D9&dates=C9D1D9&hide_border=false" alt="GitHub Streak"/>
 
 </div>
 
@@ -122,7 +118,7 @@
 
 <br>
 
-[![Quote SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=550&height=60&lines=while+%28%21success%29+%7B+attempt%2B%2B%3B+%7D)](https://git.io/typing-svg)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:0D1117&height=120&section=header&text=while%20(!success)%20%7B%20attempt%2B%2B%3B%20%7D&fontColor=00D9FF&fontSize=28&fontAlignY=55&animation=fadeIn&desc=&descAlignY=75" alt="Quote Banner" width="100%"/>
 
 <br>
 
