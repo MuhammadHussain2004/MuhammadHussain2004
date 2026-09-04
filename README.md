@@ -2,7 +2,7 @@
 
 # <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30"> Hey, I'm Muhammad Hussain Khan Lodhi
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=MERN+Stack+Developer;BSCS+Graduate;10Pearls+10Shine+Alumnus;Building+Full-Stack+Apps+%F0%9F%94%A5;Currently+Learning+at+SMIT+%F0%9F%A7%A0)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=MERN+Stack+Developer;BSCS+Graduate+%7C+CGPA+3.7%2F4.0;IBM+Full-Stack+JavaScript+Developer;10Pearls+10Shine+Alumnus;Building+Full-Stack+Apps+%F0%9F%94%A5)](https://git.io/typing-svg)
 
 <img src="https://komarev.com/ghpvc/?username=MuhammadHussain2004&style=for-the-badge&color=00d9ff" alt="Profile Views"/>
 
@@ -25,8 +25,6 @@
     <img src="https://img.shields.io/badge/-C-00599C?style=flat&logo=c&logoColor=white" />
     <img src="https://img.shields.io/badge/-C++-00599C?style=flat&logo=cplusplus&logoColor=white" />
     <img src="https://img.shields.io/badge/-Java-ED8B00?style=flat&logo=openjdk&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Assembly-6E4C13?style=flat&logoColor=white" />
   </td>
 </tr>
 <tr>
@@ -34,6 +32,7 @@
   <td>
     <img src="https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black" />
     <img src="https://img.shields.io/badge/-Next.js-000000?style=flat&logo=nextdotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Redux_Toolkit-764ABC?style=flat&logo=redux&logoColor=white" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" />
   </td>
 </tr>
@@ -45,13 +44,11 @@
   </td>
 </tr>
 <tr>
-  <td><b>Databases & ORM</b></td>
+  <td><b>Databases</b></td>
   <td>
     <img src="https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" />
-    <img src="https://img.shields.io/badge/-PostgreSQL-4479A1?style=flat&logo=postgresql&logoColor=white" />
     <img src="https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=mysql&logoColor=white" />
-    <img src="https://img.shields.io/badge/-SQL-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Prisma-2D3748?style=flat&logo=prisma&logoColor=white" />
+    <img src="https://img.shields.io/badge/-SQL_Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white" />
   </td>
 </tr>
 <tr>
@@ -63,20 +60,17 @@
   </td>
 </tr>
 <tr>
-  <td><b>DevOps & Deployment</b></td>
+  <td><b>Deployment</b></td>
   <td>
     <img src="https://img.shields.io/badge/-Vercel-000000?style=flat&logo=vercel&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Railway-0B0D0E?style=flat&logo=railway&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Render-46E3B7?style=flat&logo=render&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Netlify-00C7B7?style=flat&logo=netlify&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Surge-FFCD00?style=flat&logoColor=black" />
   </td>
 </tr>
 <tr>
   <td><b>Testing & Code Quality</b></td>
   <td>
     <img src="https://img.shields.io/badge/-SonarQube-4E9BCD?style=flat&logo=sonarqube&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Unit_Testing-6DA55F?style=flat&logo=testinglibrary&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Mocha-8D6748?style=flat&logo=mocha&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Chai-A30701?style=flat&logo=chai&logoColor=white" />
   </td>
 </tr>
 <tr>
@@ -85,7 +79,6 @@
     <img src="https://img.shields.io/badge/-VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
     <img src="https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white" />
     <img src="https://img.shields.io/badge/-NetBeans-1B6AC6?style=flat&logo=apachenetbeanside&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Dev_C++-00599C?style=flat&logo=cplusplus&logoColor=white" />
     <img src="https://img.shields.io/badge/-Cursor-000000?style=flat&logoColor=white" />
     <img src="https://img.shields.io/badge/-GitHub_Copilot-181717?style=flat&logo=github&logoColor=white" />
     <img src="https://img.shields.io/badge/-Claude_Code-D97757?style=flat&logoColor=white" />
@@ -97,12 +90,27 @@
 
 ## About Me
 
-- 🎓 BSCS Graduate from **Sindh Madressatul Islam University** (CGPA 3.5/4.0)
+- 🎓 BSCS Graduate from **Sindh Madressatul Islam University** (CGPA 3.7/4.0)
+- 📜 **IBM Full-Stack JavaScript Developer** — Professional Certificate (Coursera)
 - 💼 Completed internship at **10Pearls** (10Shine Program) — built a full-stack Notes app with authentication, CRUD functionality, unit testing & SonarQube integration
+- 🧑‍💻 Completed a NAVTTC-affiliated Full Stack Development training at **NextSkill Institute** with an IBM-aligned curriculum
 - 📚 Currently enrolled in **Saylani Mass IT Training (SMIT)** — Modern Web & App Development
 - 🌱 Actively building projects with the **MERN Stack**
 - 💬 Ask me about React, Node.js, Express, MongoDB, or anything full-stack
 - 📫 Reach me at: **muhammadhussaintech@gmail.com**
+
+---
+
+## Featured Projects
+
+**[BuildVolt](https://buildvolt.online)** — PC-build recommendation SaaS (Final Year Project). A deterministic compatibility engine that infers CPU/RAM/PSU specs from a store's catalog and assembles budget-capped, safety-checked PC builds, plus a WordPress/WooCommerce plugin and a store-owner dashboard.
+[Code](https://github.com/MuhammadHussain2004/buildbot)
+
+**[Smart Complaint Management System](https://scms-frontend-rho.vercel.app)** — Role-based complaint management platform (MERN) with JWT auth, an admin approval workflow, and a full complaint lifecycle.
+[Code](https://github.com/MuhammadHussain2004/Complain-Management-System-MERN)
+
+**[Shop.co](https://frontend-ten-cyan-64.vercel.app)** — Full MERN e-commerce site, a pixel-faithful rebuild of a community Figma template.
+[Code](https://github.com/MuhammadHussain2004/shopco-ecommerce)
 
 ---
 
@@ -126,7 +134,8 @@
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-hussain-khan-lodhi-139261252)
+[![Portfolio](https://img.shields.io/badge/-Portfolio-00D9FF?style=for-the-badge&logo=vercel&logoColor=white)](https://muhammadhussain2004.github.io/)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-hussain-khan-lodhi)
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MuhammadHussain2004)
 [![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammadhussaintech@gmail.com)
 
