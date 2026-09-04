@@ -91,10 +91,10 @@
 ## About Me
 
 - 🎓 BSCS Graduate from **Sindh Madressatul Islam University** (CGPA 3.7/4.0)
-- 📜 **IBM Full-Stack JavaScript Developer** — Professional Certificate (Coursera)
-- 💼 Completed internship at **10Pearls** (10Shine Program) — built a full-stack Notes app with authentication, CRUD functionality, unit testing & SonarQube integration
+- 📜 **IBM Full-Stack JavaScript Developer** (Professional Certificate, Coursera)
+- 💼 Completed internship at **10Pearls** (10Shine Program), building a full-stack Notes app with authentication, CRUD functionality, unit testing & SonarQube integration
 - 🧑‍💻 Completed a NAVTTC-affiliated Full Stack Development training at **NextSkill Institute** with an IBM-aligned curriculum
-- 📚 Currently enrolled in **Saylani Mass IT Training (SMIT)** — Modern Web & App Development
+- 📚 Currently enrolled in **Saylani Mass IT Training (SMIT)**, Modern Web & App Development
 - 🌱 Actively building projects with the **MERN Stack**
 - 💬 Ask me about React, Node.js, Express, MongoDB, or anything full-stack
 - 📫 Reach me at: **muhammadhussaintech@gmail.com**
@@ -103,13 +103,13 @@
 
 ## Featured Projects
 
-**[BuildVolt](https://buildvolt.online)** — PC-build recommendation SaaS (Final Year Project). A deterministic compatibility engine that infers CPU/RAM/PSU specs from a store's catalog and assembles budget-capped, safety-checked PC builds, plus a WordPress/WooCommerce plugin and a store-owner dashboard.
+**[BuildVolt](https://buildvolt.online)**: PC-build recommendation SaaS (Final Year Project). A deterministic compatibility engine that infers CPU/RAM/PSU specs from a store's catalog and assembles budget-capped, safety-checked PC builds, plus a WordPress/WooCommerce plugin and a store-owner dashboard.
 [Code](https://github.com/MuhammadHussain2004/buildbot)
 
-**[Smart Complaint Management System](https://scms-frontend-rho.vercel.app)** — Role-based complaint management platform (MERN) with JWT auth, an admin approval workflow, and a full complaint lifecycle.
+**[Smart Complaint Management System](https://scms-frontend-rho.vercel.app)**: Role-based complaint management platform (MERN) with JWT auth, an admin approval workflow, and a full complaint lifecycle.
 [Code](https://github.com/MuhammadHussain2004/Complain-Management-System-MERN)
 
-**[Shop.co](https://frontend-ten-cyan-64.vercel.app)** — Full MERN e-commerce site, a pixel-faithful rebuild of a community Figma template.
+**[Shop.co](https://frontend-ten-cyan-64.vercel.app)**: Full MERN e-commerce site, a pixel-faithful rebuild of a community Figma template.
 [Code](https://github.com/MuhammadHussain2004/shopco-ecommerce)
 
 ---
