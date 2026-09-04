@@ -1,16 +1,28 @@
 #!/usr/bin/env node
 // scripts/update-readme.mjs
 //
-// Regenerates the "Tech Stack & Tools" table in README.md between the
-// AUTO-TECH-STACK markers, based on what is actually detected across all of
-// USERNAME's public, non-fork repos: GitHub's own per-repo language stats,
-// dependencies listed in each repo's root package.json, the repo's
-// "homepage" URL (for deployment platforms), and the presence of
-// .github/workflows (CI) or an nbproject folder (NetBeans).
+// Regenerates four parts of README.md, each between its own marker comments:
 //
-// To recognize a new technology automatically in the future, add one line
-// to CATALOG (or DEPLOY_DOMAINS) below with its match key and Shields.io
-// badge URL.
+//  1. AUTO-TAGLINE       - the typing-animation line, from data/profile.json's "taglines"
+//  2. AUTO-TECH-STACK    - the Tech Stack table, from GitHub's per-repo language stats,
+//                          each repo's package.json dependencies (root + subfolders like
+//                          backend/, server/, frontend/), its "homepage" URL (deployment
+//                          platform), and marker files (.github/workflows for CI,
+//                          nbproject/ for NetBeans, sonar-project.properties for SonarQube)
+//  3. AUTO-ABOUT         - the About Me intro + bullets, from data/profile.json
+//  4. AUTO-FEATURED-PROJECTS - any repo tagged with the GitHub topic "featured" (add the
+//                          topic on GitHub.com to showcase a new project; add "mern-stack"
+//                          too to get the "(MERN Stack)" tag). Display name and preferred
+//                          order can be tuned via profile.json's "projectNameOverrides"
+//                          and "featuredOrder" - everything else (description, links) comes
+//                          straight from the repo itself.
+//
+// Facts that don't live in any repo (CGPA, certificates, internships, taglines) can't be
+// detected from GitHub - edit data/profile.json to change them; this script only handles
+// formatting/rendering, consistently, every run.
+//
+// To recognize a new technology automatically, add one line to CATALOG (or DEPLOY_DOMAINS)
+// below with its match key and Shields.io badge URL.
 //
 // Run manually:   GITHUB_TOKEN=xxxx node scripts/update-readme.mjs
 // Run in Actions: the workflow supplies GITHUB_TOKEN automatically.
@@ -23,9 +35,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const USERNAME = "MuhammadHussain2004";
 const TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
 const README_PATH = path.join(__dirname, "..", "README.md");
+const PROFILE_DATA_PATH = path.join(__dirname, "..", "data", "profile.json");
 
-const START_MARKER = "<!-- AUTO-TECH-STACK:START -->";
-const END_MARKER = "<!-- AUTO-TECH-STACK:END -->";
+const MARKERS = {
+  tagline: ["<!-- AUTO-TAGLINE:START -->", "<!-- AUTO-TAGLINE:END -->"],
+  techStack: ["<!-- AUTO-TECH-STACK:START -->", "<!-- AUTO-TECH-STACK:END -->"],
+  about: ["<!-- AUTO-ABOUT:START -->", "<!-- AUTO-ABOUT:END -->"],
+  featured: ["<!-- AUTO-FEATURED-PROJECTS:START -->", "<!-- AUTO-FEATURED-PROJECTS:END -->"],
+};
 
 const badge = (label, color, logo, logoColor = "white") =>
   `https://img.shields.io/badge/-${encodeURIComponent(label)}-${color}?style=flat${logo ? `&logo=${logo}` : ""}&logoColor=${logoColor}`;
@@ -126,14 +143,66 @@ async function fetchAllRepos() {
   return all.filter((r) => !r.fork && !r.archived);
 }
 
-function main() {
-  return run();
+function replaceBetween(content, [start, end], newInner) {
+  const startIdx = content.indexOf(start);
+  const endIdx = content.indexOf(end);
+  if (startIdx === -1 || endIdx === -1) {
+    throw new Error(`Markers not found in README.md: ${start} / ${end}`);
+  }
+  const before = content.slice(0, startIdx + start.length);
+  const after = content.slice(endIdx);
+  return `${before}\n${newInner}\n${after}`;
+}
+
+function buildTaglineLine(taglines) {
+  const encoded = taglines.map((t) => encodeURIComponent(t).replace(/%20/g, "+")).join(";");
+  const url =
+    "https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000" +
+    `&color=00D9FF&center=true&vCenter=true&width=600&lines=${encoded}`;
+  return `[![Typing SVG](${url})](https://git.io/typing-svg)`;
+}
+
+function buildAboutBlock(profile) {
+  const bullets = profile.aboutBullets.map((b) => `- ${b.emoji} ${b.text}`).join("\n");
+  return `${profile.aboutIntro}\n\n${bullets}`;
+}
+
+function buildFeaturedBlock(repos, profile) {
+  const featured = repos.filter((r) => (r.topics || []).includes("featured"));
+
+  const order = profile.featuredOrder || [];
+  featured.sort((a, b) => {
+    const ia = order.indexOf(a.name);
+    const ib = order.indexOf(b.name);
+    if (ia !== -1 || ib !== -1) return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+    return new Date(b.pushed_at) - new Date(a.pushed_at);
+  });
+
+  if (featured.length === 0) {
+    return "_No projects tagged \"featured\" yet - add that GitHub topic to a repo to showcase it here._";
+  }
+
+  return featured
+    .map((r) => {
+      const name = profile.projectNameOverrides?.[r.name] || r.name;
+      const isMern = (r.topics || []).includes("mern-stack");
+      const tag = isMern ? " (MERN Stack)" : "";
+      const link = r.homepage || r.html_url;
+      // Repo descriptions are meant for GitHub's own UI and sometimes carry an
+      // em dash; swap it for a comma so this reads like the rest of the README.
+      const rawDesc = (r.description || "").replace(/\s*[—–]\s*/g, ", ");
+      const desc = rawDesc ? `: ${rawDesc}` : "";
+      return `**[${name}](${link})**${tag}${desc}\n[Code](${r.html_url})`;
+    })
+    .join("\n\n");
 }
 
 async function run() {
   console.error(`Scanning repos for ${USERNAME}...`);
   const repos = await fetchAllRepos();
   console.error(`Found ${repos.length} non-fork, non-archived repos.`);
+
+  const profile = JSON.parse(readFileSync(PROFILE_DATA_PATH, "utf8"));
 
   const detected = new Map(); // category -> Map(label -> badgeUrl)
   const add = (category, label, badgeUrl) => {
@@ -224,21 +293,19 @@ async function run() {
   }
   table += "</table>";
 
-  const readme = readFileSync(README_PATH, "utf8");
-  const startIdx = readme.indexOf(START_MARKER);
-  const endIdx = readme.indexOf(END_MARKER);
-  if (startIdx === -1 || endIdx === -1) {
-    throw new Error("README markers not found; add AUTO-TECH-STACK:START/END HTML comments around the tech table.");
-  }
-  const before = readme.slice(0, startIdx + START_MARKER.length);
-  const after = readme.slice(endIdx);
-  const updated = `${before}\n${table}\n${after}`;
+  let readme = readFileSync(README_PATH, "utf8");
+  const original = readme;
 
-  writeFileSync(README_PATH, updated);
-  console.error(updated === readme ? "No changes." : "README.md updated.");
+  readme = replaceBetween(readme, MARKERS.tagline, buildTaglineLine(profile.taglines));
+  readme = replaceBetween(readme, MARKERS.techStack, table);
+  readme = replaceBetween(readme, MARKERS.about, buildAboutBlock(profile));
+  readme = replaceBetween(readme, MARKERS.featured, buildFeaturedBlock(repos, profile));
+
+  writeFileSync(README_PATH, readme);
+  console.error(readme === original ? "No changes." : "README.md updated.");
 }
 
-main().catch((err) => {
+run().catch((err) => {
   console.error(err);
   process.exit(1);
 });
