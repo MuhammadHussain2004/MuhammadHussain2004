@@ -82,6 +82,17 @@ const DEPLOY_DOMAINS = [
   { domain: "github.io", label: "GitHub Pages", badge: badge("GitHub_Pages", "222222", "github") },
 ];
 
+// Tools that can't be detected from repo scans (editors, AI assistants).
+// Edit this list by hand when it changes; it's merged into the same "Tools"
+// row as anything auto-detected (e.g. NetBeans), so it survives every run.
+const MANUAL_TOOLS = [
+  { label: "VS Code", badge: badge("VS_Code", "007ACC", "visualstudiocode") },
+  { label: "Postman", badge: badge("Postman", "FF6C37", "postman") },
+  { label: "Cursor", badge: badge("Cursor", "000000", "") },
+  { label: "GitHub Copilot", badge: badge("GitHub_Copilot", "181717", "github") },
+  { label: "Claude Code", badge: badge("Claude_Code", "D97757", "") },
+];
+
 async function gh(apiPath) {
   const res = await fetch(`https://api.github.com${apiPath}`, {
     headers: {
@@ -200,9 +211,10 @@ async function run() {
   if (hasWorkflow) add("Version Control & CI/CD", "GitHub Actions", badge("GitHub_Actions", "2088FF", "githubactions"));
   add("Version Control & CI/CD", "Git", badge("Git", "F05032", "git"));
   add("Version Control & CI/CD", "GitHub", badge("GitHub", "181717", "github"));
-  if (hasNetBeansProject) add("IDEs", "NetBeans", badge("NetBeans", "1B6AC6", "apachenetbeanside"));
+  if (hasNetBeansProject) add("Tools", "NetBeans", badge("NetBeans", "1B6AC6", "apachenetbeanside"));
+  for (const t of MANUAL_TOOLS) add("Tools", t.label, t.badge);
 
-  const order = ["Languages", "Frontend", "Backend", "Databases", "Version Control & CI/CD", "Deployment", "Testing & Code Quality", "IDEs"];
+  const order = ["Languages", "Frontend", "Backend", "Databases", "Version Control & CI/CD", "Deployment", "Testing & Code Quality", "Tools"];
   let table = '<table>\n<tr>\n  <td><b>Property</b></td>\n  <td><b>Data</b></td>\n</tr>\n';
   for (const cat of order) {
     const items = detected.get(cat);
