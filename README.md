@@ -83,20 +83,18 @@
   </td>
 </tr>
 <tr>
-  <td><b>IDEs</b></td>
+  <td><b>Tools</b></td>
   <td>
     <img src="https://img.shields.io/badge/-NetBeans-1B6AC6?style=flat&logo=apachenetbeanside&logoColor=white" />
+    <img src="https://img.shields.io/badge/-VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Cursor-000000?style=flat&logoColor=white" />
+    <img src="https://img.shields.io/badge/-GitHub_Copilot-181717?style=flat&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Claude_Code-D97757?style=flat&logoColor=white" />
   </td>
 </tr>
 </table>
 <!-- AUTO-TECH-STACK:END -->
-
-_Editor/AI tools (not detectable from repo scans, maintained by hand):_
-<img src="https://img.shields.io/badge/-VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
-<img src="https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white" />
-<img src="https://img.shields.io/badge/-Cursor-000000?style=flat&logoColor=white" />
-<img src="https://img.shields.io/badge/-GitHub_Copilot-181717?style=flat&logo=github&logoColor=white" />
-<img src="https://img.shields.io/badge/-Claude_Code-D97757?style=flat&logoColor=white" />
 
 ---
 
