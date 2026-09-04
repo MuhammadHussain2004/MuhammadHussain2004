@@ -39,5 +39,6 @@ jobs:
           else
             git add README.md
             git commit -m "Auto-update Tech Stack table from repo scan"
+            git pull --rebase origin main
             git push
           fi
