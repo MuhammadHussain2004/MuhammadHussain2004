@@ -2,7 +2,7 @@
 
 # <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30"> Hey, I'm Muhammad Hussain Khan Lodhi
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=MERN+Stack+Developer;BSCS+Graduate+%7C+CGPA+3.7%2F4.0;IBM+Full-Stack+JavaScript+Developer;10Pearls+10Shine+Alumnus;Building+Full-Stack+Apps+%F0%9F%94%A5)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Software+Engineer;Full-Stack+%2F+MERN+Developer;BSCS+Graduate+%7C+CGPA+3.7%2F4.0;IBM+Full-Stack+JavaScript+Developer;10Pearls+10Shine+Alumnus)](https://git.io/typing-svg)
 
 <img src="https://komarev.com/ghpvc/?username=MuhammadHussain2004&style=for-the-badge&color=00d9ff" alt="Profile Views"/>
 
@@ -100,12 +100,14 @@
 
 ## About Me
 
+Software engineer with a strong foundation in data structures, object-oriented design, and database systems, and particular depth in full-stack MERN development.
+
 - 🎓 BSCS Graduate from **Sindh Madressatul Islam University** (CGPA 3.7/4.0)
 - 📜 **IBM Full-Stack JavaScript Developer** (Professional Certificate, Coursera)
 - 💼 Completed internship at **10Pearls** (10Shine Program), building a full-stack Notes app with authentication, CRUD functionality, unit testing & SonarQube integration
 - 🧑‍💻 Completed a NAVTTC-affiliated Full Stack Development training at **NextSkill Institute** with an IBM-aligned curriculum
 - 📚 Currently enrolled in **Saylani Mass IT Training (SMIT)**, Modern Web & App Development
-- 🌱 Actively building projects with the **MERN Stack**
+- 🌱 Building production-grade apps across the **MERN Stack** (React, Node.js, Express, MongoDB), with additional experience in Java and C/C++
 - 💬 Ask me about React, Node.js, Express, MongoDB, or anything full-stack
 - 📫 Reach me at: **muhammadhussaintech@gmail.com**
 
@@ -116,10 +118,10 @@
 **[BuildVolt](https://buildvolt.online)**: PC-build recommendation SaaS (Final Year Project). A deterministic compatibility engine that infers CPU/RAM/PSU specs from a store's catalog and assembles budget-capped, safety-checked PC builds, plus a WordPress/WooCommerce plugin and a store-owner dashboard.
 [Code](https://github.com/MuhammadHussain2004/buildbot)
 
-**[Smart Complaint Management System](https://scms-frontend-rho.vercel.app)**: Role-based complaint management platform (MERN) with JWT auth, an admin approval workflow, and a full complaint lifecycle.
+**[Smart Complaint Management System](https://scms-frontend-rho.vercel.app)** (MERN Stack): Role-based complaint management platform with JWT auth, an admin approval workflow, and a full complaint lifecycle.
 [Code](https://github.com/MuhammadHussain2004/Complain-Management-System-MERN)
 
-**[Shop.co](https://frontend-ten-cyan-64.vercel.app)**: Full MERN e-commerce site, a pixel-faithful rebuild of a community Figma template.
+**[Shop.co](https://frontend-ten-cyan-64.vercel.app)** (MERN Stack): Full MERN e-commerce site, a pixel-faithful rebuild of a community Figma template.
 [Code](https://github.com/MuhammadHussain2004/shopco-ecommerce)
 
 ---
