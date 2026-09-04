@@ -1,0 +1,26 @@
+{
+  "taglines": [
+    "Software Engineer",
+    "Full-Stack / MERN Developer",
+    "BSCS Graduate | CGPA 3.7/4.0",
+    "IBM Full-Stack JavaScript Developer",
+    "10Pearls 10Shine Alumnus"
+  ],
+  "aboutIntro": "Software engineer with a strong foundation in data structures, object-oriented design, and database systems, and particular depth in full-stack MERN development.",
+  "aboutBullets": [
+    { "emoji": "🎓", "text": "BSCS Graduate from **Sindh Madressatul Islam University** (CGPA 3.7/4.0)" },
+    { "emoji": "📜", "text": "**IBM Full-Stack JavaScript Developer** (Professional Certificate, Coursera)" },
+    { "emoji": "💼", "text": "Completed internship at **10Pearls** (10Shine Program), building a full-stack Notes app with authentication, CRUD functionality, unit testing & SonarQube integration" },
+    { "emoji": "🧑‍💻", "text": "Completed a NAVTTC-affiliated Full Stack Development training at **NextSkill Institute** with an IBM-aligned curriculum" },
+    { "emoji": "📚", "text": "Currently enrolled in **Saylani Mass IT Training (SMIT)**, Modern Web & App Development" },
+    { "emoji": "🌱", "text": "Building production-grade apps across the **MERN Stack** (React, Node.js, Express, MongoDB), with additional experience in Java and C/C++" },
+    { "emoji": "💬", "text": "Ask me about React, Node.js, Express, MongoDB, or anything full-stack" },
+    { "emoji": "📫", "text": "Reach me at: **muhammadhussaintech@gmail.com**" }
+  ],
+  "projectNameOverrides": {
+    "buildbot": "BuildVolt",
+    "Complain-Management-System-MERN": "Smart Complaint Management System",
+    "shopco-ecommerce": "Shop.co"
+  },
+  "featuredOrder": ["buildbot", "Complain-Management-System-MERN", "shopco-ecommerce"]
+}
