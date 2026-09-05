@@ -152,7 +152,7 @@ Software engineer with a strong foundation in data structures, object-oriented d
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/-Portfolio-00D9FF?style=for-the-badge&logo=vercel&logoColor=white)](https://muhammadhussain2004.github.io/)
+[![Portfolio](https://img.shields.io/badge/-Portfolio-00D9FF?style=for-the-badge&logo=vercel&logoColor=white)](https://muhammadhussain2004.github.io/My-Portfolio/)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-hussain-khan-lodhi)
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MuhammadHussain2004)
 [![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammadhussaintech@gmail.com)
