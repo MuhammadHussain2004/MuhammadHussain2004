@@ -2,13 +2,14 @@ name: Update Tech Stack
 
 on:
   schedule:
-    # Every Monday at 00:00 UTC
-    - cron: "0 0 * * 1"
+    # 03:30 UTC daily = 08:30 PKT (30 min after the resume repo's own sync)
+    - cron: "30 3 * * *"
   workflow_dispatch: {}
   push:
     branches: [main]
     paths:
       - "scripts/update-readme.mjs"
+      - "data/profile.json"
 
 permissions:
   contents: write
@@ -25,20 +26,21 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Regenerate Tech Stack table from repo scan
+      - name: Regenerate README from repo scan + Gemini-refreshed About Me
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/update-readme.mjs
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- README.md; then
+          if git diff --quiet -- README.md data/profile.json; then
             echo "No changes to commit."
           else
-            git add README.md
-            git commit -m "Auto-update Tech Stack table from repo scan"
+            git add README.md data/profile.json
+            git commit -m "Auto-update README (tech stack, featured projects, About Me)"
             git pull --rebase origin main
             git push
           fi

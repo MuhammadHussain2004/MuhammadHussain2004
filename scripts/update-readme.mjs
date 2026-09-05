@@ -9,7 +9,13 @@
 //                          backend/, server/, frontend/), its "homepage" URL (deployment
 //                          platform), and marker files (.github/workflows for CI,
 //                          nbproject/ for NetBeans, sonar-project.properties for SonarQube)
-//  3. AUTO-ABOUT         - the About Me intro + bullets, from data/profile.json
+//  3. AUTO-ABOUT         - the About Me intro + bullets, from data/profile.json. If
+//                          GEMINI_API_KEY is set, refreshAboutViaGemini() first asks Gemini
+//                          to reconcile these bullets against the live GitHub profile bio
+//                          and persists any accepted change back to profile.json - but only
+//                          a bullet traceable to actual bio text is accepted (see that
+//                          function). Without the key, or if anything about the call fails,
+//                          this step is skipped and profile.json is used as-is.
 //  4. AUTO-FEATURED-PROJECTS - any repo tagged with the GitHub topic "featured" (add the
 //                          topic on GitHub.com to showcase a new project; add "mern-stack"
 //                          too to get the "(MERN Stack)" tag). Display name and preferred
@@ -17,15 +23,15 @@
 //                          and "featuredOrder" - everything else (description, links) comes
 //                          straight from the repo itself.
 //
-// Facts that don't live in any repo (CGPA, certificates, internships, taglines) can't be
-// detected from GitHub - edit data/profile.json to change them; this script only handles
-// formatting/rendering, consistently, every run.
+// Facts that don't live in any repo and aren't in the GitHub bio (CGPA, certificates,
+// internships) can't be detected automatically - edit data/profile.json directly to change
+// those; this script only handles formatting/rendering, consistently, every run.
 //
 // To recognize a new technology automatically, add one line to CATALOG (or DEPLOY_DOMAINS)
 // below with its match key and Shields.io badge URL.
 //
-// Run manually:   GITHUB_TOKEN=xxxx node scripts/update-readme.mjs
-// Run in Actions: the workflow supplies GITHUB_TOKEN automatically.
+// Run manually:   GITHUB_TOKEN=xxxx GEMINI_API_KEY=yyyy node scripts/update-readme.mjs
+// Run in Actions: the workflow supplies both automatically.
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -197,12 +203,175 @@ function buildFeaturedBlock(repos, profile) {
     .join("\n\n");
 }
 
+// --- Gemini-assisted "About Me" refresh -------------------------------
+//
+// Everything else in this file is deterministic (a repo scan, a badge
+// lookup table) - there's nothing to "get wrong". The About Me bullets are
+// different: facts like a new certification or job can't be detected from a
+// repo scan at all, only from the person's own GitHub profile bio. So this
+// step asks Gemini to reconcile the current bullets (data/profile.json)
+// against the live bio, but only touches profile.json - the actual Tech
+// Stack / Featured Projects / Tagline rendering above never goes through an
+// LLM. If GEMINI_API_KEY isn't set, or anything about the call goes wrong,
+// this quietly falls back to the existing profile.json unchanged - a
+// broken/missing key should never break the weekly tech-stack update.
+
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+
+async function resolveGeminiModels() {
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}`
+  );
+  if (!res.ok) throw new Error(`ListModels failed: ${res.status}`);
+  const data = await res.json();
+  const candidates = (data.models || [])
+    .filter((m) => (m.supportedGenerationMethods || []).includes("generateContent"))
+    .map((m) => m.name.split("/").pop());
+
+  const versionRe = /(\d+)(?:\.(\d+))?/;
+  const rank = (name) => {
+    let score = 0;
+    if (name.includes("latest")) score += 1000;
+    const m = versionRe.exec(name);
+    if (m) score += parseInt(m[1], 10) * 100 + parseInt(m[2] || "0", 10);
+    if (name.includes("flash")) score += 20;
+    if (name.includes("pro")) score += 10;
+    if (/(exp|preview|thinking)/.test(name)) score -= 500;
+    if (/(vision|embedding|tts|image|audio)/.test(name)) score -= 10000;
+    return -score;
+  };
+  candidates.sort((a, b) => rank(a) - rank(b));
+  return candidates;
+}
+
+async function callGemini(model, systemText, userText) {
+  for (const apiVersion of ["v1beta", "v1"]) {
+    const url = `https://generativelanguage.googleapis.com/${apiVersion}/models/${model}:generateContent?key=${GEMINI_API_KEY}`;
+    let res;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      res = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          systemInstruction: { parts: [{ text: systemText }] },
+          contents: [{ role: "user", parts: [{ text: userText }] }],
+          generationConfig: { maxOutputTokens: 2048, temperature: 0.3 },
+        }),
+      });
+      if ((res.status === 429 || res.status === 503) && attempt < 2) {
+        await new Promise((r) => setTimeout(r, 2000 * (attempt + 1)));
+        continue;
+      }
+      break;
+    }
+    if (res.status === 404) continue;
+    if (!res.ok) throw new Error(`Gemini ${apiVersion} ${res.status}: ${(await res.text()).slice(0, 500)}`);
+    const data = await res.json();
+    const parts = data.candidates?.[0]?.content?.parts || [];
+    const text = parts.map((p) => p.text || "").join("");
+    if (text.trim()) return text;
+    throw new Error(`Gemini returned empty text: ${JSON.stringify(data).slice(0, 500)}`);
+  }
+  throw new Error(`MODEL_UNAVAILABLE:${model}`);
+}
+
+function stripCodeFences(text) {
+  const t = text.trim();
+  const m = /^```(?:json)?\n([\s\S]*)\n```$/.exec(t);
+  return m ? m[1] : t;
+}
+
+async function refreshAboutViaGemini(profile, bio) {
+  if (!GEMINI_API_KEY) {
+    console.error("GEMINI_API_KEY not set - leaving About Me as-is.");
+    return profile;
+  }
+
+  const system = `You maintain the "About Me" section of a GitHub profile README, stored as JSON: {"aboutIntro": string, "aboutBullets": [{"emoji": string, "text": string}]}.
+You will be given the CURRENT aboutIntro/aboutBullets and the person's live GitHub profile bio text.
+Hard rules (a program will verify these mechanically before accepting your output):
+- Only change or add a bullet if the GitHub bio text explicitly supports it. If the bio doesn't mention anything new, return aboutIntro/aboutBullets completely UNCHANGED.
+- Never invent a degree, employer, certification, or fact that isn't present in the bio or already in the current bullets.
+- Keep the exact same JSON shape.
+- Keep the existing markdown bold (**text**) style for names/orgs, and keep each bullet's emoji.
+- Output ONLY raw JSON. No markdown fences, no commentary.`;
+
+  const user = `CURRENT (JSON):\n${JSON.stringify(
+    { aboutIntro: profile.aboutIntro, aboutBullets: profile.aboutBullets },
+    null,
+    2
+  )}\n\nGITHUB BIO TEXT:\n${bio || "(empty)"}`;
+
+  let models;
+  try {
+    models = await resolveGeminiModels();
+  } catch (e) {
+    console.error(`Could not list Gemini models, leaving About Me as-is: ${e.message}`);
+    return profile;
+  }
+
+  let raw = null;
+  for (const model of models) {
+    try {
+      raw = await callGemini(model, system, user);
+      console.error(`Used Gemini model: ${model}`);
+      break;
+    } catch (e) {
+      if (String(e.message).startsWith("MODEL_UNAVAILABLE")) {
+        console.error(`Skipping ${model}: ${e.message}`);
+        continue;
+      }
+      console.error(`Gemini call failed (${model}), leaving About Me as-is: ${e.message}`);
+      return profile;
+    }
+  }
+  if (!raw) {
+    console.error("No working Gemini model found, leaving About Me as-is.");
+    return profile;
+  }
+
+  let parsed;
+  try {
+    parsed = JSON.parse(stripCodeFences(raw));
+  } catch (e) {
+    console.error(`Gemini output wasn't valid JSON, leaving About Me as-is: ${e.message}`);
+    return profile;
+  }
+  if (typeof parsed.aboutIntro !== "string" || !Array.isArray(parsed.aboutBullets)) {
+    console.error("Gemini output missing required fields, leaving About Me as-is.");
+    return profile;
+  }
+
+  // Mechanical fabrication guard: every bullet that wasn't already present
+  // must have at least one distinctive word actually appear in the bio text.
+  const oldTexts = new Set(profile.aboutBullets.map((b) => b.text));
+  const newBullets = parsed.aboutBullets.filter((b) => !oldTexts.has(b.text));
+  const bioLower = (bio || "").toLowerCase();
+  const unverified = newBullets.filter((b) => {
+    const words = b.text.replace(/\*\*/g, "").toLowerCase().match(/[a-z]{4,}/g) || [];
+    return !words.some((w) => bioLower.includes(w));
+  });
+  if (unverified.length > 0) {
+    console.error(
+      `Rejecting Gemini About Me update - new bullet(s) not traceable to the bio text: ${JSON.stringify(unverified)}`
+    );
+    return profile;
+  }
+
+  return { ...profile, aboutIntro: parsed.aboutIntro, aboutBullets: parsed.aboutBullets };
+}
+
 async function run() {
   console.error(`Scanning repos for ${USERNAME}...`);
   const repos = await fetchAllRepos();
   console.error(`Found ${repos.length} non-fork, non-archived repos.`);
 
-  const profile = JSON.parse(readFileSync(PROFILE_DATA_PATH, "utf8"));
+  let profile = JSON.parse(readFileSync(PROFILE_DATA_PATH, "utf8"));
+
+  const liveUser = await ghOptional(`/users/${USERNAME}`);
+  const bio = liveUser?.bio || "";
+  profile = await refreshAboutViaGemini(profile, bio);
+  writeFileSync(PROFILE_DATA_PATH, JSON.stringify(profile, null, 2) + "\n");
 
   const detected = new Map(); // category -> Map(label -> badgeUrl)
   const add = (category, label, badgeUrl) => {
