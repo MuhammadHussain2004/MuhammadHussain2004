@@ -294,7 +294,11 @@ async function callGemini(model, systemText, userText) {
         body: JSON.stringify({
           systemInstruction: { parts: [{ text: systemText }] },
           contents: [{ role: "user", parts: [{ text: userText }] }],
-          generationConfig: { maxOutputTokens: 2048, temperature: 0.3 },
+          generationConfig: {
+            maxOutputTokens: 2048,
+            temperature: 0.2,
+            responseMimeType: "application/json",
+          },
         }),
       });
       if ((res.status === 429 || res.status === 503) && attempt < 2) {
@@ -428,48 +432,46 @@ Rules:
   const user = `AUTHORITATIVE RESUME (.tex):\n\n${resumeTex}`;
 
   const models = await resolveGeminiModels();
-  let raw = null;
   for (const model of models) {
     try {
-      raw = await callGemini(model, system, user);
-      if (raw) break;
+      const raw = await callGemini(model, system, user);
+      const parsed = JSON.parse(stripCodeFences(raw));
+      if (
+        !Array.isArray(parsed.taglines) || parsed.taglines.length < 4 ||
+        typeof parsed.aboutIntro !== "string" ||
+        !Array.isArray(parsed.aboutBullets) || parsed.aboutBullets.length < 4 ||
+        !parsed.aboutBullets.every((item) =>
+          typeof item === "string" ||
+          (item && typeof item === "object" && typeof item.text === "string")
+        ) ||
+        !Array.isArray(parsed.resumeHighlights) || parsed.resumeHighlights.length < 3
+      ) {
+        throw new Error("resume-derived JSON failed structural validation");
+      }
+
+      const outputText = JSON.stringify(parsed);
+      const unsupportedUrls = [...outputText.matchAll(/https:\/\/[^"\s]+/g)]
+        .map((match) => match[0])
+        .filter((url) => !resumeTex.includes(url));
+      if (unsupportedUrls.length) {
+        throw new Error(`invented URL(s): ${unsupportedUrls.join(", ")}`);
+      }
+
+      return {
+        ...profile,
+        taglines: parsed.taglines,
+        aboutIntro: parsed.aboutIntro,
+        aboutBullets: parsed.aboutBullets.map((item) =>
+          typeof item === "string" ? { emoji: "", text: item } : item
+        ),
+        resumeHighlights: parsed.resumeHighlights,
+      };
     } catch (error) {
       console.error(`Profile sync model ${model} failed: ${error.message}`);
     }
   }
-  if (!raw) return profile;
-
-  const parsed = JSON.parse(stripCodeFences(raw));
-  if (
-    !Array.isArray(parsed.taglines) || parsed.taglines.length < 4 ||
-    typeof parsed.aboutIntro !== "string" ||
-    !Array.isArray(parsed.aboutBullets) || parsed.aboutBullets.length < 4 ||
-    !parsed.aboutBullets.every((item) =>
-      typeof item === "string" ||
-      (item && typeof item === "object" && typeof item.text === "string")
-    ) ||
-    !Array.isArray(parsed.resumeHighlights) || parsed.resumeHighlights.length < 3
-  ) {
-    throw new Error("Resume-derived profile JSON failed structural validation");
-  }
-
-  const outputText = JSON.stringify(parsed);
-  const unsupportedUrls = [...outputText.matchAll(/https:\/\/[^"\s]+/g)]
-    .map((match) => match[0])
-    .filter((url) => !resumeTex.includes(url));
-  if (unsupportedUrls.length) {
-    throw new Error(`Resume-derived profile invented URL(s): ${unsupportedUrls.join(", ")}`);
-  }
-
-  return {
-    ...profile,
-    taglines: parsed.taglines,
-    aboutIntro: parsed.aboutIntro,
-    aboutBullets: parsed.aboutBullets.map((item) =>
-      typeof item === "string" ? { emoji: "", text: item } : item
-    ),
-    resumeHighlights: parsed.resumeHighlights,
-  };
+  console.error("All profile-sync models failed; preserving the last valid resume-derived content.");
+  return profile;
 }
 
 async function run() {
