@@ -5,7 +5,7 @@
 <!-- AUTO-HEADER:END -->
 
 <!-- AUTO-TAGLINE:START -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Software+Engineer;Full-Stack+%2F+MERN+Developer;BSCS+Graduate+%7C+CGPA+3.7%2F4.0;IBM+Full-Stack+JavaScript+Developer;10Pearls+10Shine+Alumnus)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Software+Engineer+%26+BSCS+Graduate+(CGPA+3.7%2F4.0);Full-Stack+MERN+Specialist+(React%2C+Node.js%2C+Express%2C+MongoDB);IBM-Certified+Full-Stack+JavaScript+Developer;Experience+in+Multi-Service+Systems+%26+Role-Based+Access+Control;Passionate+about+Data+Structures%2C+OOP%2C+and+Database+Design)](https://git.io/typing-svg)
 <!-- AUTO-TAGLINE:END -->
 
 <img src="https://komarev.com/ghpvc/?username=MuhammadHussain2004&style=for-the-badge&color=00d9ff" alt="Profile Views"/>
@@ -105,16 +105,15 @@
 ## About Me
 
 <!-- AUTO-ABOUT:START -->
-Software engineer with a strong foundation in data structures, object-oriented design, and database systems, and particular depth in full-stack MERN development.
+Software engineer with a strong foundation in data structures, object-oriented design, and database systems, and particular depth in full-stack MERN development (React, Node.js, Express, MongoDB). Has designed multi-service systems, including a deterministic recommendation engine and a role-based access-control platform, with production experience across Java and C/C++ as well. IBM-certified in full-stack JavaScript development; BSCS graduate, CGPA 3.7/4.0.
 
-- 🎓 BSCS Graduate from **Sindh Madressatul Islam University** (CGPA 3.7/4.0)
-- 📜 **IBM Full-Stack JavaScript Developer** (Professional Certificate, Coursera)
-- 💼 Completed internship at **10Pearls** (10Shine Program), building a full-stack Notes app with authentication, CRUD functionality, unit testing & SonarQube integration
-- 🧑‍💻 Completed a NAVTTC-affiliated Full Stack Development training at **NextSkill Institute** with an IBM-aligned curriculum
-- 📚 Currently enrolled in **Saylani Mass IT Training (SMIT)**, Modern Web & App Development
-- 🌱 Building production-grade apps across the **MERN Stack** (React, Node.js, Express, MongoDB), with additional experience in Java and C/C++
-- 💬 Ask me about React, Node.js, Express, MongoDB, or anything full-stack
-- 📫 Reach me at: **muhammadhussaintech@gmail.com**
+- undefined undefined
+- undefined undefined
+- undefined undefined
+- undefined undefined
+- undefined undefined
+- undefined undefined
+- undefined undefined
 <!-- AUTO-ABOUT:END -->
 
 ---
@@ -122,7 +121,12 @@ Software engineer with a strong foundation in data structures, object-oriented d
 ## Experience & Credentials
 
 <!-- AUTO-RESUME-HIGHLIGHTS:START -->
-_Synced from the resume._
+- **Experience: Full Stack Development Trainee - NextSkill Institute** · Jun 2026 - Sep 2026 — Completed a NAVTTC-affiliated Full Stack Development training program with an IBM-aligned curriculum, progressing from HTML5/CSS3/JavaScript fundamentals to React-based multi-page and e-commerce applications.
+- **Experience: [MERN Stack Development Intern - 10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — Designed and implemented the data model and REST API for a full-stack Notes application, including JWT authentication, email verification, and unit/integration tests.
+- **Experience: Independent Study - Self-Directed Learning & Development** · Sep 2022 - Present — Designed, built, and deployed 10+ full-stack MERN applications independently, applying data structures, OOP, and database design coursework to real projects.
+- **Education: Bachelor of Science in Computer Science - Sindh Madressatul Islam University** · Sep 2022 - Jun 2026 — CGPA: 3.7/4.0. Relevant Coursework: Data Structures, Object-Oriented Programming, Database Systems, Software Engineering, Computer Networks, Operating Systems, Mobile App Development.
+- **Certification: [IBM Full-Stack JavaScript Developer (Professional Certificate) - IBM, Coursera](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Professional certificate validating comprehensive skills in full-stack JavaScript development.
+- **Certification: Modern Web & App Development - Saylani Mass IT Training (SMIT)** · Mar 2026 - Present — Ongoing training focused on modern web and application development frameworks and practices.
 <!-- AUTO-RESUME-HIGHLIGHTS:END -->
 
 ---
@@ -130,14 +134,14 @@ _Synced from the resume._
 ## Featured Projects
 
 <!-- AUTO-FEATURED-PROJECTS:START -->
-**[BuildVolt](https://buildvolt.online)**: PC-build recommendation SaaS with a deterministic compatibility engine, a WordPress/WooCommerce plugin, and a store-owner dashboard (Final Year Project).
-[Code](https://github.com/MuhammadHussain2004/buildbot)
-
-**[Smart Complaint Management System](https://scms-frontend-rho.vercel.app)** (MERN Stack): Role-based complaint management platform (MERN) with JWT auth, an admin approval workflow, and a full complaint lifecycle.
+**[Smart Complaint Management System](https://scms-frontend-rho.vercel.app)** (Full-Stack): Full-stack application implementing administration, analytics, email/notifications, reviews/feedback with Express, JWT, Mongoose, Node.js, OAuth.
 [Code](https://github.com/MuhammadHussain2004/Complain-Management-System-MERN)
 
-**[Shop.co](https://frontend-ten-cyan-64.vercel.app)** (MERN Stack): Full MERN e-commerce site, a pixel-faithful rebuild of a community Figma template.
-[Code](https://github.com/MuhammadHussain2004/shopco-ecommerce)
+**[MuhammadHussain-mern-10pshine](https://muhammad-hussain-mern-10pshine.vercel.app)** (Full-Stack): Full-stack application implementing administration, catalog/commerce, content/data management, email/notifications with Express, JWT, Jest, MySQL, Node.js.
+[Code](https://github.com/MuhammadHussain2004/MuhammadHussain-mern-10pshine)
+
+**[BuildVolt](https://buildvolt.online)** (Full-Stack): Full-stack application implementing administration, analytics, catalog/commerce, email/notifications with Express, JWT, Node.js, OAuth, SQLite.
+[Code](https://github.com/MuhammadHussain2004/buildbot)
 <!-- AUTO-FEATURED-PROJECTS:END -->
 
 ---
@@ -164,7 +168,7 @@ _Synced from the resume._
 
 <!-- AUTO-CONTACT:START -->
 [![Portfolio](https://img.shields.io/badge/-Portfolio-00D9FF?style=for-the-badge&logo=vercel&logoColor=white)](https://muhammadhussain2004.github.io/My-Portfolio/)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-hussain-khan-lodhi)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/muhammad-hussain-khan-lodhi)
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MuhammadHussain2004)
 [![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammadhussaintech@gmail.com)
 <!-- AUTO-CONTACT:END -->
