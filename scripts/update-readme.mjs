@@ -314,8 +314,16 @@ async function callGemini(model, systemText, userText) {
 
 function stripCodeFences(text) {
   const t = text.trim();
-  const m = /^```(?:json)?\n([\s\S]*)\n```$/.exec(t);
-  return m ? m[1] : t;
+  const fenced = /^```(?:json)?\s*([\s\S]*?)\s*```$/i.exec(t);
+  if (fenced) return fenced[1].trim();
+
+  // Some models add a short sentence around otherwise valid JSON despite the
+  // response-format instruction. Extract the outer JSON object defensively.
+  const firstBrace = t.indexOf("{");
+  const lastBrace = t.lastIndexOf("}");
+  return firstBrace !== -1 && lastBrace > firstBrace
+    ? t.slice(firstBrace, lastBrace + 1)
+    : t;
 }
 
 async function refreshAboutViaGemini(profile, bio) {
