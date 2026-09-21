@@ -174,7 +174,9 @@ function buildTaglineLine(taglines) {
 }
 
 function buildAboutBlock(profile) {
-  const bullets = profile.aboutBullets.map((b) => `- ${b.emoji} ${b.text}`).join("\n");
+  const bullets = profile.aboutBullets
+    .map((b) => typeof b === "string" ? `- ${b}` : `- ${b.emoji || ""} ${b.text}`.trimEnd())
+    .join("\n");
   return `${profile.aboutIntro}\n\n${bullets}`;
 }
 
@@ -442,6 +444,10 @@ Rules:
     !Array.isArray(parsed.taglines) || parsed.taglines.length < 4 ||
     typeof parsed.aboutIntro !== "string" ||
     !Array.isArray(parsed.aboutBullets) || parsed.aboutBullets.length < 4 ||
+    !parsed.aboutBullets.every((item) =>
+      typeof item === "string" ||
+      (item && typeof item === "object" && typeof item.text === "string")
+    ) ||
     !Array.isArray(parsed.resumeHighlights) || parsed.resumeHighlights.length < 3
   ) {
     throw new Error("Resume-derived profile JSON failed structural validation");
@@ -459,7 +465,9 @@ Rules:
     ...profile,
     taglines: parsed.taglines,
     aboutIntro: parsed.aboutIntro,
-    aboutBullets: parsed.aboutBullets,
+    aboutBullets: parsed.aboutBullets.map((item) =>
+      typeof item === "string" ? { emoji: "", text: item } : item
+    ),
     resumeHighlights: parsed.resumeHighlights,
   };
 }

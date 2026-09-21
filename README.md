@@ -107,13 +107,13 @@
 <!-- AUTO-ABOUT:START -->
 Software engineer with a strong foundation in data structures, object-oriented design, and database systems, and particular depth in full-stack MERN development (React, Node.js, Express, MongoDB). Has designed multi-service systems, including a deterministic recommendation engine and a role-based access-control platform, with production experience across Java and C/C++ as well. IBM-certified in full-stack JavaScript development; BSCS graduate, CGPA 3.7/4.0.
 
-- undefined undefined
-- undefined undefined
-- undefined undefined
-- undefined undefined
-- undefined undefined
-- undefined undefined
-- undefined undefined
+- 🎓 BS in Computer Science from Sindh Madressatul Islam University (CGPA: 3.7/4.0)
+- 💻 Core expertise in MERN stack, JavaScript, TypeScript, Python, Java, C++, and SQL
+- 📜 IBM Full-Stack JavaScript Developer Professional Certificate holder
+- 🚀 Developed BuildVolt (PC-Build Recommendation SaaS) and Smart Complaint Management System
+- 🛠️ Practical experience across 10+ independent MERN applications and internships like 10Pearls
+- 📍 Based in Karachi, Pakistan
+- ✉️ Reachable at muhammadhussaintech@gmail.com
 <!-- AUTO-ABOUT:END -->
 
 ---
