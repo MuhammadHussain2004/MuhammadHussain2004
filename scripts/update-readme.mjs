@@ -42,12 +42,17 @@ const USERNAME = "MuhammadHussain2004";
 const TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
 const README_PATH = path.join(__dirname, "..", "README.md");
 const PROFILE_DATA_PATH = path.join(__dirname, "..", "data", "profile.json");
+const RESUME_URL = "https://raw.githubusercontent.com/MuhammadHussain2004/resume/master/Muhammad_Hussain_Resume.tex";
+const ANALYSIS_URL = "https://raw.githubusercontent.com/MuhammadHussain2004/resume/master/data/repo-analysis.json";
 
 const MARKERS = {
+  header: ["<!-- AUTO-HEADER:START -->", "<!-- AUTO-HEADER:END -->"],
   tagline: ["<!-- AUTO-TAGLINE:START -->", "<!-- AUTO-TAGLINE:END -->"],
   techStack: ["<!-- AUTO-TECH-STACK:START -->", "<!-- AUTO-TECH-STACK:END -->"],
   about: ["<!-- AUTO-ABOUT:START -->", "<!-- AUTO-ABOUT:END -->"],
+  highlights: ["<!-- AUTO-RESUME-HIGHLIGHTS:START -->", "<!-- AUTO-RESUME-HIGHLIGHTS:END -->"],
   featured: ["<!-- AUTO-FEATURED-PROJECTS:START -->", "<!-- AUTO-FEATURED-PROJECTS:END -->"],
+  contact: ["<!-- AUTO-CONTACT:START -->", "<!-- AUTO-CONTACT:END -->"],
 };
 
 const badge = (label, color, logo, logoColor = "white") =>
@@ -173,32 +178,64 @@ function buildAboutBlock(profile) {
   return `${profile.aboutIntro}\n\n${bullets}`;
 }
 
-function buildFeaturedBlock(repos, profile) {
-  const featured = repos.filter((r) => (r.topics || []).includes("featured"));
+function parseResumeContact(resumeTex) {
+  const name = /\\textbf\{\\Huge \\scshape ([^}]+)\}/.exec(resumeTex)?.[1] || "Muhammad Hussain Khan Lodhi";
+  const email = /\\href\{mailto:([^}]+)\}/.exec(resumeTex)?.[1] || "muhammadhussaintech@gmail.com";
+  const urls = [...resumeTex.matchAll(/\\href\{(https:\/\/[^}]+)\}/g)].map((m) => m[1]);
+  return {
+    name,
+    email,
+    github: urls.find((url) => url.includes("github.com/MuhammadHussain2004") && !url.includes("/resume/")) || `https://github.com/${USERNAME}`,
+    linkedin: urls.find((url) => url.includes("linkedin.com/in/")) || "",
+    portfolio: urls.find((url) => url.includes("github.io/My-Portfolio")) || "",
+  };
+}
 
-  const order = profile.featuredOrder || [];
-  featured.sort((a, b) => {
-    const ia = order.indexOf(a.name);
-    const ib = order.indexOf(b.name);
-    if (ia !== -1 || ib !== -1) return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
-    return new Date(b.pushed_at) - new Date(a.pushed_at);
-  });
+function buildHeader(contact) {
+  return `# <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30"> Hey, I'm ${contact.name}`;
+}
 
-  if (featured.length === 0) {
-    return "_No projects tagged \"featured\" yet - add that GitHub topic to a repo to showcase it here._";
-  }
+function buildContactBlock(contact) {
+  const links = [];
+  if (contact.portfolio) links.push(`[![Portfolio](https://img.shields.io/badge/-Portfolio-00D9FF?style=for-the-badge&logo=vercel&logoColor=white)](${contact.portfolio})`);
+  if (contact.linkedin) links.push(`[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](${contact.linkedin})`);
+  if (contact.github) links.push(`[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](${contact.github})`);
+  if (contact.email) links.push(`[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:${contact.email})`);
+  return links.join("\n");
+}
+
+function buildHighlightsBlock(profile) {
+  return (profile.resumeHighlights || [])
+    .map((item) => {
+      const title = item.link ? `[${item.title}](${item.link})` : item.title;
+      const period = item.period ? ` · ${item.period}` : "";
+      return `- **${item.category}: ${title}**${period} — ${item.description}`;
+    })
+    .join("\n");
+}
+
+function evidenceDescription(project) {
+  const features = (project.feature_domains || []).slice(0, 4);
+  const technologies = (project.technologies || []).slice(0, 5);
+  const kind = project.full_stack ? "Full-stack application" : "Software project";
+  const featureText = features.length ? ` implementing ${features.join(", ")}` : " built from a substantive codebase";
+  const stackText = technologies.length ? ` with ${technologies.join(", ")}` : "";
+  return `${kind}${featureText}${stackText}.`;
+}
+
+function buildFeaturedBlock(repoAnalysis, profile) {
+  const featured = (repoAnalysis.projects || [])
+    .filter((project) => project.eligible && project.overall_rank <= 3)
+    .sort((a, b) => a.overall_rank - b.overall_rank);
+
+  if (featured.length === 0) throw new Error("Shared analysis contains no featured projects");
 
   return featured
-    .map((r) => {
-      const name = profile.projectNameOverrides?.[r.name] || r.name;
-      const isMern = (r.topics || []).includes("mern-stack");
-      const tag = isMern ? " (MERN Stack)" : "";
-      const link = r.homepage || r.html_url;
-      // Repo descriptions are meant for GitHub's own UI and sometimes carry an
-      // em dash; swap it for a comma so this reads like the rest of the README.
-      const rawDesc = (r.description || "").replace(/\s*[—–]\s*/g, ", ");
-      const desc = rawDesc ? `: ${rawDesc}` : "";
-      return `**[${name}](${link})**${tag}${desc}\n[Code](${r.html_url})`;
+    .map((project) => {
+      const name = profile.projectNameOverrides?.[project.name] || project.name;
+      const link = project.homepage || project.url;
+      const tag = project.full_stack ? " (Full-Stack)" : "";
+      return `**[${name}](${link})**${tag}: ${evidenceDescription(project)}\n[Code](${project.url})`;
     })
     .join("\n\n");
 }
@@ -361,16 +398,83 @@ Hard rules (a program will verify these mechanically before accepting your outpu
   return { ...profile, aboutIntro: parsed.aboutIntro, aboutBullets: parsed.aboutBullets };
 }
 
+async function refreshProfileFromResume(profile, resumeTex) {
+  if (!GEMINI_API_KEY) {
+    console.error("GEMINI_API_KEY not set - keeping the last resume-derived profile data.");
+    return profile;
+  }
+
+  const system = `You synchronize a GitHub profile README from an authoritative LaTeX resume.
+Return JSON with exactly this shape:
+{"taglines":[string],"aboutIntro":string,"aboutBullets":[{"emoji":string,"text":string}],"resumeHighlights":[{"category":string,"title":string,"period":string,"description":string,"link":string}]}
+Rules:
+- The resume is the only source of truth. Never invent or retain a stale fact that conflicts with it.
+- taglines: 4-6 concise professional identity/qualification lines derived from Summary, Education, Experience, and Certifications.
+- aboutIntro: one concise paragraph derived from Summary.
+- aboutBullets: 5-8 concise bullets covering the strongest current education, certification, experience, project/engineering focus, and contact facts. Use fitting emoji and Markdown bold sparingly.
+- resumeHighlights: one entry for every Experience, Education, and Certification entry. Category must be Experience, Education, or Certification. Preserve dates/periods and factual meaning. Use a URL only when the entry has an explicit \\href URL; otherwise use an empty string.
+- Projects and Technical Skills are rendered separately from code analysis, so summarize rather than duplicate whole sections.
+- Output raw JSON only.`;
+  const user = `AUTHORITATIVE RESUME (.tex):\n\n${resumeTex}`;
+
+  const models = await resolveGeminiModels();
+  let raw = null;
+  for (const model of models) {
+    try {
+      raw = await callGemini(model, system, user);
+      if (raw) break;
+    } catch (error) {
+      console.error(`Profile sync model ${model} failed: ${error.message}`);
+    }
+  }
+  if (!raw) return profile;
+
+  const parsed = JSON.parse(stripCodeFences(raw));
+  if (
+    !Array.isArray(parsed.taglines) || parsed.taglines.length < 4 ||
+    typeof parsed.aboutIntro !== "string" ||
+    !Array.isArray(parsed.aboutBullets) || parsed.aboutBullets.length < 4 ||
+    !Array.isArray(parsed.resumeHighlights) || parsed.resumeHighlights.length < 3
+  ) {
+    throw new Error("Resume-derived profile JSON failed structural validation");
+  }
+
+  const outputText = JSON.stringify(parsed);
+  const unsupportedUrls = [...outputText.matchAll(/https:\/\/[^"\s]+/g)]
+    .map((match) => match[0])
+    .filter((url) => !resumeTex.includes(url));
+  if (unsupportedUrls.length) {
+    throw new Error(`Resume-derived profile invented URL(s): ${unsupportedUrls.join(", ")}`);
+  }
+
+  return {
+    ...profile,
+    taglines: parsed.taglines,
+    aboutIntro: parsed.aboutIntro,
+    aboutBullets: parsed.aboutBullets,
+    resumeHighlights: parsed.resumeHighlights,
+  };
+}
+
 async function run() {
   console.error(`Scanning repos for ${USERNAME}...`);
   const repos = await fetchAllRepos();
   console.error(`Found ${repos.length} non-fork, non-archived repos.`);
 
-  let profile = JSON.parse(readFileSync(PROFILE_DATA_PATH, "utf8"));
+  const [resumeResponse, analysisResponse] = await Promise.all([
+    fetch(RESUME_URL, { signal: AbortSignal.timeout(30000) }),
+    fetch(ANALYSIS_URL, { signal: AbortSignal.timeout(30000) }),
+  ]);
+  if (!resumeResponse.ok) throw new Error(`Resume fetch failed: ${resumeResponse.status}`);
+  if (!analysisResponse.ok) throw new Error(`Shared analysis fetch failed: ${analysisResponse.status}`);
+  const resumeTex = await resumeResponse.text();
+  const repoAnalysis = await analysisResponse.json();
+  if (resumeTex.length < 500 || !Array.isArray(repoAnalysis.projects)) {
+    throw new Error("Resume or shared analysis response was malformed");
+  }
 
-  const liveUser = await ghOptional(`/users/${USERNAME}`);
-  const bio = liveUser?.bio || "";
-  profile = await refreshAboutViaGemini(profile, bio);
+  let profile = JSON.parse(readFileSync(PROFILE_DATA_PATH, "utf8"));
+  profile = await refreshProfileFromResume(profile, resumeTex);
   writeFileSync(PROFILE_DATA_PATH, JSON.stringify(profile, null, 2) + "\n");
 
   const detected = new Map(); // category -> Map(label -> badgeUrl)
@@ -464,11 +568,15 @@ async function run() {
 
   let readme = readFileSync(README_PATH, "utf8");
   const original = readme;
+  const contact = parseResumeContact(resumeTex);
 
+  readme = replaceBetween(readme, MARKERS.header, buildHeader(contact));
   readme = replaceBetween(readme, MARKERS.tagline, buildTaglineLine(profile.taglines));
   readme = replaceBetween(readme, MARKERS.techStack, table);
   readme = replaceBetween(readme, MARKERS.about, buildAboutBlock(profile));
-  readme = replaceBetween(readme, MARKERS.featured, buildFeaturedBlock(repos, profile));
+  readme = replaceBetween(readme, MARKERS.highlights, buildHighlightsBlock(profile));
+  readme = replaceBetween(readme, MARKERS.featured, buildFeaturedBlock(repoAnalysis, profile));
+  readme = replaceBetween(readme, MARKERS.contact, buildContactBlock(contact));
 
   writeFileSync(README_PATH, readme);
   console.error(readme === original ? "No changes." : "README.md updated.");

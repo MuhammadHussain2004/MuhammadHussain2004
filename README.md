@@ -1,6 +1,8 @@
 <div align="center">
 
+<!-- AUTO-HEADER:START -->
 # <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30"> Hey, I'm Muhammad Hussain Khan Lodhi
+<!-- AUTO-HEADER:END -->
 
 <!-- AUTO-TAGLINE:START -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Software+Engineer;Full-Stack+%2F+MERN+Developer;BSCS+Graduate+%7C+CGPA+3.7%2F4.0;IBM+Full-Stack+JavaScript+Developer;10Pearls+10Shine+Alumnus)](https://git.io/typing-svg)
@@ -117,6 +119,14 @@ Software engineer with a strong foundation in data structures, object-oriented d
 
 ---
 
+## Experience & Credentials
+
+<!-- AUTO-RESUME-HIGHLIGHTS:START -->
+_Synced from the resume._
+<!-- AUTO-RESUME-HIGHLIGHTS:END -->
+
+---
+
 ## Featured Projects
 
 <!-- AUTO-FEATURED-PROJECTS:START -->
@@ -152,10 +162,12 @@ Software engineer with a strong foundation in data structures, object-oriented d
 
 <div align="center">
 
+<!-- AUTO-CONTACT:START -->
 [![Portfolio](https://img.shields.io/badge/-Portfolio-00D9FF?style=for-the-badge&logo=vercel&logoColor=white)](https://muhammadhussain2004.github.io/My-Portfolio/)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-hussain-khan-lodhi)
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MuhammadHussain2004)
 [![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammadhussaintech@gmail.com)
+<!-- AUTO-CONTACT:END -->
 
 </div>
 

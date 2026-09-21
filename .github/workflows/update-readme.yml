@@ -5,6 +5,8 @@ on:
     # 03:30 UTC daily = 08:30 PKT (30 min after the resume repo's own sync)
     - cron: "30 3 * * *"
   workflow_dispatch: {}
+  repository_dispatch:
+    types: [resume_updated]
   push:
     branches: [main]
     paths:
