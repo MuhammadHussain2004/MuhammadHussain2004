@@ -1,35 +1,35 @@
 {
   "taglines": [
-    "Software Engineer specializing in full-stack MERN development and robust database systems",
-    "BSCS graduate with a 3.7/4.0 CGPA and a strong foundation in data structures and OOP",
-    "IBM-certified Full-Stack JavaScript Developer experienced in building production-ready web applications",
-    "Creator of deterministic recommendation engines and role-based access control platforms"
+    "Software Engineer & Full-Stack MERN Developer",
+    "BSCS Graduate with 3.7/4.0 CGPA",
+    "IBM-Certified Full-Stack JavaScript Developer",
+    "Specialized in Distributed Systems & Recommendation Engines"
   ],
-  "aboutIntro": "Software engineer with a strong foundation in data structures, object-oriented design, and database systems, and particular depth in full-stack MERN development (React, Node.js, Express, MongoDB). Has designed multi-service systems, including a deterministic recommendation engine and a role-based access-control platform, with production experience across Java and C/C++ as well. IBM-certified in full-stack JavaScript development; BSCS graduate, CGPA 3.7/4.0.",
+  "aboutIntro": "Software engineer with a strong foundation in data structures, object-oriented design, and database systems, and particular depth in full-stack MERN development (React, Node.js, Express, MongoDB). Has designed multi-service systems, including a deterministic recommendation engine and a role-based access-control platform, with production experience across Java and C/C++ as well.",
   "aboutBullets": [
     {
-      "emoji": "",
-      "text": "🎓 BS in Computer Science from Sindh Madressatul Islam University with a 3.7/4.0 CGPA"
+      "emoji": "🎓",
+      "text": "**BS Computer Science** graduate from Sindh Madressatul Islam University (CGPA 3.7/4.0)."
     },
     {
-      "emoji": "",
-      "text": "💻 Core expertise in MERN stack (React, Node.js, Express.js, MongoDB/MySQL)"
+      "emoji": "💻",
+      "text": "Specialized in **Full-Stack MERN Development** (React, Node.js, Express, MongoDB/MySQL)."
     },
     {
-      "emoji": "",
-      "text": "📜 IBM-certified Full-Stack JavaScript Developer (Coursera, Sep 2026)"
+      "emoji": "📜",
+      "text": "Certified as an **IBM Full-Stack JavaScript Developer** via Coursera."
     },
     {
-      "emoji": "",
-      "text": "🚀 Developed and deployed 10+ full-stack applications including BuildVolt SaaS and Smart Complaint Management System"
+      "emoji": "⚡",
+      "text": "Created **BuildVolt**, a deterministic PC-build recommendation SaaS with 1,200+ lines of compatibility logic."
     },
     {
-      "emoji": "",
-      "text": "🛠️ Skilled in building REST APIs, JWT authentication, role-based access control, and unit testing (Mocha, Chai)"
+      "emoji": "🛠️",
+      "text": "Experienced through internships and traineeships at **10Pearls** and **NextSkill Institute**."
     },
     {
-      "emoji": "",
-      "text": "📍 Based in Karachi, Pakistan, open to software engineering opportunities"
+      "emoji": "📬",
+      "text": "Reach me via email at **muhammadhussaintech@gmail.com** or connect on LinkedIn."
     }
   ],
   "projectNameOverrides": {
@@ -75,14 +75,14 @@
       "category": "Certification",
       "title": "IBM Full-Stack JavaScript Developer (Professional Certificate)",
       "period": "Sep 2026",
-      "description": "Professional certification issued by IBM via Coursera.",
+      "description": "Earned Professional Certificate from IBM via Coursera.",
       "link": "https://coursera.org/verify/professional-cert/ACOM3SC87IX4"
     },
     {
       "category": "Certification",
       "title": "Modern Web & App Development - Saylani Mass IT Training (SMIT)",
       "period": "Mar 2026 - Present",
-      "description": "Modern Web & App Development training program.",
+      "description": "Ongoing training in modern web and app development technologies.",
       "link": ""
     }
   ]
