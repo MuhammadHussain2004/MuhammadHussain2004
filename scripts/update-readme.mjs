@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // scripts/update-readme.mjs
 //
-// Regenerates four parts of README.md, each between its own marker comments:
+// Regenerates every data-bearing section of README.md between marker comments.
 //
 //  1. AUTO-TAGLINE       - the typing-animation line, from data/profile.json's "taglines"
 //  2. AUTO-TECH-STACK    - the Tech Stack table, from GitHub's per-repo language stats,
@@ -9,23 +9,9 @@
 //                          backend/, server/, frontend/), its "homepage" URL (deployment
 //                          platform), and marker files (.github/workflows for CI,
 //                          nbproject/ for NetBeans, sonar-project.properties for SonarQube)
-//  3. AUTO-ABOUT         - the About Me intro + bullets, from data/profile.json. If
-//                          GEMINI_API_KEY is set, refreshAboutViaGemini() first asks Gemini
-//                          to reconcile these bullets against the live GitHub profile bio
-//                          and persists any accepted change back to profile.json - but only
-//                          a bullet traceable to actual bio text is accepted (see that
-//                          function). Without the key, or if anything about the call fails,
-//                          this step is skipped and profile.json is used as-is.
-//  4. AUTO-FEATURED-PROJECTS - any repo tagged with the GitHub topic "featured" (add the
-//                          topic on GitHub.com to showcase a new project; add "mern-stack"
-//                          too to get the "(MERN Stack)" tag). Display name and preferred
-//                          order can be tuned via profile.json's "projectNameOverrides"
-//                          and "featuredOrder" - everything else (description, links) comes
-//                          straight from the repo itself.
-//
-// Facts that don't live in any repo and aren't in the GitHub bio (CGPA, certificates,
-// internships) can't be detected automatically - edit data/profile.json directly to change
-// those; this script only handles formatting/rendering, consistently, every run.
+// Resume-backed identity, About, credentials, contact, and declared skills come from the
+// resume repository. Featured projects use its shared code-derived ranking. Repository
+// scanning supplements the declared skill set with additional evidence-backed technology.
 //
 // To recognize a new technology automatically, add one line to CATALOG (or DEPLOY_DOMAINS)
 // below with its match key and Shields.io badge URL.
@@ -74,8 +60,10 @@ const CATALOG = [
 
   // Frontend (matched against package.json dependencies + devDependencies)
   { category: "Frontend", match: "react", label: "React", badge: badge("React", "61DAFB", "react", "black") },
+  { category: "Frontend", match: "react-dom", label: "React DOM", badge: badge("React_DOM", "61DAFB", "react", "black") },
   { category: "Frontend", match: "next", label: "Next.js", badge: badge("Next.js", "000000", "nextdotjs") },
   { category: "Frontend", match: "@reduxjs/toolkit", label: "Redux Toolkit", badge: badge("Redux_Toolkit", "764ABC", "redux") },
+  { category: "Frontend", match: "react-redux", label: "React Redux", badge: badge("React_Redux", "764ABC", "redux") },
   { category: "Frontend", match: "react-router-dom", label: "React Router", badge: badge("React_Router", "CA4245", "reactrouter") },
   { category: "Frontend", match: "tailwindcss", label: "Tailwind CSS", badge: badge("Tailwind_CSS", "38B2AC", "tailwind-css") },
   { category: "Frontend", match: "vite", label: "Vite", badge: badge("Vite", "646CFF", "vite") },
@@ -83,14 +71,22 @@ const CATALOG = [
 
   // Backend
   { category: "Backend", match: "express", label: "Express.js", badge: badge("Express.js", "000000", "express") },
+  { category: "Backend", match: "socket.io", label: "Socket.IO", badge: badge("Socket.IO", "010101", "socketdotio") },
+  { category: "Backend", match: "bcrypt", label: "bcrypt", badge: badge("bcrypt", "333333", "") },
+  { category: "Backend", match: "bcryptjs", label: "bcrypt", badge: badge("bcrypt", "333333", "") },
+  { category: "Backend", match: "jsonwebtoken", label: "JWT", badge: badge("JWT", "000000", "jsonwebtokens") },
+  { category: "Backend", match: "cors", label: "CORS", badge: badge("CORS", "555555", "") },
+  { category: "Backend", match: "dotenv", label: "dotenv", badge: badge("dotenv", "ECD53F", "dotenv", "black") },
+  { category: "Backend", match: "multer", label: "Multer", badge: badge("Multer", "333333", "") },
 
   // Databases
-  { category: "Databases", match: "mongoose", label: "MongoDB", badge: badge("MongoDB", "47A248", "mongodb") },
+  { category: "Databases", match: "mongoose", label: "Mongoose", badge: badge("Mongoose", "880000", "mongoose") },
   { category: "Databases", match: "mongodb", label: "MongoDB", badge: badge("MongoDB", "47A248", "mongodb") },
   { category: "Databases", match: "mysql2", label: "MySQL", badge: badge("MySQL", "4479A1", "mysql") },
   { category: "Databases", match: "mysql", label: "MySQL", badge: badge("MySQL", "4479A1", "mysql") },
   { category: "Databases", match: "@libsql/client", label: "Turso (libSQL)", badge: badge("Turso", "4FF8D2", "turso", "black") },
   { category: "Databases", match: "pg", label: "PostgreSQL", badge: badge("PostgreSQL", "4479A1", "postgresql") },
+  { category: "Databases", match: "sequelize", label: "Sequelize", badge: badge("Sequelize", "52B0E7", "sequelize") },
   { category: "Databases", match: "prisma", label: "Prisma", badge: badge("Prisma", "2D3748", "prisma") },
 
   // Testing & Code Quality
@@ -98,6 +94,8 @@ const CATALOG = [
   { category: "Testing & Code Quality", match: "chai", label: "Chai", badge: badge("Chai", "A30701", "chai") },
   { category: "Testing & Code Quality", match: "jest", label: "Jest", badge: badge("Jest", "C21325", "jest") },
   { category: "Testing & Code Quality", match: "eslint", label: "ESLint", badge: badge("ESLint", "4B32C3", "eslint") },
+  { category: "Testing & Code Quality", match: "eslint-plugin-react-hooks", label: "React Hooks ESLint", badge: badge("React_Hooks_ESLint", "4B32C3", "eslint") },
+  { category: "Tools", match: "nodemon", label: "Nodemon", badge: badge("Nodemon", "76D04B", "nodemon", "black") },
 ];
 
 // Deployment platforms, detected from a repo's "homepage" URL
@@ -119,6 +117,37 @@ const MANUAL_TOOLS = [
   { label: "Cursor", badge: badge("Cursor", "000000", "") },
   { label: "GitHub Copilot", badge: badge("GitHub_Copilot", "181717", "github") },
   { label: "Claude Code", badge: badge("Claude_Code", "D97757", "") },
+];
+
+// Skills explicitly declared in the authoritative resume. Repository scanning
+// can add more evidence-backed technologies, while these entries ensure that
+// built-in APIs and workflow tools (which package.json cannot reveal) survive.
+const RESUME_DECLARED_TECH = [
+  ["Languages", "JSX", "jsx", badge("JSX", "61DAFB", "react", "black")],
+  ["Frontend", "React DOM", "react dom", badge("React_DOM", "61DAFB", "react", "black")],
+  ["Frontend", "Context API", "context api", badge("Context_API", "61DAFB", "react", "black")],
+  ["Frontend", "React Redux", "react redux", badge("React_Redux", "764ABC", "redux")],
+  ["Backend", "Socket.IO", "socket.io", badge("Socket.IO", "010101", "socketdotio")],
+  ["Backend", "bcrypt", "bcrypt", badge("bcrypt", "333333", "")],
+  ["Backend", "JWT", "jwt", badge("JWT", "000000", "jsonwebtokens")],
+  ["Backend", "CORS", "cors", badge("CORS", "555555", "")],
+  ["Backend", "dotenv", "dotenv", badge("dotenv", "ECD53F", "dotenv", "black")],
+  ["Backend", "Multer", "multer", badge("Multer", "333333", "")],
+  ["Backend", "Node.js http", "node.js http", badge("Node.js_http", "339933", "nodedotjs")],
+  ["Backend", "fs/promises", "fs/promises", badge("fs/promises", "339933", "nodedotjs")],
+  ["Backend", "path", "path, json", badge("path", "339933", "nodedotjs")],
+  ["Backend", "JSON", "json", badge("JSON", "000000", "json")],
+  ["Databases", "MongoDB Atlas", "mongodb atlas", badge("MongoDB_Atlas", "47A248", "mongodb")],
+  ["Databases", "Mongoose", "mongoose", badge("Mongoose", "880000", "mongoose")],
+  ["Databases", "PostgreSQL", "postgresql", badge("PostgreSQL", "4169E1", "postgresql")],
+  ["Databases", "pg", ", pg,", badge("node--postgres_(pg)", "4169E1", "postgresql")],
+  ["Databases", "Sequelize", "sequelize", badge("Sequelize", "52B0E7", "sequelize")],
+  ["Tools", "npm", "npm,", badge("npm", "CB3837", "npm")],
+  ["Tools", "Docker", "docker,", badge("Docker", "2496ED", "docker")],
+  ["Tools", "Dockerfile", "dockerfile", badge("Dockerfile", "2496ED", "docker")],
+  ["Tools", "Nodemon", "nodemon", badge("Nodemon", "76D04B", "nodemon", "black")],
+  ["Testing & Code Quality", "ESLint", "eslint", badge("ESLint", "4B32C3", "eslint")],
+  ["Testing & Code Quality", "React Hooks ESLint", "react hooks eslint", badge("React_Hooks_ESLint", "4B32C3", "eslint")],
 ];
 
 async function gh(apiPath) {
@@ -573,6 +602,10 @@ async function run() {
   add("Version Control & CI/CD", "GitHub", badge("GitHub", "181717", "github"));
   if (hasNetBeansProject) add("Tools", "NetBeans", badge("NetBeans", "1B6AC6", "apachenetbeanside"));
   for (const t of MANUAL_TOOLS) add("Tools", t.label, t.badge);
+  const normalizedResume = resumeTex.toLowerCase();
+  for (const [category, label, resumeMatch, badgeUrl] of RESUME_DECLARED_TECH) {
+    if (normalizedResume.includes(resumeMatch)) add(category, label, badgeUrl);
+  }
 
   const order = ["Languages", "Frontend", "Backend", "Databases", "Version Control & CI/CD", "Deployment", "Testing & Code Quality", "Tools"];
   let table = '<table>\n<tr>\n  <td><b>Property</b></td>\n  <td><b>Data</b></td>\n</tr>\n';
