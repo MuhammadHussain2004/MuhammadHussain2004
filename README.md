@@ -5,7 +5,7 @@
 <!-- AUTO-HEADER:END -->
 
 <!-- AUTO-TAGLINE:START -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Software+Engineer+%26+BSCS+Graduate+(CGPA+3.7%2F4.0);Full-Stack+MERN+Specialist+(React%2C+Node.js%2C+Express%2C+MongoDB);IBM+Certified+Full-Stack+JavaScript+Developer;Experienced+in+Multi-Service+Architecture+%26+SaaS+Development;Strong+Foundation+in+Data+Structures+%26+Database+Systems)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Software+Engineer+%26+BSCS+Graduate+(CGPA+3.7%2F4.0);Full-Stack+MERN+Specialist+(React%2C+Node.js%2C+Express%2C+MongoDB);IBM+Certified+Full-Stack+JavaScript+Developer;Experienced+in+Multi-Service+Architecture+%26+SaaS+Development;Proficient+in+Data+Structures%2C+OOP%2C+and+Relational+Databases)](https://git.io/typing-svg)
 <!-- AUTO-TAGLINE:END -->
 
 <img src="https://komarev.com/ghpvc/?username=MuhammadHussain2004&style=for-the-badge&color=00d9ff" alt="Profile Views"/>
@@ -33,6 +33,7 @@
     <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" />
     <img src="https://img.shields.io/badge/-Java-ED8B00?style=flat&logo=openjdk&logoColor=white" />
     <img src="https://img.shields.io/badge/-C-00599C?style=flat&logo=c&logoColor=white" />
+    <img src="https://img.shields.io/badge/-JSX-61DAFB?style=flat&logo=react&logoColor=black" />
   </td>
 </tr>
 <tr>
@@ -40,26 +41,43 @@
   <td>
     <img src="https://img.shields.io/badge/-Vite-646CFF?style=flat&logo=vite&logoColor=white" />
     <img src="https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black" />
+    <img src="https://img.shields.io/badge/-React_DOM-61DAFB?style=flat&logo=react&logoColor=black" />
     <img src="https://img.shields.io/badge/-React_Router-CA4245?style=flat&logo=reactrouter&logoColor=white" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" />
     <img src="https://img.shields.io/badge/-Framer_Motion-0055FF?style=flat&logo=framer&logoColor=white" />
     <img src="https://img.shields.io/badge/-Redux_Toolkit-764ABC?style=flat&logo=redux&logoColor=white" />
+    <img src="https://img.shields.io/badge/-React_Redux-764ABC?style=flat&logo=redux&logoColor=white" />
     <img src="https://img.shields.io/badge/-Next.js-000000?style=flat&logo=nextdotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Context_API-61DAFB?style=flat&logo=react&logoColor=black" />
   </td>
 </tr>
 <tr>
   <td><b>Backend</b></td>
   <td>
+    <img src="https://img.shields.io/badge/-bcrypt-333333?style=flat&logoColor=white" />
+    <img src="https://img.shields.io/badge/-CORS-555555?style=flat&logoColor=white" />
+    <img src="https://img.shields.io/badge/-dotenv-ECD53F?style=flat&logo=dotenv&logoColor=black" />
     <img src="https://img.shields.io/badge/-Express.js-000000?style=flat&logo=express&logoColor=white" />
+    <img src="https://img.shields.io/badge/-JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Multer-333333?style=flat&logoColor=white" />
     <img src="https://img.shields.io/badge/-Node.js-339933?style=flat&logo=nodedotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Socket.IO-010101?style=flat&logo=socketdotio&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Node.js_http-339933?style=flat&logo=nodedotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/-fs%2Fpromises-339933?style=flat&logo=nodedotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/-path-339933?style=flat&logo=nodedotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/-JSON-000000?style=flat&logo=json&logoColor=white" />
   </td>
 </tr>
 <tr>
   <td><b>Databases</b></td>
   <td>
     <img src="https://img.shields.io/badge/-Turso-4FF8D2?style=flat&logo=turso&logoColor=black" />
-    <img src="https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Mongoose-880000?style=flat&logo=mongoose&logoColor=white" />
     <img src="https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=mysql&logoColor=white" />
+    <img src="https://img.shields.io/badge/-MongoDB_Atlas-47A248?style=flat&logo=mongodb&logoColor=white" />
+    <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" />
+    <img src="https://img.shields.io/badge/-node--postgres_(pg)-4169E1?style=flat&logo=postgresql&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Sequelize-52B0E7?style=flat&logo=sequelize&logoColor=white" />
   </td>
 </tr>
 <tr>
@@ -81,6 +99,7 @@
   <td><b>Testing & Code Quality</b></td>
   <td>
     <img src="https://img.shields.io/badge/-ESLint-4B32C3?style=flat&logo=eslint&logoColor=white" />
+    <img src="https://img.shields.io/badge/-React_Hooks_ESLint-4B32C3?style=flat&logo=eslint&logoColor=white" />
     <img src="https://img.shields.io/badge/-Chai-A30701?style=flat&logo=chai&logoColor=white" />
     <img src="https://img.shields.io/badge/-Mocha-8D6748?style=flat&logo=mocha&logoColor=white" />
     <img src="https://img.shields.io/badge/-SonarQube-4E9BCD?style=flat&logo=sonarqube&logoColor=white" />
@@ -89,12 +108,16 @@
 <tr>
   <td><b>Tools</b></td>
   <td>
+    <img src="https://img.shields.io/badge/-Nodemon-76D04B?style=flat&logo=nodemon&logoColor=black" />
     <img src="https://img.shields.io/badge/-NetBeans-1B6AC6?style=flat&logo=apachenetbeanside&logoColor=white" />
     <img src="https://img.shields.io/badge/-VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
     <img src="https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white" />
     <img src="https://img.shields.io/badge/-Cursor-000000?style=flat&logoColor=white" />
     <img src="https://img.shields.io/badge/-GitHub_Copilot-181717?style=flat&logo=github&logoColor=white" />
     <img src="https://img.shields.io/badge/-Claude_Code-D97757?style=flat&logoColor=white" />
+    <img src="https://img.shields.io/badge/-npm-CB3837?style=flat&logo=npm&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Dockerfile-2496ED?style=flat&logo=docker&logoColor=white" />
   </td>
 </tr>
 </table>
@@ -107,13 +130,12 @@
 <!-- AUTO-ABOUT:START -->
 Software engineer with a strong foundation in data structures, object-oriented design, and database systems, and particular depth in full-stack MERN development (React, Node.js, Express, MongoDB). Has designed multi-service systems, including a deterministic recommendation engine and a role-based access-control platform, with production experience across Java and C/C++ as well. IBM-certified in full-stack JavaScript development; BSCS graduate, CGPA 3.7/4.0.
 
--  🎓 **Education**: BS in Computer Science from Sindh Madressatul Islam University (CGPA 3.7/4.0)
--  💻 **Core Focus**: Full-Stack MERN Development, REST APIs, and System Architecture
--  🏆 **Certifications**: IBM Full-Stack JavaScript Developer Professional Certificate
--  🚀 **Key Projects**: Built BuildVolt (PC-Build Recommendation SaaS) and Smart Complaint Management System
--  💼 **Experience**: Full Stack Development Trainee at NextSkill Institute and MERN Intern at 10Pearls
--  🛠️ **Tech Stack**: JavaScript, TypeScript, React, Node.js, Express, MongoDB, MySQL, Git
--  📫 **Contact**: Reach me via email at muhammadhussaintech@gmail.com or visit my portfolio
+-  🎓 BS in Computer Science from Sindh Madressatul Islam University (CGPA: 3.7/4.0)
+-  💻 Full-Stack MERN Developer with hands-on experience building 10+ production-ready apps
+-  📜 IBM Full-Stack JavaScript Developer Professional Certificate holder
+-  ⚙️ Built BuildVolt, a deterministic PC-build recommendation SaaS platform
+-  🛠️ Skilled in JavaScript, TypeScript, React, Node.js, Express, MongoDB, and MySQL
+-  📬 Contact: muhammadhussaintech@gmail.com | Karachi, Pakistan
 <!-- AUTO-ABOUT:END -->
 
 ---
@@ -121,12 +143,12 @@ Software engineer with a strong foundation in data structures, object-oriented d
 ## Experience & Credentials
 
 <!-- AUTO-RESUME-HIGHLIGHTS:START -->
-- **Experience: Full Stack Development Trainee - NextSkill Institute** · Jun 2026 - Sep 2026 — Completed a NAVTTC-affiliated Full Stack Development training program with an IBM-aligned curriculum, building front-end projects including a personal portfolio, expense tracker, and e-commerce site.
-- **Experience: [MERN Stack Development Intern - 10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — Designed data model and REST API for a full-stack Notes application with JWT authentication, email verification, and CRUD operations, authoring unit tests with Mocha and Chai.
-- **Experience: Independent Study - Self-Directed Learning & Development** · Sep 2022 - Present — Designed, built, and deployed 10+ full-stack MERN applications independently, applying data structures, OOP, and database design coursework to real projects.
-- **Education: Bachelor of Science in Computer Science - Sindh Madressatul Islam University** · Sep 2022 - Jun 2026 — Completed relevant coursework including Data Structures, Object-Oriented Programming, Database Systems, Software Engineering, Computer Networks, Operating Systems, and Mobile App Development with a CGPA of 3.7/4.0.
-- **Certification: [IBM Full-Stack JavaScript Developer (Professional Certificate) - IBM, Coursera](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Earned professional certification in full-stack JavaScript development covering modern web frameworks and technologies.
-- **Certification: Modern Web & App Development - Saylani Mass IT Training (SMIT)** · Mar 2026 - Present — Trained in modern web and application development principles and practices.
+- **Experience: NextSkill Institute - Full Stack Development Trainee** · Jun 2026 - Sep 2026 — Completed a NAVTTC-affiliated Full Stack Development training program with an IBM-aligned curriculum, progressing from HTML5/CSS3/JavaScript fundamentals to React-based multi-page and e-commerce applications.
+- **Experience: [10Pearls - 10Shine Program - MERN Stack Development Intern](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — Designed and implemented data models, REST APIs, JWT auth, and automated testing for full-stack applications.
+- **Experience: Self-Directed Learning & Development - Independent Study** · Sep 2022 - Present — Designed, built, and deployed 10+ full-stack MERN applications independently, applying data structures, OOP, and database design coursework to real projects.
+- **Education: Sindh Madressatul Islam University - Bachelor of Science in Computer Science** · Sep 2022 - Jun 2026 — Relevant Coursework: Data Structures, Object-Oriented Programming, Database Systems, Software Engineering, Computer Networks, Operating Systems, Mobile App Development. CGPA: 3.7/4.0.
+- **Certification: [IBM Full-Stack JavaScript Developer (Professional Certificate)](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Professional certificate issued by IBM via Coursera.
+- **Certification: Modern Web & App Development - Saylani Mass IT Training (SMIT)** · Mar 2026 - Present — Modern Web & App Development training program.
 <!-- AUTO-RESUME-HIGHLIGHTS:END -->
 
 ---

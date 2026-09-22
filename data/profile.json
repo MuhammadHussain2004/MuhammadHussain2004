@@ -4,37 +4,33 @@
     "Full-Stack MERN Specialist (React, Node.js, Express, MongoDB)",
     "IBM Certified Full-Stack JavaScript Developer",
     "Experienced in Multi-Service Architecture & SaaS Development",
-    "Strong Foundation in Data Structures & Database Systems"
+    "Proficient in Data Structures, OOP, and Relational Databases"
   ],
   "aboutIntro": "Software engineer with a strong foundation in data structures, object-oriented design, and database systems, and particular depth in full-stack MERN development (React, Node.js, Express, MongoDB). Has designed multi-service systems, including a deterministic recommendation engine and a role-based access-control platform, with production experience across Java and C/C++ as well. IBM-certified in full-stack JavaScript development; BSCS graduate, CGPA 3.7/4.0.",
   "aboutBullets": [
     {
       "emoji": "",
-      "text": "🎓 **Education**: BS in Computer Science from Sindh Madressatul Islam University (CGPA 3.7/4.0)"
+      "text": "🎓 BS in Computer Science from Sindh Madressatul Islam University (CGPA: 3.7/4.0)"
     },
     {
       "emoji": "",
-      "text": "💻 **Core Focus**: Full-Stack MERN Development, REST APIs, and System Architecture"
+      "text": "💻 Full-Stack MERN Developer with hands-on experience building 10+ production-ready apps"
     },
     {
       "emoji": "",
-      "text": "🏆 **Certifications**: IBM Full-Stack JavaScript Developer Professional Certificate"
+      "text": "📜 IBM Full-Stack JavaScript Developer Professional Certificate holder"
     },
     {
       "emoji": "",
-      "text": "🚀 **Key Projects**: Built BuildVolt (PC-Build Recommendation SaaS) and Smart Complaint Management System"
+      "text": "⚙️ Built BuildVolt, a deterministic PC-build recommendation SaaS platform"
     },
     {
       "emoji": "",
-      "text": "💼 **Experience**: Full Stack Development Trainee at NextSkill Institute and MERN Intern at 10Pearls"
+      "text": "🛠️ Skilled in JavaScript, TypeScript, React, Node.js, Express, MongoDB, and MySQL"
     },
     {
       "emoji": "",
-      "text": "🛠️ **Tech Stack**: JavaScript, TypeScript, React, Node.js, Express, MongoDB, MySQL, Git"
-    },
-    {
-      "emoji": "",
-      "text": "📫 **Contact**: Reach me via email at muhammadhussaintech@gmail.com or visit my portfolio"
+      "text": "📬 Contact: muhammadhussaintech@gmail.com | Karachi, Pakistan"
     }
   ],
   "projectNameOverrides": {
@@ -50,44 +46,44 @@
   "resumeHighlights": [
     {
       "category": "Experience",
-      "title": "Full Stack Development Trainee - NextSkill Institute",
+      "title": "NextSkill Institute - Full Stack Development Trainee",
       "period": "Jun 2026 - Sep 2026",
-      "description": "Completed a NAVTTC-affiliated Full Stack Development training program with an IBM-aligned curriculum, building front-end projects including a personal portfolio, expense tracker, and e-commerce site.",
+      "description": "Completed a NAVTTC-affiliated Full Stack Development training program with an IBM-aligned curriculum, progressing from HTML5/CSS3/JavaScript fundamentals to React-based multi-page and e-commerce applications.",
       "link": ""
     },
     {
       "category": "Experience",
-      "title": "MERN Stack Development Intern - 10Pearls - 10Shine Program",
+      "title": "10Pearls - 10Shine Program - MERN Stack Development Intern",
       "period": "Apr 2026 - May 2026",
-      "description": "Designed data model and REST API for a full-stack Notes application with JWT authentication, email verification, and CRUD operations, authoring unit tests with Mocha and Chai.",
+      "description": "Designed and implemented data models, REST APIs, JWT auth, and automated testing for full-stack applications.",
       "link": "https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf"
     },
     {
       "category": "Experience",
-      "title": "Independent Study - Self-Directed Learning & Development",
+      "title": "Self-Directed Learning & Development - Independent Study",
       "period": "Sep 2022 - Present",
       "description": "Designed, built, and deployed 10+ full-stack MERN applications independently, applying data structures, OOP, and database design coursework to real projects.",
       "link": ""
     },
     {
       "category": "Education",
-      "title": "Bachelor of Science in Computer Science - Sindh Madressatul Islam University",
+      "title": "Sindh Madressatul Islam University - Bachelor of Science in Computer Science",
       "period": "Sep 2022 - Jun 2026",
-      "description": "Completed relevant coursework including Data Structures, Object-Oriented Programming, Database Systems, Software Engineering, Computer Networks, Operating Systems, and Mobile App Development with a CGPA of 3.7/4.0.",
+      "description": "Relevant Coursework: Data Structures, Object-Oriented Programming, Database Systems, Software Engineering, Computer Networks, Operating Systems, Mobile App Development. CGPA: 3.7/4.0.",
       "link": ""
     },
     {
       "category": "Certification",
-      "title": "IBM Full-Stack JavaScript Developer (Professional Certificate) - IBM, Coursera",
+      "title": "IBM Full-Stack JavaScript Developer (Professional Certificate)",
       "period": "Sep 2026",
-      "description": "Earned professional certification in full-stack JavaScript development covering modern web frameworks and technologies.",
+      "description": "Professional certificate issued by IBM via Coursera.",
       "link": "https://coursera.org/verify/professional-cert/ACOM3SC87IX4"
     },
     {
       "category": "Certification",
       "title": "Modern Web & App Development - Saylani Mass IT Training (SMIT)",
       "period": "Mar 2026 - Present",
-      "description": "Trained in modern web and application development principles and practices.",
+      "description": "Modern Web & App Development training program.",
       "link": ""
     }
   ]
