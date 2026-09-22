@@ -16,6 +16,12 @@ on:
 permissions:
   contents: write
 
+# A resume push and its repository_dispatch can arrive together. Only one
+# generator may commit README/profile data at a time; the newest run wins.
+concurrency:
+  group: profile-readme-sync
+  cancel-in-progress: true
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
