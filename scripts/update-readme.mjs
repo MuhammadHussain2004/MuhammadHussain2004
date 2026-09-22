@@ -171,11 +171,26 @@ function replaceBetween(content, [start, end], newInner) {
 }
 
 function buildTaglineLine(taglines) {
-  const encoded = taglines.map((t) => encodeURIComponent(t).replace(/%20/g, "+")).join(";");
+  const encoded = taglines.map((t) => encodeURIComponent(compactTagline(t)).replace(/%20/g, "+")).join(";");
   const url =
     "https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000" +
     `&color=00D9FF&center=true&vCenter=true&width=600&lines=${encoded}`;
   return `[![Typing SVG](${url})](https://git.io/typing-svg)`;
+}
+
+// The typing SVG has a fixed 600px canvas. Keep each generated line short
+// enough to remain readable on GitHub instead of being cropped horizontally.
+function compactTagline(value, maxLength = 42) {
+  const text = String(value || "").replace(/\s+/g, " ").trim();
+  if (text.length <= maxLength) return text;
+  const words = text.split(" ");
+  let result = "";
+  for (const word of words) {
+    const candidate = result ? `${result} ${word}` : word;
+    if (candidate.length > maxLength) break;
+    result = candidate;
+  }
+  return result || text.slice(0, maxLength).trimEnd();
 }
 
 function buildAboutBlock(profile) {
@@ -428,7 +443,7 @@ Return JSON with exactly this shape:
 {"taglines":[string],"aboutIntro":string,"aboutBullets":[{"emoji":string,"text":string}],"resumeHighlights":[{"category":string,"title":string,"period":string,"description":string,"link":string}]}
 Rules:
 - The resume is the only source of truth. Never invent or retain a stale fact that conflicts with it.
-- taglines: 4-6 concise professional identity/qualification lines derived from Summary, Education, Experience, and Certifications.
+- taglines: 4-6 concise professional identity/qualification lines derived from Summary, Education, Experience, and Certifications; each must be 42 characters or fewer.
 - aboutIntro: one concise paragraph derived from Summary.
 - aboutBullets: 5-8 concise bullets covering the strongest current education, certification, experience, project/engineering focus, and contact facts. Use fitting emoji and Markdown bold sparingly.
 - resumeHighlights: one entry for every Experience, Education, and Certification entry. Category must be Experience, Education, or Certification. Preserve dates/periods and factual meaning. Use a URL only when the entry has an explicit \\href URL; otherwise use an empty string.
@@ -464,7 +479,7 @@ Rules:
 
       return {
         ...profile,
-        taglines: parsed.taglines,
+        taglines: parsed.taglines.map((tagline) => compactTagline(tagline)),
         aboutIntro: parsed.aboutIntro,
         aboutBullets: parsed.aboutBullets.map((item) =>
           typeof item === "string" ? { emoji: "", text: item } : item
