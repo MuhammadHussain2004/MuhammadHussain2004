@@ -60,10 +60,8 @@ const CATALOG = [
 
   // Frontend (matched against package.json dependencies + devDependencies)
   { category: "Frontend", match: "react", label: "React", badge: badge("React", "61DAFB", "react", "black") },
-  { category: "Frontend", match: "react-dom", label: "React DOM", badge: badge("React_DOM", "61DAFB", "react", "black") },
   { category: "Frontend", match: "next", label: "Next.js", badge: badge("Next.js", "000000", "nextdotjs") },
   { category: "Frontend", match: "@reduxjs/toolkit", label: "Redux Toolkit", badge: badge("Redux_Toolkit", "764ABC", "redux") },
-  { category: "Frontend", match: "react-redux", label: "React Redux", badge: badge("React_Redux", "764ABC", "redux") },
   { category: "Frontend", match: "react-router-dom", label: "React Router", badge: badge("React_Router", "CA4245", "reactrouter") },
   { category: "Frontend", match: "tailwindcss", label: "Tailwind CSS", badge: badge("Tailwind_CSS", "38B2AC", "tailwind-css") },
   { category: "Frontend", match: "vite", label: "Vite", badge: badge("Vite", "646CFF", "vite") },
@@ -72,12 +70,7 @@ const CATALOG = [
   // Backend
   { category: "Backend", match: "express", label: "Express.js", badge: badge("Express.js", "000000", "express") },
   { category: "Backend", match: "socket.io", label: "Socket.IO", badge: badge("Socket.IO", "010101", "socketdotio") },
-  { category: "Backend", match: "bcrypt", label: "bcrypt", badge: badge("bcrypt", "333333", "") },
-  { category: "Backend", match: "bcryptjs", label: "bcrypt", badge: badge("bcrypt", "333333", "") },
   { category: "Backend", match: "jsonwebtoken", label: "JWT", badge: badge("JWT", "000000", "jsonwebtokens") },
-  { category: "Backend", match: "cors", label: "CORS", badge: badge("CORS", "555555", "") },
-  { category: "Backend", match: "dotenv", label: "dotenv", badge: badge("dotenv", "ECD53F", "dotenv", "black") },
-  { category: "Backend", match: "multer", label: "Multer", badge: badge("Multer", "333333", "") },
 
   // Databases
   { category: "Databases", match: "mongoose", label: "Mongoose", badge: badge("Mongoose", "880000", "mongoose") },
@@ -94,8 +87,6 @@ const CATALOG = [
   { category: "Testing & Code Quality", match: "chai", label: "Chai", badge: badge("Chai", "A30701", "chai") },
   { category: "Testing & Code Quality", match: "jest", label: "Jest", badge: badge("Jest", "C21325", "jest") },
   { category: "Testing & Code Quality", match: "eslint", label: "ESLint", badge: badge("ESLint", "4B32C3", "eslint") },
-  { category: "Testing & Code Quality", match: "eslint-plugin-react-hooks", label: "React Hooks ESLint", badge: badge("React_Hooks_ESLint", "4B32C3", "eslint") },
-  { category: "Tools", match: "nodemon", label: "Nodemon", badge: badge("Nodemon", "76D04B", "nodemon", "black") },
 ];
 
 // Deployment platforms, detected from a repo's "homepage" URL
@@ -124,30 +115,15 @@ const MANUAL_TOOLS = [
 // built-in APIs and workflow tools (which package.json cannot reveal) survive.
 const RESUME_DECLARED_TECH = [
   ["Languages", "JSX", "jsx", badge("JSX", "61DAFB", "react", "black")],
-  ["Frontend", "React DOM", "react dom", badge("React_DOM", "61DAFB", "react", "black")],
   ["Frontend", "Context API", "context api", badge("Context_API", "61DAFB", "react", "black")],
-  ["Frontend", "React Redux", "react redux", badge("React_Redux", "764ABC", "redux")],
   ["Backend", "Socket.IO", "socket.io", badge("Socket.IO", "010101", "socketdotio")],
-  ["Backend", "bcrypt", "bcrypt", badge("bcrypt", "333333", "")],
   ["Backend", "JWT", "jwt", badge("JWT", "000000", "jsonwebtokens")],
-  ["Backend", "CORS", "cors", badge("CORS", "555555", "")],
-  ["Backend", "dotenv", "dotenv", badge("dotenv", "ECD53F", "dotenv", "black")],
-  ["Backend", "Multer", "multer", badge("Multer", "333333", "")],
-  ["Backend", "Node.js http", "node.js http", badge("Node.js_http", "339933", "nodedotjs")],
-  ["Backend", "fs/promises", "fs/promises", badge("fs/promises", "339933", "nodedotjs")],
-  ["Backend", "path", "path, json", badge("path", "339933", "nodedotjs")],
-  ["Backend", "JSON", "json", badge("JSON", "000000", "json")],
   ["Databases", "MongoDB Atlas", "mongodb atlas", badge("MongoDB_Atlas", "47A248", "mongodb")],
   ["Databases", "Mongoose", "mongoose", badge("Mongoose", "880000", "mongoose")],
   ["Databases", "PostgreSQL", "postgresql", badge("PostgreSQL", "4169E1", "postgresql")],
-  ["Databases", "pg", ", pg,", badge("node--postgres_(pg)", "4169E1", "postgresql")],
   ["Databases", "Sequelize", "sequelize", badge("Sequelize", "52B0E7", "sequelize")],
-  ["Tools", "npm", "npm,", badge("npm", "CB3837", "npm")],
   ["Tools", "Docker", "docker,", badge("Docker", "2496ED", "docker")],
-  ["Tools", "Dockerfile", "dockerfile", badge("Dockerfile", "2496ED", "docker")],
-  ["Tools", "Nodemon", "nodemon", badge("Nodemon", "76D04B", "nodemon", "black")],
   ["Testing & Code Quality", "ESLint", "eslint", badge("ESLint", "4B32C3", "eslint")],
-  ["Testing & Code Quality", "React Hooks ESLint", "react hooks eslint", badge("React_Hooks_ESLint", "4B32C3", "eslint")],
 ];
 
 async function gh(apiPath) {
