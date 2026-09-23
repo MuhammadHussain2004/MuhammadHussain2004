@@ -55,32 +55,32 @@ const CATALOG = [
   { category: "Languages", match: "c", label: "C", badge: badge("C", "00599C", "c") },
   { category: "Languages", match: "java", label: "Java", badge: badge("Java", "ED8B00", "openjdk") },
   { category: "Languages", match: "python", label: "Python", badge: badge("Python", "3776AB", "python") },
-  { category: "Languages", match: "php", label: "PHP", badge: badge("PHP", "777BB4", "php") },
-  { category: "Languages", match: "shell", label: "Shell", badge: badge("Shell", "4EAA25", "gnubash") },
+  { category: "Languages", match: "php", label: "PHP", deferred: true, badge: badge("PHP", "777BB4", "php") },
+  { category: "Languages", match: "shell", label: "Shell", deferred: true, badge: badge("Shell", "4EAA25", "gnubash") },
 
   // Frontend (matched against package.json dependencies + devDependencies)
-  { category: "Frontend", match: "react", label: "React", badge: badge("React", "61DAFB", "react", "black") },
-  { category: "Frontend", match: "next", label: "Next.js", badge: badge("Next.js", "000000", "nextdotjs") },
-  { category: "Frontend", match: "@reduxjs/toolkit", label: "Redux Toolkit", badge: badge("Redux_Toolkit", "764ABC", "redux") },
-  { category: "Frontend", match: "react-router-dom", label: "React Router", badge: badge("React_Router", "CA4245", "reactrouter") },
-  { category: "Frontend", match: "tailwindcss", label: "Tailwind CSS", badge: badge("Tailwind_CSS", "38B2AC", "tailwind-css") },
-  { category: "Frontend", match: "vite", label: "Vite", badge: badge("Vite", "646CFF", "vite") },
-  { category: "Frontend", match: "framer-motion", label: "Framer Motion", badge: badge("Framer_Motion", "0055FF", "framer") },
+  { category: "Frontend Technologies", match: "react", label: "React", badge: badge("React", "61DAFB", "react", "black") },
+  { category: "Frontend Technologies", match: "next", label: "Next.js", badge: badge("Next.js", "000000", "nextdotjs") },
+  { category: "Frontend Technologies", match: "@reduxjs/toolkit", label: "Redux Toolkit", badge: badge("Redux_Toolkit", "764ABC", "redux") },
+  { category: "Frontend Technologies", match: "react-router-dom", label: "React Router", badge: badge("React_Router", "CA4245", "reactrouter") },
+  { category: "Frontend Technologies", match: "tailwindcss", label: "Tailwind CSS", badge: badge("Tailwind_CSS", "38B2AC", "tailwind-css") },
+  { category: "Frontend Technologies", match: "vite", label: "Vite", badge: badge("Vite", "646CFF", "vite") },
+  { category: "Frontend Technologies", match: "framer-motion", label: "Framer Motion", deferred: true, badge: badge("Framer_Motion", "0055FF", "framer") },
 
   // Backend
-  { category: "Backend", match: "express", label: "Express.js", badge: badge("Express.js", "000000", "express") },
-  { category: "Backend", match: "socket.io", label: "Socket.IO", badge: badge("Socket.IO", "010101", "socketdotio") },
-  { category: "Backend", match: "jsonwebtoken", label: "JWT", badge: badge("JWT", "000000", "jsonwebtokens") },
+  { category: "Backend Technologies", match: "express", label: "Express.js", badge: badge("Express.js", "000000", "express") },
+  { category: "Backend Technologies", match: "socket.io", label: "Socket.IO", badge: badge("Socket.IO", "010101", "socketdotio") },
+  { category: "Backend Technologies", match: "jsonwebtoken", label: "JWT", badge: badge("JWT", "000000", "jsonwebtokens") },
 
   // Databases
-  { category: "Databases", match: "mongoose", label: "Mongoose", badge: badge("Mongoose", "880000", "mongoose") },
-  { category: "Databases", match: "mongodb", label: "MongoDB", badge: badge("MongoDB", "47A248", "mongodb") },
-  { category: "Databases", match: "mysql2", label: "MySQL", badge: badge("MySQL", "4479A1", "mysql") },
-  { category: "Databases", match: "mysql", label: "MySQL", badge: badge("MySQL", "4479A1", "mysql") },
-  { category: "Databases", match: "@libsql/client", label: "Turso (libSQL)", badge: badge("Turso", "4FF8D2", "turso", "black") },
-  { category: "Databases", match: "pg", label: "PostgreSQL", badge: badge("PostgreSQL", "4479A1", "postgresql") },
-  { category: "Databases", match: "sequelize", label: "Sequelize", badge: badge("Sequelize", "52B0E7", "sequelize") },
-  { category: "Databases", match: "prisma", label: "Prisma", badge: badge("Prisma", "2D3748", "prisma") },
+  { category: "Databases and ORMs", match: "mongoose", label: "Mongoose", badge: badge("Mongoose", "880000", "mongoose") },
+  { category: "Databases and ORMs", match: "mongodb", label: "MongoDB", badge: badge("MongoDB", "47A248", "mongodb") },
+  { category: "Databases and ORMs", match: "mysql2", label: "MySQL", badge: badge("MySQL", "4479A1", "mysql") },
+  { category: "Databases and ORMs", match: "mysql", label: "MySQL", badge: badge("MySQL", "4479A1", "mysql") },
+  { category: "Databases and ORMs", match: "@libsql/client", label: "Turso (libSQL)", badge: badge("Turso", "4FF8D2", "turso", "black") },
+  { category: "Databases and ORMs", match: "pg", label: "PostgreSQL", badge: badge("PostgreSQL", "4479A1", "postgresql") },
+  { category: "Databases and ORMs", match: "sequelize", label: "Sequelize", badge: badge("Sequelize", "52B0E7", "sequelize") },
+  { category: "Databases and ORMs", match: "prisma", label: "Prisma", badge: badge("Prisma", "2D3748", "prisma") },
 
   // Testing & Code Quality
   { category: "Testing & Code Quality", match: "mocha", label: "Mocha", badge: badge("Mocha", "8D6748", "mocha") },
@@ -99,6 +99,21 @@ const DEPLOY_DOMAINS = [
   { domain: "github.io", label: "GitHub Pages", badge: badge("GitHub_Pages", "222222", "github") },
 ];
 
+const MANUAL_DEPLOYMENTS = [
+  { label: "Railway", badge: badge("Railway", "0B0D0E", "railway") },
+  { label: "Netlify", badge: badge("Netlify", "00C7B7", "netlify") },
+];
+
+// These are intentionally deferred for the current profile. They become
+// eligible automatically when a repository receives new evidence after this
+// review date, instead of being re-added from older repositories every day.
+const DEFERRED_TECHNOLOGY_CUTOFF = Date.parse("2026-09-23T00:00:00Z");
+
+function technologyAllowed(entry, repo) {
+  if (!entry.deferred) return true;
+  return Date.parse(repo.pushed_at || "") > DEFERRED_TECHNOLOGY_CUTOFF;
+}
+
 // Tools that can't be detected from repo scans (editors, AI assistants).
 // Edit this list by hand when it changes; it's merged into the same "Tools"
 // row as anything auto-detected (e.g. NetBeans), so it survives every run.
@@ -115,13 +130,13 @@ const MANUAL_TOOLS = [
 // built-in APIs and workflow tools (which package.json cannot reveal) survive.
 const RESUME_DECLARED_TECH = [
   ["Languages", "JSX", "jsx", badge("JSX", "61DAFB", "react", "black")],
-  ["Frontend", "Context API", "context api", badge("Context_API", "61DAFB", "react", "black")],
-  ["Backend", "Socket.IO", "socket.io", badge("Socket.IO", "010101", "socketdotio")],
-  ["Backend", "JWT", "jwt", badge("JWT", "000000", "jsonwebtokens")],
-  ["Databases", "MongoDB Atlas", "mongodb atlas", badge("MongoDB_Atlas", "47A248", "mongodb")],
-  ["Databases", "Mongoose", "mongoose", badge("Mongoose", "880000", "mongoose")],
-  ["Databases", "PostgreSQL", "postgresql", badge("PostgreSQL", "4169E1", "postgresql")],
-  ["Databases", "Sequelize", "sequelize", badge("Sequelize", "52B0E7", "sequelize")],
+  ["Frontend Technologies", "Context API", "context api", badge("Context_API", "61DAFB", "react", "black")],
+  ["Backend Technologies", "Socket.IO", "socket.io", badge("Socket.IO", "010101", "socketdotio")],
+  ["Backend Technologies", "JWT", "jwt", badge("JWT", "000000", "jsonwebtokens")],
+  ["Databases and ORMs", "MongoDB Atlas", "mongodb atlas", badge("MongoDB_Atlas", "47A248", "mongodb")],
+  ["Databases and ORMs", "Mongoose", "mongoose", badge("Mongoose", "880000", "mongoose")],
+  ["Databases and ORMs", "PostgreSQL", "postgresql", badge("PostgreSQL", "4169E1", "postgresql")],
+  ["Databases and ORMs", "Sequelize", "sequelize", badge("Sequelize", "52B0E7", "sequelize")],
   ["Tools", "Docker", "docker,", badge("Docker", "2496ED", "docker")],
   ["Testing & Code Quality", "ESLint", "eslint", badge("ESLint", "4B32C3", "eslint")],
 ];
@@ -531,7 +546,7 @@ async function run() {
       const langs = await gh(`/repos/${USERNAME}/${repo.name}/languages`);
       for (const langName of Object.keys(langs)) {
         const entry = CATALOG.find((c) => c.category === "Languages" && c.match === langName.toLowerCase());
-        if (entry) add(entry.category, entry.label, entry.badge);
+        if (entry && technologyAllowed(entry, repo)) add(entry.category, entry.label, entry.badge);
       }
     } catch (e) {
       console.error(`  languages failed for ${repo.name}: ${e.message}`);
@@ -556,7 +571,7 @@ async function run() {
         for (const depName of Object.keys(deps)) {
           const key = depName.toLowerCase();
           const entry = CATALOG.find((c) => c.category !== "Languages" && c.match === key);
-          if (entry) add(entry.category, entry.label, entry.badge);
+          if (entry && technologyAllowed(entry, repo)) add(entry.category, entry.label, entry.badge);
         }
       }
 
@@ -593,12 +608,13 @@ async function run() {
   add("Version Control & CI/CD", "GitHub", badge("GitHub", "181717", "github"));
   if (hasNetBeansProject) add("Tools", "NetBeans", badge("NetBeans", "1B6AC6", "apachenetbeanside"));
   for (const t of MANUAL_TOOLS) add("Tools", t.label, t.badge);
+  for (const deployment of MANUAL_DEPLOYMENTS) add("Cloud and Deployment", deployment.label, deployment.badge);
   const normalizedResume = resumeTex.toLowerCase();
   for (const [category, label, resumeMatch, badgeUrl] of RESUME_DECLARED_TECH) {
     if (normalizedResume.includes(resumeMatch)) add(category, label, badgeUrl);
   }
 
-  const order = ["Languages", "Frontend", "Backend", "Databases", "Version Control & CI/CD", "Deployment", "Testing & Code Quality", "Tools"];
+  const order = ["Languages", "Core Computer Science", "Frontend Technologies", "Backend Technologies", "Databases and ORMs", "Version Control & CI/CD", "Cloud and Deployment", "Testing & Code Quality", "Tools"];
   let table = '<table>\n<tr>\n  <td><b>Property</b></td>\n  <td><b>Data</b></td>\n</tr>\n';
   for (const cat of order) {
     const items = detected.get(cat);
