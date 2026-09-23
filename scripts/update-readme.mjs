@@ -107,7 +107,7 @@ const MANUAL_DEPLOYMENTS = [
 // These are intentionally deferred for the current profile. They become
 // eligible automatically when a repository receives new evidence after this
 // review date, instead of being re-added from older repositories every day.
-const DEFERRED_TECHNOLOGY_CUTOFF = Date.parse("2026-09-23T00:00:00Z");
+const DEFERRED_TECHNOLOGY_CUTOFF = Date.parse("2026-09-24T00:00:00Z");
 
 function technologyAllowed(entry, repo) {
   if (!entry.deferred) return true;
