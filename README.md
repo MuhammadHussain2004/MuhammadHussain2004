@@ -5,7 +5,7 @@
 <!-- AUTO-HEADER:END -->
 
 <!-- AUTO-TAGLINE:START -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Software+Engineer+%26+MERN+Developer;BSCS+Graduate+with+3.7+CGPA;RESTful+APIs+%26+Database+Specialist;IBM+Certified+JavaScript+Developer)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Software+Engineer+%26+MERN+Developer;BSCS+Graduate+with+3.7+CGPA;IBM+Full-Stack+Certified+Professional;Building+Scalable+Web+Applications;API+%26+Database+Architecture+Specialist)](https://git.io/typing-svg)
 <!-- AUTO-TAGLINE:END -->
 
 <img src="https://komarev.com/ghpvc/?username=MuhammadHussain2004&style=for-the-badge&color=00d9ff" alt="Profile Views"/>
@@ -110,14 +110,15 @@
 ## About Me
 
 <!-- AUTO-ABOUT:START -->
-Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Build RESTful APIs and database-backed applications with React, Node.js, Express, MongoDB, and MySQL; experienced in JWT/RBAC, automated testing, and deterministic recommendation systems. IBM-certified; CGPA 3.7/4.0.
+Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Build RESTful APIs and database-backed applications with React, Node.js, Express, MongoDB, and MySQL; experienced in JWT/RBAC, automated testing, and deterministic recommendation systems.
 
--  🎓 BS in Computer Science from Sindh Madressatul Islam University (CGPA: 3.7/4.0)
--  💼 Full Stack Development Trainee at NextSkill Institute and 10Pearls MERN Intern
--  📜 IBM Full-Stack JavaScript Developer Professional Certificate holder
--  🚀 Built 10+ full-stack MERN applications including SCMS and SHOP.CO e-commerce
--  🛠️ Proficient in React, Node.js, Express, MongoDB, MySQL, Git, and Docker
--  📫 Contact via muhammadhussaintech@gmail.com or based in Karachi, Pakistan
+- 🎓 BS in Computer Science from Sindh Madressatul Islam University (CGPA: 3.7/4.0).
+- 📜 IBM Certified Full-Stack JavaScript Developer.
+- 💻 Experienced MERN stack developer with hands-on internship experience at 10Pearls.
+- 🚀 Built and deployed 10+ full-stack applications including Smart Complaint Management and E-Commerce platforms.
+- 🛠️ Proficient in React, Node.js, Express, MongoDB, MySQL, Git, and automated testing tools like Mocha/Chai.
+- 📍 Based in Karachi, Pakistan; open to remote and on-site opportunities.
+- ✉️ Contact via email at muhammadhussaintech@gmail.com.
 <!-- AUTO-ABOUT:END -->
 
 ---
@@ -125,12 +126,12 @@ Software Engineer and full-stack MERN developer with a BSCS foundation in data s
 ## Experience & Credentials
 
 <!-- AUTO-RESUME-HIGHLIGHTS:START -->
-- **Experience: NextSkill Institute - Full Stack Development Trainee** · Jun 2026 - Sep 2026 — Completed NAVTTC/IBM-aligned full-stack training covering HTML5, CSS3, JavaScript, React, responsive multi-page, and e-commerce applications. Built and version-controlled portfolio, expense-tracker, and e-commerce projects using Git/GitHub.
-- **Experience: [10Pearls - 10Shine Program - MERN Stack Development Intern](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — Built the data model and REST API for a Notes application using React, Node.js, Express, MySQL, JWT authentication, email verification, CRUD, and search. Added Mocha/Chai tests, addressed SonarQube findings, and collaborated through GitHub pull requests and code review.
-- **Experience: Self-Directed Learning & Development - Independent Study** · Sep 2022 - Present — Built and deployed 10+ full-stack MERN applications with React, Node.js, MongoDB/MySQL, applying OOP, data structures, and database design. Used Git/GitHub and iterative, test-driven development workflows.
-- **Education: Sindh Madressatul Islam University - Bachelor of Science in Computer Science** · Sep 2022 - Jun 2026 — Completed relevant coursework including Data Structures, OOP, Database Systems, Software Engineering, Networks, and Operating Systems with a CGPA of 3.7/4.0.
-- **Certification: [IBM Full-Stack JavaScript Developer (Professional Certificate)](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Professional certificate issued by IBM via Coursera.
-- **Certification: Modern Web & App Development Training - Saylani Mass IT Training (SMIT)** · Mar 2026 - Present — Ongoing technical training in modern web and app development at Saylani Mass IT Training (SMIT), Karachi, Pakistan.
+- **Experience: NextSkill Institute - Full Stack Development Trainee** · Jun 2026 - Sep 2026 — Completed NAVTTC/IBM-aligned full-stack training covering HTML5, CSS3, JavaScript, React, responsive multi-page, and e-commerce applications.
+- **Experience: [10Pearls - 10Shine Program - MERN Stack Development Intern](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — Built the data model and REST API for a Notes application using React, Node.js, Express, MySQL, JWT authentication, email verification, CRUD, and search.
+- **Experience: Self-Directed Learning & Development - Independent Study** · Sep 2022 - Present — Built and deployed 10+ full-stack MERN applications with React, Node.js, MongoDB/MySQL, applying OOP, data structures, and database design.
+- **Education: Sindh Madressatul Islam University - Bachelor of Science in Computer Science** · Sep 2022 - Jun 2026 — Relevant Coursework: Data Structures, OOP, Database Systems, Software Engineering, Networks, Operating Systems. CGPA: 3.7/4.0.
+- **Certification: [IBM Full-Stack JavaScript Developer (Professional Certificate)](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Certified by IBM via Coursera.
+- **Certification: Modern Web & App Development Training** · Mar 2026 - Present — Saylani Mass IT Training (SMIT), Karachi, Pakistan.
 <!-- AUTO-RESUME-HIGHLIGHTS:END -->
 
 ---
