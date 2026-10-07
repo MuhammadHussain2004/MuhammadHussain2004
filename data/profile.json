@@ -1,35 +1,36 @@
 {
   "taglines": [
-    "Software Engineer & MERN Developer",
-    "BSCS Graduate with 3.7 CGPA",
-    "IBM Full-Stack Certified Developer",
-    "API & Database Systems Enthusiast"
+    "Software Engineer & Full-Stack MERN Dev",
+    "BSCS Graduate with 3.7/4.0 CGPA",
+    "IBM Certified JavaScript Developer",
+    "Specialized in REST APIs & Database Design",
+    "Building Scalable Web Applications"
   ],
-  "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Build RESTful APIs and database-backed applications with React, Node.js, Express, MongoDB, and MySQL; experienced in JWT/RBAC, automated testing, and deterministic recommendation systems.",
+  "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Build RESTful APIs and database-backed applications with React, Node.js, Express, MongoDB, and MySQL; experienced in JWT/RBAC, automated testing, and deterministic recommendation systems. IBM-certified; CGPA 3.7/4.0.",
   "aboutBullets": [
     {
-      "emoji": "🎓",
-      "text": "BS in Computer Science from Sindh Madressatul Islam University (CGPA: 3.7/4.0)"
+      "emoji": "",
+      "text": "🎓 Studying BS Computer Science at Sindh Madressatul Islam University (CGPA 3.7/4.0)"
     },
     {
-      "emoji": "💼",
-      "text": "MERN Stack Development Intern at 10Pearls and trainee at NextSkill Institute"
+      "emoji": "",
+      "text": "💻 Experienced Full-Stack Developer proficient in React, Node.js, Express, MongoDB, and MySQL"
     },
     {
-      "emoji": "📜",
-      "text": "IBM Full-Stack JavaScript Developer Professional Certificate holder"
+      "emoji": "",
+      "text": "📜 Certified as an IBM Full-Stack JavaScript Developer through Coursera"
     },
     {
-      "emoji": "🚀",
-      "text": "Built and deployed 10+ full-stack apps including Smart Complaint Management & SHOP.CO"
+      "emoji": "",
+      "text": "🚀 Built and deployed 10+ full-stack web apps including Smart Complaint Management & e-commerce platforms"
     },
     {
-      "emoji": "🛠️",
-      "text": "Skilled in React, Node.js, Express, MongoDB, MySQL, TypeScript, and Git/GitHub"
+      "emoji": "",
+      "text": "🛠️ Skilled in modern tools like Git, GitHub, Docker, Postman, SonarQube, and Mocha/Chai"
     },
     {
-      "emoji": "📍",
-      "text": "Based in Karachi, Pakistan | Open for global collaborations and opportunities"
+      "emoji": "",
+      "text": "📫 Reach me at muhammadhussaintech@gmail.com or via my portfolio in Karachi, Pakistan"
     }
   ],
   "projectNameOverrides": {
@@ -75,14 +76,14 @@
       "category": "Certification",
       "title": "IBM Full-Stack JavaScript Developer (Professional Certificate)",
       "period": "Sep 2026",
-      "description": "Issued by IBM via Coursera.",
+      "description": "Professional certification issued by IBM via Coursera.",
       "link": "https://coursera.org/verify/professional-cert/ACOM3SC87IX4"
     },
     {
       "category": "Certification",
-      "title": "Modern Web & App Development Training",
+      "title": "Modern Web & App Development Training - Saylani Mass IT Training (SMIT)",
       "period": "Mar 2026 - Present",
-      "description": "Issued by Saylani Mass IT Training (SMIT), Karachi, Pakistan.",
+      "description": "Ongoing web and app development training in Karachi, Pakistan.",
       "link": ""
     }
   ]
