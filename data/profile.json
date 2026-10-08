@@ -1,35 +1,39 @@
 {
   "taglines": [
-    "Software Engineer & Full-Stack Developer",
-    "MERN Stack & RESTful API Specialist",
-    "BSCS Graduate with 3.7 CGPA",
-    "IBM Certified JavaScript Developer"
+    "Software Engineer & Full-Stack MERN Dev",
+    "BSCS Graduate with 3.7/4.0 CGPA",
+    "IBM Certified JavaScript Developer",
+    "Building Scalable REST APIs & Web Apps"
   ],
   "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Build RESTful APIs and database-backed applications with React, Node.js, Express, MongoDB, and MySQL; experienced in JWT/RBAC, automated testing, and deterministic recommendation systems. IBM-certified; CGPA 3.7/4.0.",
   "aboutBullets": [
     {
       "emoji": "",
-      "text": "🎓 BSCS from Sindh Madressatul Islam University (CGPA 3.7/4.0)"
+      "text": "🎓 BS in Computer Science from Sindh Madressatul Islam University (CGPA: 3.7/4.0)"
     },
     {
       "emoji": "",
-      "text": "💼 Full-Stack MERN Intern experience at 10Pearls (10Shine)"
+      "text": "💻 Full-Stack MERN Developer specializing in React, Node.js, Express, MongoDB, and MySQL"
     },
     {
       "emoji": "",
-      "text": "📜 IBM Full-Stack JavaScript Developer Professional Certificate"
+      "text": "📜 IBM Full-Stack JavaScript Developer Professional Certificate holder"
     },
     {
       "emoji": "",
-      "text": "🛠️ Built 10+ full-stack apps with React, Node.js, and MongoDB/MySQL"
+      "text": "🚀 Built 10+ full-stack applications including Smart Complaint Management & SHOP.CO"
     },
     {
       "emoji": "",
-      "text": "⚡ Focus on robust RESTful APIs, RBAC, JWT auth, and testing"
+      "text": "🛠️ Experienced with Git/GitHub, RESTful API Design, JWT authentication, and Mocha/Chai testing"
     },
     {
       "emoji": "",
-      "text": "📫 Contact: muhammadhussaintech@gmail.com | Karachi, Pakistan"
+      "text": "📍 Based in Karachi, Pakistan, open to software engineering and development opportunities"
+    },
+    {
+      "emoji": "",
+      "text": "📧 Contact: muhammadhussaintech@gmail.com | Phone: +92 324 3249217"
     }
   ],
   "projectNameOverrides": {
@@ -54,21 +58,21 @@
       "category": "Experience",
       "title": "10Pearls - 10Shine Program - MERN Stack Development Intern",
       "period": "Apr 2026 - May 2026",
-      "description": "Built the data model and REST API for a Notes application using React, Node.js, Express, MySQL, JWT authentication, email verification, CRUD, and search.",
+      "description": "Built data model and REST API for a Notes application using React, Node.js, Express, MySQL, JWT authentication, email verification, CRUD, and search. Added Mocha/Chai tests and addressed SonarQube findings.",
       "link": "https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf"
     },
     {
       "category": "Experience",
       "title": "Self-Directed Learning & Development - Independent Study",
       "period": "Sep 2022 - Present",
-      "description": "Built and deployed 10+ full-stack MERN applications with React, Node.js, MongoDB/MySQL, applying OOP, data structures, and database design.",
+      "description": "Built and deployed 10+ full-stack MERN applications with React, Node.js, MongoDB/MySQL, applying OOP, data structures, and database design using Git/GitHub workflows.",
       "link": ""
     },
     {
       "category": "Education",
       "title": "Sindh Madressatul Islam University - Bachelor of Science in Computer Science",
       "period": "Sep 2022 - Jun 2026",
-      "description": "CGPA: 3.7/4.0. Relevant Coursework: Data Structures, OOP, Database Systems, Software Engineering, Networks, Operating Systems.",
+      "description": "Relevant Coursework: Data Structures, OOP, Database Systems, Software Engineering, Networks, Operating Systems. CGPA: 3.7/4.0.",
       "link": ""
     },
     {
@@ -82,7 +86,7 @@
       "category": "Certification",
       "title": "Modern Web & App Development Training",
       "period": "Mar 2026 - Present",
-      "description": "Saylani Mass IT Training (SMIT), Karachi, Pakistan.",
+      "description": "Issued by Saylani Mass IT Training (SMIT).",
       "link": ""
     }
   ]
