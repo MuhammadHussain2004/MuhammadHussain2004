@@ -1,12 +1,11 @@
 {
   "taglines": [
-    "Software Engineer & MERN Stack Developer",
-    "BSCS Graduate with a 3.7 CGPA",
+    "Software Engineer & MERN Full-Stack Dev",
+    "BSCS Graduate with 3.7/4.0 CGPA",
     "IBM Certified JavaScript Developer",
-    "Full-Stack Web Application Builder",
-    "Specialized in REST APIs & Databases"
+    "API & Database-Backed App Specialist"
   ],
-  "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Build RESTful APIs and database-backed applications with React, Node.js, Express, MongoDB, and MySQL; experienced in JWT/RBAC, automated testing, and deterministic recommendation systems. IBM-certified; CGPA 3.7/4.0.",
+  "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Build RESTful APIs and database-backed applications with React, Node.js, Express, MongoDB, and MySQL; experienced in JWT/RBAC, automated testing, and deterministic recommendation systems.",
   "aboutBullets": [
     {
       "emoji": "",
@@ -14,27 +13,23 @@
     },
     {
       "emoji": "",
-      "text": "💼 Full Stack Development Trainee at NextSkill Institute"
+      "text": "💼 Full-Stack Developer & Trainee experienced with NextSkill, 10Pearls, and SMIT"
     },
     {
       "emoji": "",
-      "text": "💻 MERN Stack Development Intern experience at 10Pearls"
+      "text": "📜 IBM Full-Stack JavaScript Developer Professional Certificate holder"
     },
     {
       "emoji": "",
-      "text": "📜 IBM Full-Stack JavaScript Developer Professional Certificate"
+      "text": "💻 Built 10+ full-stack MERN apps including Smart Complaint & Notes Management systems"
     },
     {
       "emoji": "",
-      "text": "🚀 Built and deployed 10+ full-stack MERN applications"
+      "text": "🛠️ Skilled in React, Node.js, Express, MongoDB, MySQL, Git, Docker, and REST APIs"
     },
     {
       "emoji": "",
-      "text": "🛠️ Skilled in React, Node.js, Express, MongoDB, MySQL, and TypeScript"
-    },
-    {
-      "emoji": "",
-      "text": "📫 Contact: muhammadhussaintech@gmail.com | Karachi, Pakistan"
+      "text": "📫 Contact via email at muhammadhussaintech@gmail.com or LinkedIn"
     }
   ],
   "projectNameOverrides": {
@@ -50,30 +45,30 @@
   "resumeHighlights": [
     {
       "category": "Experience",
-      "title": "NextSkill Institute",
+      "title": "NextSkill Institute - Full Stack Development Trainee",
       "period": "Jun 2026 - Sep 2026",
       "description": "Completed NAVTTC/IBM-aligned full-stack training covering HTML5, CSS3, JavaScript, React, responsive multi-page, and e-commerce applications.",
       "link": ""
     },
     {
       "category": "Experience",
-      "title": "10Pearls - 10Shine Program",
+      "title": "10Pearls - 10Shine Program - MERN Stack Development Intern",
       "period": "Apr 2026 - May 2026",
       "description": "Built the data model and REST API for a Notes application using React, Node.js, Express, MySQL, JWT authentication, email verification, CRUD, and search.",
       "link": "https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf"
     },
     {
       "category": "Experience",
-      "title": "Self-Directed Learning & Development",
+      "title": "Self-Directed Learning & Development - Independent Study",
       "period": "Sep 2022 - Present",
       "description": "Built and deployed 10+ full-stack MERN applications with React, Node.js, MongoDB/MySQL, applying OOP, data structures, and database design.",
       "link": ""
     },
     {
       "category": "Education",
-      "title": "Sindh Madressatul Islam University",
+      "title": "Sindh Madressatul Islam University - Bachelor of Science in Computer Science",
       "period": "Sep 2022 - Jun 2026",
-      "description": "Bachelor of Science in Computer Science; CGPA: 3.7/4.0. Relevant Coursework: Data Structures, OOP, Database Systems, Software Engineering, Networks, Operating Systems.",
+      "description": "Relevant Coursework: Data Structures, OOP, Database Systems, Software Engineering, Networks, Operating Systems. CGPA: 3.7/4.0.",
       "link": ""
     },
     {
@@ -87,7 +82,7 @@
       "category": "Certification",
       "title": "Modern Web & App Development Training",
       "period": "Mar 2026 - Present",
-      "description": "Training at Saylani Mass IT Training (SMIT), Karachi, Pakistan.",
+      "description": "Saylani Mass IT Training (SMIT), Karachi, Pakistan.",
       "link": ""
     }
   ]
