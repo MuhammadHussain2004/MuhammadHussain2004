@@ -2,8 +2,8 @@
   "taglines": [
     "Software Engineer & MERN Developer",
     "BSCS Graduate with 3.7 CGPA",
-    "IBM Full-Stack JavaScript Certified",
-    "API & Database-Backed App Builder"
+    "IBM Certified JavaScript Developer",
+    "Specialized in React, Node.js & APIs"
   ],
   "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Build RESTful APIs and database-backed applications with React, Node.js, Express, MongoDB, and MySQL; experienced in JWT/RBAC, automated testing, and deterministic recommendation systems. IBM-certified; CGPA 3.7/4.0.",
   "aboutBullets": [
@@ -13,23 +13,23 @@
     },
     {
       "emoji": "",
-      "text": "💼 Full Stack Development Trainee at NextSkill Institute"
+      "text": "💼 Full-Stack Developer experience at NextSkill Institute and 10Pearls"
     },
     {
       "emoji": "",
-      "text": "💻 MERN Stack Development Intern experience via 10Pearls 10Shine Program"
+      "text": "📜 IBM Full-Stack JavaScript Developer Professional Certificate holder"
     },
     {
       "emoji": "",
-      "text": "📜 Certified IBM Full-Stack JavaScript Developer"
+      "text": "⚡ Built 10+ full-stack MERN applications including SCMS and e-commerce platforms"
     },
     {
       "emoji": "",
-      "text": "🚀 Built 10+ full-stack MERN applications with React, Node.js, and MongoDB/MySQL"
+      "text": "🛠️ Skilled in JavaScript, React, Node.js, Express, MongoDB, and MySQL"
     },
     {
       "emoji": "",
-      "text": "📬 Contact via email at muhammadhussaintech@gmail.com or LinkedIn"
+      "text": "📬 Contact: muhammadhussaintech@gmail.com | Karachi, Pakistan"
     }
   ],
   "projectNameOverrides": {
@@ -75,7 +75,7 @@
       "category": "Certification",
       "title": "IBM Full-Stack JavaScript Developer (Professional Certificate)",
       "period": "Sep 2026",
-      "description": "Issued by IBM, Coursera (Online).",
+      "description": "Earned IBM Full-Stack JavaScript Developer Professional Certificate via Coursera.",
       "link": "https://coursera.org/verify/professional-cert/ACOM3SC87IX4"
     },
     {
