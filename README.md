@@ -5,7 +5,7 @@
 <!-- AUTO-HEADER:END -->
 
 <!-- AUTO-TAGLINE:START -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Software+Engineer+%26+MERN+Developer;BSCS+Graduate+with+3.7+CGPA;IBM+Full-Stack+Certified+Developer;Specialized+in+REST+APIs+%26+React;Building+Scalable+Web+Applications)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Full-Stack+MERN+Software+Engineer;BSCS+Graduate+%7C+3.7+CGPA;IBM+Certified+Full-Stack+Developer;REST+APIs%2C+Node.js+%26+React+Specialist)](https://git.io/typing-svg)
 <!-- AUTO-TAGLINE:END -->
 
 <img src="https://komarev.com/ghpvc/?username=MuhammadHussain2004&style=for-the-badge&color=00d9ff" alt="Profile Views"/>
@@ -110,14 +110,14 @@
 ## About Me
 
 <!-- AUTO-ABOUT:START -->
-Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Build RESTful APIs and database-backed applications with React, Node.js, Express, MongoDB, and MySQL; experienced in JWT/RBAC, automated testing, and deterministic recommendation systems. IBM-certified; CGPA 3.7/4.0.
+Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Builds RESTful APIs and database-backed applications with React, Node.js, Express, MongoDB, and MySQL, with expertise in JWT/RBAC, automated testing, and deterministic recommendation systems. IBM-certified with a 3.7/4.0 CGPA.
 
--  🎓 BSCS from Sindh Madressatul Islam University with a 3.7/4.0 CGPA
--  💻 Experienced Full Stack MERN Developer building 10+ web applications
--  📜 IBM Full-Stack JavaScript Developer Professional Certificate holder
--  🚀 Built scalable projects like Smart Complaint Management System & NodeMart
--  🛠️ Skilled in React, Node.js, Express, MongoDB, MySQL, Git, and Docker
--  📧 Reachable at muhammadhussaintech@gmail.com based in Karachi, Pakistan
+- 🎓 **BS in Computer Science** from Sindh Madressatul Islam University (CGPA 3.7/4.0, Sep 2022 – Jun 2026).
+- 📜 **IBM Full-Stack JavaScript Developer** Professional Certificate holder via Coursera.
+- 💼 Completed **MERN Stack Development Internship** at 10Pearls (10Shine Program) building secure REST APIs and testing suites.
+- 🛠️ Trained in **Full Stack Development** at NextSkill Institute and pursuing **Modern Web & App Development** at SMIT.
+- 🚀 Built and deployed **10+ full-stack applications** utilizing React, Node.js, Express, MongoDB, MySQL, and JWT/RBAC security.
+- 📍 Based in **Karachi, Pakistan** • Reach out via [muhammadhussaintech@gmail.com](mailto:muhammadhussaintech@gmail.com).
 <!-- AUTO-ABOUT:END -->
 
 ---
@@ -125,12 +125,12 @@ Software Engineer and full-stack MERN developer with a BSCS foundation in data s
 ## Experience & Credentials
 
 <!-- AUTO-RESUME-HIGHLIGHTS:START -->
-- **Experience: Full Stack Development Trainee at NextSkill Institute** · Jun 2026 - Sep 2026 — Completed NAVTTC/IBM-aligned full-stack training covering HTML5, CSS3, JavaScript, React, responsive multi-page, and e-commerce applications.
-- **Experience: [MERN Stack Development Intern at 10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — Built the data model and REST API for a Notes application using React, Node.js, Express, MySQL, JWT authentication, email verification, CRUD, and search.
-- **Experience: Independent Study / Self-Directed Learning & Development** · Sep 2022 - Present — Built and deployed 10+ full-stack MERN applications with React, Node.js, MongoDB/MySQL, applying OOP, data structures, and database design.
-- **Education: Sindh Madressatul Islam University** · Sep 2022 - Jun 2026 — Bachelor of Science in Computer Science; CGPA: 3.7/4.0. Relevant Coursework: Data Structures, OOP, Database Systems, Software Engineering, Networks, Operating Systems.
-- **Certification: [IBM Full-Stack JavaScript Developer (Professional Certificate)](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — IBM, Coursera - Online certification for full-stack JavaScript development.
-- **Certification: Modern Web & App Development Training** · Mar 2026 - Present — Saylani Mass IT Training (SMIT), Karachi, Pakistan.
+- **Experience: Full Stack Development Trainee — NextSkill Institute** · Jun 2026 - Sep 2026 — Completed NAVTTC/IBM-aligned full-stack training covering HTML5, CSS3, JavaScript, React, responsive multi-page, and e-commerce applications; built and version-controlled projects using Git/GitHub.
+- **Experience: [MERN Stack Development Intern — 10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — Built data model and REST API for a Notes application using React, Node.js, Express, MySQL, JWT authentication, email verification, CRUD, search, and Mocha/Chai tests; resolved SonarQube findings.
+- **Experience: Independent Study — Self-Directed Learning & Development** · Sep 2022 - Present — Built and deployed 10+ full-stack MERN applications with React, Node.js, MongoDB/MySQL, applying OOP, data structures, database design, and iterative test-driven development workflows.
+- **Education: Bachelor of Science in Computer Science — Sindh Madressatul Islam University** · Sep 2022 - Jun 2026 — CGPA: 3.7/4.0. Relevant Coursework: Data Structures, OOP, Database Systems, Software Engineering, Networks, Operating Systems.
+- **Certification: [IBM Full-Stack JavaScript Developer (Professional Certificate) — IBM, Coursera](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Professional certification validating full-stack JavaScript and application development skills.
+- **Certification: Modern Web & App Development Training — Saylani Mass IT Training (SMIT)** · Mar 2026 - Present — Comprehensive training in modern web and application development practices.
 <!-- AUTO-RESUME-HIGHLIGHTS:END -->
 
 ---
