@@ -1,35 +1,35 @@
 {
   "taglines": [
-    "Software Engineer & MERN Developer",
-    "BSCS Student with 3.7 CGPA",
-    "IBM Full-Stack JavaScript Developer",
-    "API & Database-Backed App Builder"
+    "Software Engineer & Full-Stack MERN Dev",
+    "BSCS Graduate with 3.7 CGPA",
+    "RESTful APIs & Database-Backed Apps",
+    "IBM-Certified Full-Stack Developer"
   ],
   "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Build RESTful APIs and database-backed applications with React, Node.js, Express, MongoDB, and MySQL; experienced in JWT/RBAC, automated testing, and deterministic recommendation systems. IBM-certified; CGPA 3.7/4.0.",
   "aboutBullets": [
     {
       "emoji": "",
-      "text": "🎓 BS in Computer Science at Sindh Madressatul Islam University (CGPA: 3.7/4.0)"
+      "text": "🎓 **Education:** BS in Computer Science from Sindh Madressatul Islam University (CGPA: 3.7/4.0)"
     },
     {
       "emoji": "",
-      "text": "💼 MERN Stack Development Intern at 10Pearls (10Shine Program)"
+      "text": "💼 **Experience:** MERN Stack Development Intern at 10Pearls and independent full-stack developer"
     },
     {
       "emoji": "",
-      "text": "📜 IBM Full-Stack JavaScript Developer Professional Certificate holder"
+      "text": "🏆 **Certifications:** IBM Full-Stack JavaScript Developer and NAVTTC/IBM-aligned training"
     },
     {
       "emoji": "",
-      "text": "🚀 Built and deployed 10+ full-stack MERN apps including Smart Complaint Management"
+      "text": "💻 **Engineering Focus:** React, Node.js, Express, MongoDB, MySQL, and RESTful API design"
     },
     {
       "emoji": "",
-      "text": "🛠️ Skilled in JavaScript, TypeScript, React, Node.js, Express, MongoDB, and MySQL"
+      "text": "🛠️ **Tools & Workflow:** Git, GitHub, Docker, Postman, SonarQube, and Mocha/Chai testing"
     },
     {
       "emoji": "",
-      "text": "📬 Contact via muhammadhussaintech@gmail.com or GitHub @MuhammadHussain2004"
+      "text": "📧 **Contact:** muhammadhussaintech@gmail.com | Karachi, Pakistan"
     }
   ],
   "projectNameOverrides": {
@@ -47,28 +47,28 @@
       "category": "Experience",
       "title": "10Pearls - 10Shine Program - MERN Stack Development Intern",
       "period": "Apr 2026 - May 2026",
-      "description": "Built the data model and REST API for a Notes application using React, Node.js, Express, MySQL, JWT authentication, email verification, CRUD, and search, while adding Mocha/Chai tests and addressing SonarQube findings.",
+      "description": "Built the data model and REST API for a Notes application using React, Node.js, Express, MySQL, JWT authentication, email verification, CRUD, and search. Added Mocha/Chai tests, addressed SonarQube findings, and collaborated through GitHub pull requests and code review.",
       "link": "https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf"
     },
     {
       "category": "Experience",
       "title": "Self-Directed Learning & Development - Independent Study",
       "period": "Sep 2022 - Present",
-      "description": "Built and deployed 10+ full-stack MERN applications with React, Node.js, MongoDB/MySQL, applying OOP, data structures, database design, and Git/GitHub workflows.",
+      "description": "Built and deployed 10+ full-stack MERN applications with React, Node.js, MongoDB/MySQL, applying OOP, data structures, and database design. Used Git/GitHub and iterative, test-driven development workflows.",
       "link": ""
     },
     {
       "category": "Education",
       "title": "Sindh Madressatul Islam University - Bachelor of Science in Computer Science",
       "period": "Sep 2022 - Jun 2026",
-      "description": "Relevant Coursework: Data Structures, OOP, Database Systems, Software Engineering, Networks, Operating Systems. CGPA: 3.7/4.0.",
+      "description": "Completed coursework in Data Structures, OOP, Database Systems, Software Engineering, Networks, and Operating Systems with a CGPA of 3.7/4.0.",
       "link": ""
     },
     {
       "category": "Certification",
       "title": "IBM Full-Stack JavaScript Developer (Professional Certificate)",
       "period": "Sep 2026",
-      "description": "Professional certification issued by IBM via Coursera.",
+      "description": "Earned professional certification from IBM via Coursera.",
       "link": "https://coursera.org/verify/professional-cert/ACOM3SC87IX4"
     },
     {
@@ -82,7 +82,7 @@
       "category": "Certification",
       "title": "Modern Web & App Development Training - Saylani Mass IT Training (SMIT)",
       "period": "Mar 2026 - Present",
-      "description": "Ongoing modern web and app development training.",
+      "description": "Participating in modern web and app development training program.",
       "link": ""
     }
   ]
