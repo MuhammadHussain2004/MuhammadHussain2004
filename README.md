@@ -129,8 +129,8 @@ Software Engineer and full-stack MERN developer with a BSCS foundation in data s
 - **Experience: Self-Directed Learning & Development - Independent Study** · Sep 2022 - Present — Built and deployed 10+ full-stack MERN applications with React, Node.js, MongoDB/MySQL, applying OOP, data structures, and database design. Used Git/GitHub and iterative, test-driven development workflows.
 - **Education: Sindh Madressatul Islam University - Bachelor of Science in Computer Science** · Sep 2022 - Jun 2026 — Completed coursework in Data Structures, OOP, Database Systems, Software Engineering, Networks, and Operating Systems with a CGPA of 3.7/4.0.
 - **Certification: [IBM Full-Stack JavaScript Developer (Professional Certificate)](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Earned professional certification from IBM via Coursera.
-- **Certification: Full Stack Development Training (NAVTTC/IBM-aligned) - NextSkill Institute** · Jun 2026 - Sep 2026 — Completed HTML5, CSS3, JavaScript, and React training; built a portfolio, expense tracker, and multi-page e-commerce app using Git/GitHub.
-- **Certification: Modern Web & App Development Training - Saylani Mass IT Training (SMIT)** · Mar 2026 - Present — Participating in modern web and app development training program.
+- **Training: Full Stack Development Training (NAVTTC/IBM-aligned) - NextSkill Institute** · Jun 2026 - Sep 2026 — Completed HTML5, CSS3, JavaScript, and React training; built a portfolio, expense tracker, and multi-page e-commerce app using Git/GitHub.
+- **Training: Modern Web & App Development Training - Saylani Mass IT Training (SMIT)** · Mar 2026 - Present — Participating in modern web and app development training program.
 <!-- AUTO-RESUME-HIGHLIGHTS:END -->
 
 ---

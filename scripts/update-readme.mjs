@@ -461,7 +461,7 @@ Rules:
 - taglines: 4-6 concise professional identity/qualification lines derived from Summary, Education, Experience, and Certifications; each must be 42 characters or fewer.
 - aboutIntro: one concise paragraph derived from Summary.
 - aboutBullets: 5-8 concise bullets covering the strongest current education, certification, experience, project/engineering focus, and contact facts. Use fitting emoji and Markdown bold sparingly.
-- resumeHighlights: one entry for every Experience, Education, and Certification entry. Category must be Experience, Education, or Certification. Preserve dates/periods and factual meaning. Use a URL only when the entry has an explicit \\href URL; otherwise use an empty string.
+- resumeHighlights: one entry for every Experience, Education, and Certifications-section entry. Category must be Experience, Education, Certification, or Training. NextSkill/NAVTTC and SMIT are Training, not professional Experience or verified Certification; IBM/Coursera is Certification and 10Pearls internship is Experience. Preserve dates/periods and factual meaning. Use a URL only when the entry has an explicit \\href URL; otherwise use an empty string.
 - Projects and Technical Skills are rendered separately from code analysis, so summarize rather than duplicate whole sections.
 - Output raw JSON only.`;
   const user = `AUTHORITATIVE RESUME (.tex):\n\n${resumeTex}`;
@@ -490,6 +490,15 @@ Rules:
         .filter((url) => !resumeTex.includes(url));
       if (unsupportedUrls.length) {
         throw new Error(`invented URL(s): ${unsupportedUrls.join(", ")}`);
+      }
+      const training = parsed.resumeHighlights.find((item) => /NextSkill|NAVTTC/i.test(item.title || ""));
+      const smit = parsed.resumeHighlights.find((item) => /SMIT|Saylani/i.test(item.title || ""));
+      const internship = parsed.resumeHighlights.find((item) => /10Pearls/i.test(item.title || ""));
+      const ibm = parsed.resumeHighlights.find((item) => /IBM.*Full.Stack/i.test(item.title || ""));
+      if (!training || training.category !== "Training" || !smit || smit.category !== "Training" ||
+          !internship || internship.category !== "Experience" ||
+          !ibm || ibm.category !== "Certification") {
+        throw new Error("Resume highlights misclassify training, internship, or IBM certificate");
       }
 
       return {
