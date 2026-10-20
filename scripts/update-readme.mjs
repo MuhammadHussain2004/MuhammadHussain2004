@@ -495,9 +495,12 @@ Rules:
       const smit = parsed.resumeHighlights.find((item) => /SMIT|Saylani/i.test(item.title || ""));
       const internship = parsed.resumeHighlights.find((item) => /10Pearls/i.test(item.title || ""));
       const ibm = parsed.resumeHighlights.find((item) => /IBM.*Full.Stack/i.test(item.title || ""));
-      if (!training || training.category !== "Training" || !smit || smit.category !== "Training" ||
-          !internship || internship.category !== "Experience" ||
-          !ibm || ibm.category !== "Certification") {
+      const experienceSource = resumeTex.split("\\section{Experience}")[1]?.split("\\section{Projects}")[0] || "";
+      const credentialsSource = resumeTex.split("\\section{Certifications}")[1]?.split("\\section{Technical Skills}")[0] || "";
+      if ((/NextSkill|NAVTTC/i.test(credentialsSource) && (!training || training.category !== "Training")) ||
+          (/SMIT|Saylani/i.test(credentialsSource) && (!smit || smit.category !== "Training")) ||
+          (/10Pearls/i.test(experienceSource) && (!internship || internship.category !== "Experience")) ||
+          (/IBM.*Full.Stack/i.test(credentialsSource) && (!ibm || ibm.category !== "Certification"))) {
         throw new Error("Resume highlights misclassify training, internship, or IBM certificate");
       }
 
