@@ -2,10 +2,10 @@
   "taglines": [
     "Software Engineer & MERN Developer",
     "BSCS Graduate with 3.7 CGPA",
-    "IBM Certified JavaScript Developer",
-    "Full-Stack Web App Builder"
+    "Full-Stack Web App Builder",
+    "IBM Certified JavaScript Developer"
   ],
-  "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Build RESTful APIs and database-backed applications with React, Node.js, Express, MongoDB, and MySQL; experienced in JWT/RBAC, automated testing, and deterministic recommendation systems. IBM-certified; CGPA 3.7/4.0.",
+  "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Build RESTful APIs and database-backed applications with React, Node.js, Express, MongoDB, and MySQL; experienced in JWT/RBAC, automated testing, and deterministic recommendation systems.",
   "aboutBullets": [
     {
       "emoji": "",
@@ -13,7 +13,7 @@
     },
     {
       "emoji": "",
-      "text": "💻 Experienced Full-Stack MERN Developer specializing in React, Node.js, Express, and databases"
+      "text": "💻 Experienced Full-Stack MERN Developer specializing in React, Node.js, Express, MongoDB, and MySQL"
     },
     {
       "emoji": "",
@@ -21,19 +21,19 @@
     },
     {
       "emoji": "",
-      "text": "🚀 Built and deployed 10+ full-stack applications including Smart Complaint Management"
+      "text": "🚀 Built and deployed 10+ full-stack web applications including Smart Complaint Management & NodeMart"
     },
     {
       "emoji": "",
-      "text": "🛠️ Skilled in modern tools like Git, Docker, Postman, SonarQube, and Mocha/Chai"
+      "text": "🛠️ Skilled in RESTful API design, JWT/RBAC security, automated testing (Mocha/Chai), and Git workflows"
     },
     {
       "emoji": "",
-      "text": "📍 Based in Karachi, Pakistan, open to global opportunities"
+      "text": "📍 Based in Karachi, Pakistan, available for global remote or on-site opportunities"
     },
     {
       "emoji": "",
-      "text": "✉️ Contact: muhammadhussaintech@gmail.com"
+      "text": "✉️ Reach out via email at muhammadhussaintech@gmail.com or via LinkedIn"
     }
   ],
   "projectNameOverrides": {
@@ -58,35 +58,35 @@
       "category": "Experience",
       "title": "10Pearls - 10Shine Program - MERN Stack Development Intern",
       "period": "Apr 2026 - May 2026",
-      "description": "Built the data model and REST API for a Notes application using React, Node.js, Express, MySQL, JWT authentication, email verification, CRUD, and search.",
+      "description": "Built data models, REST APIs, and automated tests for a Notes application using React, Node.js, Express, MySQL, and JWT authentication.",
       "link": "https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf"
     },
     {
       "category": "Experience",
       "title": "Self-Directed Learning & Development - Independent Study",
       "period": "Sep 2022 - Present",
-      "description": "Built and deployed 10+ full-stack MERN applications with React, Node.js, MongoDB/MySQL, applying OOP, data structures, and database design.",
+      "description": "Built and deployed 10+ full-stack MERN applications using React, Node.js, MongoDB/MySQL, applying OOP and test-driven workflows.",
       "link": ""
     },
     {
       "category": "Education",
       "title": "Sindh Madressatul Islam University - Bachelor of Science in Computer Science",
       "period": "Sep 2022 - Jun 2026",
-      "description": "Relevant Coursework: Data Structures, OOP, Database Systems, Software Engineering, Networks, Operating Systems. CGPA: 3.7/4.0.",
+      "description": "Completed BSCS with a 3.7/4.0 CGPA, focusing on Data Structures, OOP, Database Systems, Software Engineering, Networks, and Operating Systems.",
       "link": ""
     },
     {
       "category": "Certification",
       "title": "IBM Full-Stack JavaScript Developer (Professional Certificate)",
       "period": "Sep 2026",
-      "description": "Issued by IBM via Coursera.",
+      "description": "Professional certification issued by IBM via Coursera.",
       "link": "https://coursera.org/verify/professional-cert/ACOM3SC87IX4"
     },
     {
       "category": "Certification",
-      "title": "Modern Web & App Development Training",
+      "title": "Modern Web & App Development Training - SMIT",
       "period": "Mar 2026 - Present",
-      "description": "Saylani Mass IT Training (SMIT), Karachi, Pakistan.",
+      "description": "Ongoing web and app development training at Saylani Mass IT Training.",
       "link": ""
     }
   ]
