@@ -5,7 +5,7 @@
 <!-- AUTO-HEADER:END -->
 
 <!-- AUTO-TAGLINE:START -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Full-Stack+MERN+Developer;BSCS+Graduate+%7C+3.7+CGPA;IBM+Certified+JavaScript+Developer;RESTful+API+%26+Database+Specialist;Passionate+Software+Engineer)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Full-Stack+MERN+Developer;BSCS+Graduate+%7C+3.7+CGPA;IBM+Certified+JavaScript+Developer;Building+Scalable+RESTful+APIs;Passionate+About+Clean+Code+%26+Testing)](https://git.io/typing-svg)
 <!-- AUTO-TAGLINE:END -->
 
 <img src="https://komarev.com/ghpvc/?username=MuhammadHussain2004&style=for-the-badge&color=00d9ff" alt="Profile Views"/>
@@ -112,12 +112,12 @@
 <!-- AUTO-ABOUT:START -->
 Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with expertise in JWT/RBAC, automated testing, and deterministic recommendation systems.
 
-- 🎓 BSCS student at **Sindh Madressatul Islam University** (3.7/4.0 CGPA).
+- 🎓 BSCS student at **Sindh Madressatul Islam University** (CGPA 3.7/4.0).
 - 💻 Experienced in **MERN stack** development with 10+ deployed applications.
-- 📜 IBM Certified **Full-Stack JavaScript Developer**.
+- 📜 Certified **IBM Full-Stack JavaScript Developer**.
 - 🚀 Completed a professional internship at **10Pearls**.
-- 🛠️ Proficient in **Git**, TDD, and CI/CD workflows.
-- 📧 Open to collaborations via **muhammadhussaintech@gmail.com**.
+- 🛠️ Focus on **Test-Driven Development** using Mocha/Chai and SonarQube.
+- 📧 Open to collaboration: **muhammadhussaintech@gmail.com**.
 <!-- AUTO-ABOUT:END -->
 
 ---
@@ -125,8 +125,8 @@ Software Engineer and full-stack MERN developer with a BSCS foundation in data s
 ## Experience & Credentials
 
 <!-- AUTO-RESUME-HIGHLIGHTS:START -->
-- **Experience: [10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — MERN Stack Development Intern building REST APIs and implementing Mocha/Chai testing.
-- **Experience: Self-Directed Learning & Development** · Sep 2022 - Present — Independent development of 10+ full-stack MERN applications using TDD and Git.
+- **Experience: [10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — MERN Stack Development Intern building REST APIs and implementing automated testing.
+- **Experience: Self-Directed Learning & Development** · Sep 2022 - Present — Independent development of 10+ full-stack MERN applications using TDD workflows.
 - **Education: Sindh Madressatul Islam University** · Sep 2022 - Jun 2026 — Bachelor of Science in Computer Science; CGPA: 3.7/4.0.
 - **Certification: [IBM Full-Stack JavaScript Developer](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Professional Certificate from IBM via Coursera.
 - **Training: NextSkill Institute** · Jun 2026 - Sep 2026 — Full Stack Development Training (NAVTTC/IBM-aligned).

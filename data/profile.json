@@ -3,14 +3,14 @@
     "Full-Stack MERN Developer",
     "BSCS Graduate | 3.7 CGPA",
     "IBM Certified JavaScript Developer",
-    "RESTful API & Database Specialist",
-    "Passionate Software Engineer"
+    "Building Scalable RESTful APIs",
+    "Passionate About Clean Code & Testing"
   ],
   "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with expertise in JWT/RBAC, automated testing, and deterministic recommendation systems.",
   "aboutBullets": [
     {
       "emoji": "🎓",
-      "text": "BSCS student at **Sindh Madressatul Islam University** (3.7/4.0 CGPA)."
+      "text": "BSCS student at **Sindh Madressatul Islam University** (CGPA 3.7/4.0)."
     },
     {
       "emoji": "💻",
@@ -18,7 +18,7 @@
     },
     {
       "emoji": "📜",
-      "text": "IBM Certified **Full-Stack JavaScript Developer**."
+      "text": "Certified **IBM Full-Stack JavaScript Developer**."
     },
     {
       "emoji": "🚀",
@@ -26,11 +26,11 @@
     },
     {
       "emoji": "🛠️",
-      "text": "Proficient in **Git**, TDD, and CI/CD workflows."
+      "text": "Focus on **Test-Driven Development** using Mocha/Chai and SonarQube."
     },
     {
       "emoji": "📧",
-      "text": "Open to collaborations via **muhammadhussaintech@gmail.com**."
+      "text": "Open to collaboration: **muhammadhussaintech@gmail.com**."
     }
   ],
   "projectNameOverrides": {
@@ -48,14 +48,14 @@
       "category": "Experience",
       "title": "10Pearls - 10Shine Program",
       "period": "Apr 2026 - May 2026",
-      "description": "MERN Stack Development Intern building REST APIs and implementing Mocha/Chai testing.",
+      "description": "MERN Stack Development Intern building REST APIs and implementing automated testing.",
       "link": "https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf"
     },
     {
       "category": "Experience",
       "title": "Self-Directed Learning & Development",
       "period": "Sep 2022 - Present",
-      "description": "Independent development of 10+ full-stack MERN applications using TDD and Git.",
+      "description": "Independent development of 10+ full-stack MERN applications using TDD workflows.",
       "link": ""
     },
     {
