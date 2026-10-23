@@ -114,10 +114,10 @@ Software Engineer and full-stack MERN developer with a BSCS foundation in data s
 
 - 🎓 BSCS student at **Sindh Madressatul Islam University** (3.7/4.0 CGPA).
 - 💻 Experienced in **MERN stack** development and RESTful API architecture.
-- 📜 IBM Full-Stack JavaScript Developer Professional Certificate holder.
-- 🚀 Interned at **10Pearls** (10Shine Program) building scalable web solutions.
-- 🛠️ Proficient in Git, TDD, Mocha/Chai testing, and SonarQube code analysis.
-- 📧 Open to collaboration: muhammadhussaintech@gmail.com
+- 📜 IBM Certified **Full-Stack JavaScript Developer**.
+- 🚀 Completed a professional internship at **10Pearls**.
+- 🛠️ Proficient in Git, TDD with Mocha/Chai, and CI/CD workflows.
+- 📧 Open to collaborations: **muhammadhussaintech@gmail.com**.
 <!-- AUTO-ABOUT:END -->
 
 ---
@@ -125,11 +125,11 @@ Software Engineer and full-stack MERN developer with a BSCS foundation in data s
 ## Experience & Credentials
 
 <!-- AUTO-RESUME-HIGHLIGHTS:START -->
-- **Experience: [10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — MERN Stack Development Intern; built REST APIs, implemented JWT authentication, and performed TDD with Mocha/Chai.
-- **Experience: Self-Directed Learning & Development** · Sep 2022 - Present — Independent study and development of 10+ full-stack MERN applications using iterative, test-driven workflows.
+- **Experience: [10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — MERN Stack Development Intern building REST APIs, implementing JWT authentication, and performing unit testing.
+- **Experience: Self-Directed Learning & Development** · Sep 2022 - Present — Independent development of 10+ full-stack MERN applications using iterative, test-driven development.
 - **Education: Sindh Madressatul Islam University** · Sep 2022 - Jun 2026 — Bachelor of Science in Computer Science; CGPA: 3.7/4.0.
 - **Certification: [IBM Full-Stack JavaScript Developer](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Professional Certificate issued by IBM via Coursera.
-- **Training: NextSkill Institute** · Jun 2026 - Sep 2026 — Full Stack Development Training (NAVTTC/IBM-aligned) covering HTML5, CSS3, JavaScript, and React.
+- **Training: NextSkill Institute (NAVTTC/IBM-aligned)** · Jun 2026 - Sep 2026 — Full Stack Development Training covering HTML5, CSS3, JavaScript, and React.
 - **Training: Saylani Mass IT Training (SMIT)** · Mar 2026 - Present — Modern Web & App Development Training.
 <!-- AUTO-RESUME-HIGHLIGHTS:END -->
 
