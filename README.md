@@ -5,7 +5,7 @@
 <!-- AUTO-HEADER:END -->
 
 <!-- AUTO-TAGLINE:START -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Full-Stack+MERN+Software+Engineer;BSCS+Graduate+with+3.7%2F4.0+CGPA;IBM+Certified+JavaScript+Developer;RESTful+API+%26+Database+Design+Expert;Passionate+About+Scalable+Web+Solutions)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Full-Stack+MERN+Developer;BSCS+Graduate+%7C+3.7+CGPA;IBM+Certified+JavaScript+Developer;RESTful+API+%26+Database+Specialist;Passionate+Software+Engineer)](https://git.io/typing-svg)
 <!-- AUTO-TAGLINE:END -->
 
 <img src="https://komarev.com/ghpvc/?username=MuhammadHussain2004&style=for-the-badge&color=00d9ff" alt="Profile Views"/>
@@ -110,14 +110,14 @@
 ## About Me
 
 <!-- AUTO-ABOUT:START -->
-Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with expertise in JWT/RBAC, automated testing, and recommendation systems.
+Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with expertise in JWT/RBAC, automated testing, and deterministic recommendation systems.
 
-- 🎓 BS in Computer Science from **Sindh Madressatul Islam University** (3.7/4.0 CGPA).
-- 💻 Experienced MERN stack developer with 10+ full-stack applications deployed.
-- 📜 IBM Full-Stack JavaScript Developer Professional Certificate holder.
-- 🚀 Completed a professional MERN internship at **10Pearls**.
-- 🛠️ Proficient in TDD, Git/GitHub, and modern cloud deployment via Vercel.
-- 📧 Open to collaboration: [muhammadhussaintech@gmail.com](mailto:muhammadhussaintech@gmail.com)
+- 🎓 BSCS student at **Sindh Madressatul Islam University** (CGPA 3.7/4.0).
+- 💻 Experienced in building full-stack MERN applications with **10+ projects** deployed.
+- 📜 IBM Professional Certificate in **Full-Stack JavaScript Development**.
+- 🛠️ Proficient in **RESTful API design**, JWT authentication, and Mocha/Chai testing.
+- 🚀 Skilled in cloud deployment using **Vercel**, GitHub Actions, and Railway.
+- 📧 Open to collaboration: [muhammadhussaintech@gmail.com](mailto:muhammadhussaintech@gmail.com).
 <!-- AUTO-ABOUT:END -->
 
 ---
@@ -125,8 +125,8 @@ Software Engineer and full-stack MERN developer with a BSCS foundation in data s
 ## Experience & Credentials
 
 <!-- AUTO-RESUME-HIGHLIGHTS:START -->
-- **Experience: [10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — MERN Stack Development Intern; built REST APIs and implemented Mocha/Chai testing.
-- **Experience: Self-Directed Learning & Development** · Sep 2022 - Present — Independent study building 10+ full-stack MERN applications using TDD workflows.
+- **Experience: [10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — MERN Stack Development Intern building REST APIs and implementing Mocha/Chai tests.
+- **Experience: Self-Directed Learning & Development** · Sep 2022 - Present — Independent study and development of 10+ full-stack MERN applications.
 - **Education: Sindh Madressatul Islam University** · Sep 2022 - Jun 2026 — Bachelor of Science in Computer Science; CGPA: 3.7/4.0.
 - **Certification: [IBM Full-Stack JavaScript Developer](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Professional Certificate from IBM via Coursera.
 - **Training: NextSkill Institute** · Jun 2026 - Sep 2026 — Full Stack Development Training (NAVTTC/IBM-aligned).
