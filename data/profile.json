@@ -4,33 +4,33 @@
     "BSCS Graduate | 3.7 CGPA",
     "IBM Certified JavaScript Developer",
     "RESTful API & Database Specialist",
-    "Passionate Software Engineer"
+    "Software Engineering Enthusiast"
   ],
   "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with expertise in JWT/RBAC, automated testing, and deterministic recommendation systems.",
   "aboutBullets": [
     {
       "emoji": "🎓",
-      "text": "BSCS student at **Sindh Madressatul Islam University** (CGPA 3.7/4.0)."
+      "text": "BSCS student at **Sindh Madressatul Islam University** (3.7/4.0 CGPA)."
     },
     {
       "emoji": "💻",
-      "text": "Experienced in building full-stack MERN applications with **10+ projects** deployed."
+      "text": "Experienced in **MERN stack** development and RESTful API design."
     },
     {
       "emoji": "📜",
-      "text": "IBM Professional Certificate in **Full-Stack JavaScript Development**."
-    },
-    {
-      "emoji": "🛠️",
-      "text": "Proficient in **RESTful API design**, JWT authentication, and Mocha/Chai testing."
+      "text": "IBM Full-Stack JavaScript Developer Professional Certificate holder."
     },
     {
       "emoji": "🚀",
-      "text": "Skilled in cloud deployment using **Vercel**, GitHub Actions, and Railway."
+      "text": "Completed a 10Pearls internship focusing on scalable web applications."
+    },
+    {
+      "emoji": "🛠️",
+      "text": "Proficient in Git, TDD, Mocha/Chai testing, and SonarQube analysis."
     },
     {
       "emoji": "📧",
-      "text": "Open to collaboration: [muhammadhussaintech@gmail.com](mailto:muhammadhussaintech@gmail.com)."
+      "text": "Open to collaborations at **muhammadhussaintech@gmail.com**."
     }
   ],
   "projectNameOverrides": {
@@ -55,7 +55,7 @@
       "category": "Experience",
       "title": "Self-Directed Learning & Development",
       "period": "Sep 2022 - Present",
-      "description": "Independent study and development of 10+ full-stack MERN applications.",
+      "description": "Independent study and deployment of 10+ full-stack MERN applications.",
       "link": ""
     },
     {
