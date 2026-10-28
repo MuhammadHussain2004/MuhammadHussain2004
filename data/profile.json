@@ -1,36 +1,36 @@
 {
   "taglines": [
-    "Full-Stack MERN Developer",
-    "Software Engineering Student (BSCS)",
-    "IBM Certified JavaScript Developer",
-    "RESTful API & Database Specialist",
-    "Passionate about Scalable Web Solutions"
+    "Full-Stack MERN Software Engineer",
+    "BSCS Graduate | IBM Certified Developer",
+    "Building Scalable RESTful Applications",
+    "Data Structures & OOP Enthusiast",
+    "Passionate About Clean, Tested Code"
   ],
   "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with a focus on JWT/RBAC, automated testing, and deterministic recommendation systems.",
   "aboutBullets": [
     {
       "emoji": "🎓",
-      "text": "Pursuing **BS in Computer Science** at Sindh Madressatul Islam University (CGPA 3.7/4.0)."
+      "text": "BSCS student at **Sindh Madressatul Islam University** (CGPA 3.7/4.0)."
     },
     {
-      "emoji": "💼",
-      "text": "Completed MERN Stack internship at **10Pearls** (10Shine Program)."
+      "emoji": "💻",
+      "text": "Experienced in **MERN stack** development through 10Pearls internship."
     },
     {
       "emoji": "📜",
-      "text": "Certified as an **IBM Full-Stack JavaScript Developer** via Coursera."
+      "text": "IBM-certified **Full-Stack JavaScript Developer**."
     },
     {
       "emoji": "🚀",
-      "text": "Built 10+ full-stack applications including a **Smart Complaint Management System**."
+      "text": "Deployed 10+ full-stack applications including marketplaces and management systems."
     },
     {
       "emoji": "🛠️",
-      "text": "Expertise in **React, Node.js, Express, MongoDB, and MySQL**."
+      "text": "Proficient in **TDD**, Mocha/Chai testing, and SonarQube code quality."
     },
     {
       "emoji": "📧",
-      "text": "Open to professional opportunities: **muhammadhussaintech@gmail.com**."
+      "text": "Open to collaboration: [muhammadhussaintech@gmail.com](mailto:muhammadhussaintech@gmail.com)."
     }
   ],
   "projectNameOverrides": {
@@ -48,14 +48,14 @@
       "category": "Experience",
       "title": "10Pearls - 10Shine Program",
       "period": "Apr 2026 - May 2026",
-      "description": "MERN Stack Development Intern building REST APIs, implementing JWT authentication, and performing unit testing.",
+      "description": "MERN Stack Development Intern; built REST APIs, implemented JWT auth, and performed unit testing.",
       "link": "https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf"
     },
     {
       "category": "Experience",
       "title": "Self-Directed Learning & Development",
       "period": "Sep 2022 - Present",
-      "description": "Independent development of 10+ full-stack MERN applications using TDD and Git workflows.",
+      "description": "Independent development of 10+ full-stack MERN applications using iterative, test-driven workflows.",
       "link": ""
     },
     {
@@ -76,7 +76,7 @@
       "category": "Training",
       "title": "NextSkill Institute",
       "period": "Jun 2026 - Sep 2026",
-      "description": "Full Stack Development Training (NAVTTC/IBM-aligned) covering HTML5, CSS3, JS, and React.",
+      "description": "Full Stack Development Training (NAVTTC/IBM-aligned) covering React and Git workflows.",
       "link": ""
     },
     {
