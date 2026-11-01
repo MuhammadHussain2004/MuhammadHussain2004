@@ -1,36 +1,36 @@
 {
   "taglines": [
-    "Full-Stack MERN Software Engineer",
-    "BSCS Graduate with 3.7/4.0 CGPA",
-    "IBM Certified JavaScript Developer",
-    "RESTful API & Database Design Expert",
-    "Passionate about Scalable Web Solutions"
+    "Software Engineer & Full-Stack MERN Dev",
+    "BSCS Student at SMIU (CGPA 3.7/4.0)",
+    "IBM Certified Full-Stack JS Developer",
+    "Expert in RESTful APIs & Database Design",
+    "Experienced in JWT, RBAC & Unit Testing"
   ],
-  "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with expertise in JWT/RBAC, automated testing, and deterministic recommendation systems.",
+  "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. Specialized in building RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with a focus on JWT/RBAC and automated testing.",
   "aboutBullets": [
     {
       "emoji": "🎓",
-      "text": "BS in Computer Science from **Sindh Madressatul Islam University** (3.7/4.0 CGPA)."
-    },
-    {
-      "emoji": "💻",
-      "text": "Experienced MERN stack developer with a focus on **RESTful API design** and database architecture."
+      "text": "**BSCS** at Sindh Madressatul Islam University"
     },
     {
       "emoji": "📜",
-      "text": "IBM Certified **Full-Stack JavaScript Developer**."
+      "text": "**IBM Certified** Full-Stack JS Developer"
     },
     {
-      "emoji": "🚀",
-      "text": "Completed a professional internship at **10Pearls** focusing on scalable web applications."
+      "emoji": "💻",
+      "text": "**MERN Stack** Intern at 10Pearls"
     },
     {
       "emoji": "🛠️",
-      "text": "Proficient in **Test-Driven Development** using Mocha/Chai and code quality tools like SonarQube."
+      "text": "Built **10+ full-stack applications**"
+    },
+    {
+      "emoji": "⚙️",
+      "text": "Focus on **REST APIs & RBAC systems**"
     },
     {
       "emoji": "📧",
-      "text": "Open to professional opportunities: **muhammadhussaintech@gmail.com**"
+      "text": "Contact: **muhammadhussaintech@gmail.com**"
     }
   ],
   "projectNameOverrides": {
@@ -48,42 +48,42 @@
       "category": "Experience",
       "title": "10Pearls - 10Shine Program",
       "period": "Apr 2026 - May 2026",
-      "description": "MERN Stack Development Intern building REST APIs, implementing JWT authentication, and performing unit testing.",
+      "description": "MERN Stack Development Intern",
       "link": "https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf"
     },
     {
       "category": "Experience",
       "title": "Self-Directed Learning & Development",
       "period": "Sep 2022 - Present",
-      "description": "Independent development of 10+ full-stack MERN applications applying OOP, data structures, and Git workflows.",
+      "description": "Independent Study",
       "link": ""
     },
     {
       "category": "Education",
       "title": "Sindh Madressatul Islam University",
       "period": "Sep 2022 - Jun 2026",
-      "description": "Bachelor of Science in Computer Science; CGPA: 3.7/4.0.",
+      "description": "Bachelor of Science in Computer Science",
       "link": ""
     },
     {
       "category": "Certification",
       "title": "IBM Full-Stack JavaScript Developer",
       "period": "Sep 2026",
-      "description": "Professional Certificate issued by IBM via Coursera.",
+      "description": "Professional Certificate",
       "link": "https://coursera.org/verify/professional-cert/ACOM3SC87IX4"
     },
     {
       "category": "Training",
-      "title": "NextSkill Institute (NAVTTC/IBM-aligned)",
+      "title": "NextSkill Institute",
       "period": "Jun 2026 - Sep 2026",
-      "description": "Full Stack Development training covering HTML5, CSS3, JavaScript, and React.",
+      "description": "Full Stack Development Training (NAVTTC/IBM-aligned)",
       "link": ""
     },
     {
       "category": "Training",
       "title": "Saylani Mass IT Training (SMIT)",
       "period": "Mar 2026 - Present",
-      "description": "Modern Web & App Development training program.",
+      "description": "Modern Web & App Development Training",
       "link": ""
     }
   ]
