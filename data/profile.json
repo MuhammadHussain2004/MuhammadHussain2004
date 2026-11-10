@@ -1,36 +1,36 @@
 {
   "taglines": [
-    "Full-Stack MERN Developer",
-    "Software Engineering Student (BSCS)",
-    "IBM-Certified JavaScript Developer",
-    "Building Scalable RESTful APIs",
-    "Passionate about Clean Code & Testing"
+    "Full-Stack MERN Software Engineer",
+    "BSCS Graduate | IBM Certified Developer",
+    "Building Scalable RESTful Applications",
+    "Passionate about Clean Code & Testing",
+    "Data Structures & OOP Enthusiast"
   ],
-  "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with a focus on JWT/RBAC, automated testing, and deterministic recommendation systems.",
+  "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I specialize in building RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with a focus on JWT/RBAC, automated testing, and deterministic recommendation systems.",
   "aboutBullets": [
     {
       "emoji": "🎓",
-      "text": "BS in Computer Science at **Sindh Madressatul Islam University** (3.7/4.0 CGPA)."
-    },
-    {
-      "emoji": "💼",
-      "text": "Completed MERN Stack Internship at **10Pearls**."
+      "text": "BS in Computer Science from **Sindh Madressatul Islam University** (CGPA 3.7/4.0)."
     },
     {
       "emoji": "📜",
-      "text": "IBM Full-Stack JavaScript Developer Professional Certificate."
+      "text": "IBM Full-Stack JavaScript Developer Professional Certificate holder."
+    },
+    {
+      "emoji": "💻",
+      "text": "Experienced MERN stack developer with a focus on RESTful API design and testing."
     },
     {
       "emoji": "🚀",
-      "text": "Developed 10+ full-stack applications including a Smart Complaint Management System."
+      "text": "Deployed 10+ full-stack applications including marketplaces and management systems."
     },
     {
       "emoji": "🛠️",
-      "text": "Proficient in React, Node.js, Express, MongoDB, MySQL, and Git workflows."
+      "text": "Proficient in Git, GitHub, Docker, and CI/CD workflows for modern web deployment."
     },
     {
       "emoji": "📧",
-      "text": "Open to collaborations: muhammadhussaintech@gmail.com"
+      "text": "Open to collaboration: muhammadhussaintech@gmail.com"
     }
   ],
   "projectNameOverrides": {
@@ -48,35 +48,35 @@
       "category": "Experience",
       "title": "10Pearls - 10Shine Program",
       "period": "Apr 2026 - May 2026",
-      "description": "MERN Stack Development Intern building REST APIs, implementing JWT authentication, and performing unit testing.",
+      "description": "MERN Stack Development Intern focusing on REST API development, MySQL, and Mocha/Chai testing.",
       "link": "https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf"
     },
     {
       "category": "Experience",
       "title": "Self-Directed Learning & Development",
       "period": "Sep 2022 - Present",
-      "description": "Independent development of 10+ full-stack MERN applications using TDD and Git.",
+      "description": "Independent development of 10+ full-stack MERN applications using TDD and Git workflows.",
       "link": ""
     },
     {
       "category": "Education",
       "title": "Sindh Madressatul Islam University",
       "period": "Sep 2022 - Jun 2026",
-      "description": "Bachelor of Science in Computer Science; CGPA: 3.7/4.0.",
+      "description": "Bachelor of Science in Computer Science, CGPA 3.7/4.0.",
       "link": ""
     },
     {
       "category": "Certification",
       "title": "IBM Full-Stack JavaScript Developer",
       "period": "Sep 2026",
-      "description": "Professional Certificate from IBM via Coursera.",
+      "description": "Professional Certificate issued by IBM via Coursera.",
       "link": "https://coursera.org/verify/professional-cert/ACOM3SC87IX4"
     },
     {
       "category": "Training",
       "title": "NextSkill Institute",
       "period": "Jun 2026 - Sep 2026",
-      "description": "Full Stack Development Training (NAVTTC/IBM-aligned) covering HTML5, CSS3, JS, and React.",
+      "description": "Full Stack Development Training (NAVTTC/IBM-aligned) covering React and e-commerce development.",
       "link": ""
     },
     {
