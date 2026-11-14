@@ -4,7 +4,7 @@
     "BSCS Graduate | 3.7 CGPA",
     "IBM Certified JavaScript Developer",
     "RESTful API & Database Specialist",
-    "Building Scalable Web Applications"
+    "Passionate Software Engineer"
   ],
   "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with expertise in JWT/RBAC, automated testing, and deterministic recommendation systems.",
   "aboutBullets": [
@@ -14,11 +14,11 @@
     },
     {
       "emoji": "💻",
-      "text": "Experienced in **MERN stack** development and RESTful API architecture."
+      "text": "Experienced in **MERN stack** development with 10+ deployed applications."
     },
     {
       "emoji": "📜",
-      "text": "IBM Full-Stack JavaScript Developer Professional Certificate holder."
+      "text": "IBM Professional Certificate in **Full-Stack JavaScript Development**."
     },
     {
       "emoji": "🚀",
@@ -26,11 +26,11 @@
     },
     {
       "emoji": "🛠️",
-      "text": "Proficient in Git, TDD, Mocha/Chai testing, and SonarQube analysis."
+      "text": "Proficient in **Git, Docker, and CI/CD** workflows."
     },
     {
       "emoji": "📧",
-      "text": "Contact me at **muhammadhussaintech@gmail.com**."
+      "text": "Contact: **muhammadhussaintech@gmail.com**"
     }
   ],
   "projectNameOverrides": {
@@ -48,14 +48,14 @@
       "category": "Experience",
       "title": "10Pearls - 10Shine Program",
       "period": "Apr 2026 - May 2026",
-      "description": "MERN Stack Development Intern building REST APIs, JWT authentication, and implementing automated testing.",
+      "description": "MERN Stack Development Intern focused on REST API design, JWT authentication, and automated testing.",
       "link": "https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf"
     },
     {
       "category": "Experience",
       "title": "Self-Directed Learning & Development",
       "period": "Sep 2022 - Present",
-      "description": "Independent development of 10+ full-stack MERN applications using iterative, test-driven development.",
+      "description": "Independent development of 10+ full-stack MERN applications using TDD and Git workflows.",
       "link": ""
     },
     {
@@ -74,9 +74,9 @@
     },
     {
       "category": "Training",
-      "title": "NextSkill Institute",
+      "title": "NextSkill Institute (NAVTTC/IBM-aligned)",
       "period": "Jun 2026 - Sep 2026",
-      "description": "Full Stack Development Training (NAVTTC/IBM-aligned) covering React and e-commerce application development.",
+      "description": "Full Stack Development Training covering HTML5, CSS3, JavaScript, and React.",
       "link": ""
     },
     {
