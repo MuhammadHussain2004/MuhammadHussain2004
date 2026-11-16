@@ -4,7 +4,7 @@
     "BSCS Graduate with 3.7/4.0 CGPA",
     "IBM Certified JavaScript Developer",
     "RESTful API & Database Design Expert",
-    "Passionate about Test-Driven Development"
+    "Building Scalable Web Applications"
   ],
   "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with expertise in JWT/RBAC, automated testing, and deterministic recommendation systems.",
   "aboutBullets": [
@@ -13,24 +13,24 @@
       "text": "BSCS student at **Sindh Madressatul Islam University** (3.7/4.0 CGPA)."
     },
     {
-      "emoji": "💼",
-      "text": "Completed MERN Stack internship at **10Pearls**."
+      "emoji": "💻",
+      "text": "Professional experience as a **MERN Stack Intern** at 10Pearls."
     },
     {
       "emoji": "📜",
-      "text": "IBM Full-Stack JavaScript Professional Certificate holder."
-    },
-    {
-      "emoji": "💻",
-      "text": "Engineering focus: REST APIs, RBAC, and full-stack MERN architecture."
+      "text": "IBM Full-Stack JavaScript Developer Professional Certificate holder."
     },
     {
       "emoji": "🚀",
-      "text": "Deployed 10+ full-stack applications on Vercel."
+      "text": "Engineering focus: RESTful APIs, RBAC, and full-stack MERN deployment."
+    },
+    {
+      "emoji": "🛠️",
+      "text": "Proficient in **React, Node.js, MongoDB, MySQL, and Git** workflows."
     },
     {
       "emoji": "📧",
-      "text": "Open to collaboration: muhammadhussaintech@gmail.com"
+      "text": "Contact me at **muhammadhussaintech@gmail.com**."
     }
   ],
   "projectNameOverrides": {
@@ -48,28 +48,28 @@
       "category": "Experience",
       "title": "10Pearls - 10Shine Program",
       "period": "Apr 2026 - May 2026",
-      "description": "MERN Stack Development Intern; built REST APIs, implemented JWT authentication, and performed unit testing.",
+      "description": "MERN Stack Development Intern building REST APIs, implementing JWT authentication, and performing unit testing.",
       "link": "https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf"
     },
     {
       "category": "Experience",
       "title": "Self-Directed Learning & Development",
       "period": "Sep 2022 - Present",
-      "description": "Independent study and development of 10+ full-stack MERN applications using TDD and Git workflows.",
+      "description": "Independent development of 10+ full-stack MERN applications using test-driven development.",
       "link": ""
     },
     {
       "category": "Education",
       "title": "Sindh Madressatul Islam University",
       "period": "Sep 2022 - Jun 2026",
-      "description": "Bachelor of Science in Computer Science; CGPA: 3.7/4.0.",
+      "description": "Bachelor of Science in Computer Science (CGPA: 3.7/4.0).",
       "link": ""
     },
     {
       "category": "Certification",
       "title": "IBM Full-Stack JavaScript Developer",
       "period": "Sep 2026",
-      "description": "Professional Certificate issued by IBM via Coursera.",
+      "description": "Professional Certificate via IBM and Coursera.",
       "link": "https://coursera.org/verify/professional-cert/ACOM3SC87IX4"
     },
     {
