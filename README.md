@@ -110,14 +110,14 @@
 ## About Me
 
 <!-- AUTO-ABOUT:START -->
-Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with expertise in JWT/RBAC, automated testing, and deterministic recommendation systems.
+Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with a focus on JWT/RBAC, automated testing, and deterministic recommendation systems.
 
 - 🎓 BS in Computer Science from **Sindh Madressatul Islam University** (3.7/4.0 CGPA).
-- 📜 IBM Full-Stack JavaScript Developer Professional Certificate.
-- 💼 Experience as a MERN Stack Development Intern at **10Pearls**.
-- 🚀 Engineering focus: Full-stack MERN, RESTful APIs, and test-driven development.
-- 🛠️ Proficient in React, Node.js, Express, MongoDB, MySQL, and Git workflows.
-- 📧 Open to collaborations: muhammadhussaintech@gmail.com
+- 📜 IBM Full-Stack JavaScript Developer Professional Certificate holder.
+- 💼 Experience as a MERN Stack Intern at **10Pearls**.
+- 💻 Engineering focus on MERN stack, RESTful APIs, and test-driven development.
+- 🚀 Deployed 10+ full-stack applications including marketplace and management platforms.
+- 📧 Open to professional inquiries at **muhammadhussaintech@gmail.com**.
 <!-- AUTO-ABOUT:END -->
 
 ---
@@ -125,11 +125,11 @@ Software Engineer and full-stack MERN developer with a BSCS foundation in data s
 ## Experience & Credentials
 
 <!-- AUTO-RESUME-HIGHLIGHTS:START -->
-- **Experience: [10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — MERN Stack Development Intern building REST APIs and implementing Mocha/Chai tests.
-- **Experience: Self-Directed Learning & Development** · Sep 2022 - Present — Built and deployed 10+ full-stack MERN applications using TDD and Git.
+- **Experience: [10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — MERN Stack Development Intern building REST APIs, implementing JWT authentication, and performing unit testing with Mocha/Chai.
+- **Experience: Self-Directed Learning & Development** · Sep 2022 - Present — Independent development of 10+ full-stack MERN applications applying OOP, data structures, and iterative TDD workflows.
 - **Education: Sindh Madressatul Islam University** · Sep 2022 - Jun 2026 — Bachelor of Science in Computer Science; CGPA: 3.7/4.0.
-- **Certification: [IBM Full-Stack JavaScript Developer](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Professional Certificate from IBM via Coursera.
-- **Training: NextSkill Institute** · Jun 2026 - Sep 2026 — Full Stack Development Training (NAVTTC/IBM-aligned).
+- **Certification: [IBM Full-Stack JavaScript Developer](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Professional Certificate issued by IBM via Coursera.
+- **Training: NextSkill Institute** · Jun 2026 - Sep 2026 — Full Stack Development Training (NAVTTC/IBM-aligned) covering HTML5, CSS3, JavaScript, and React.
 - **Training: Saylani Mass IT Training (SMIT)** · Mar 2026 - Present — Modern Web & App Development Training.
 <!-- AUTO-RESUME-HIGHLIGHTS:END -->
 
