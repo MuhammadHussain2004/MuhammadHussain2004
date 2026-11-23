@@ -1,36 +1,36 @@
 {
   "taglines": [
-    "Full-Stack MERN Developer",
-    "BSCS Graduate | 3.7 CGPA",
-    "IBM Certified JavaScript Developer",
-    "RESTful API & Database Specialist",
-    "Passionate Software Engineer"
+    "Software Engineer & MERN Stack Developer",
+    "Building Scalable RESTful Web Solutions",
+    "BSCS Graduate with 3.7/4.0 CGPA",
+    "IBM Certified Full-Stack Developer",
+    "Passionate about Clean Code & Testing"
   ],
-  "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with a focus on JWT/RBAC, automated testing, and deterministic recommendation systems.",
+  "aboutIntro": "Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I specialize in building RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with a focus on JWT/RBAC, automated testing, and deterministic recommendation systems.",
   "aboutBullets": [
     {
       "emoji": "🎓",
       "text": "BS in Computer Science from **Sindh Madressatul Islam University** (3.7/4.0 CGPA)."
     },
     {
+      "emoji": "💻",
+      "text": "Experienced in **MERN stack** development with a focus on RESTful API design."
+    },
+    {
       "emoji": "📜",
       "text": "IBM Full-Stack JavaScript Developer Professional Certificate holder."
     },
     {
-      "emoji": "💼",
-      "text": "Experience as a MERN Stack Intern at **10Pearls**."
-    },
-    {
-      "emoji": "💻",
-      "text": "Engineering focus on MERN stack, RESTful APIs, and test-driven development."
-    },
-    {
       "emoji": "🚀",
-      "text": "Deployed 10+ full-stack applications including marketplace and management platforms."
+      "text": "Completed a professional internship at **10Pearls** (10Shine Program)."
+    },
+    {
+      "emoji": "🛠️",
+      "text": "Proficient in Git, Docker, Mocha/Chai testing, and SonarQube code quality."
     },
     {
       "emoji": "📧",
-      "text": "Open to professional inquiries at **muhammadhussaintech@gmail.com**."
+      "text": "Available for collaboration at **muhammadhussaintech@gmail.com**."
     }
   ],
   "projectNameOverrides": {
@@ -48,14 +48,14 @@
       "category": "Experience",
       "title": "10Pearls - 10Shine Program",
       "period": "Apr 2026 - May 2026",
-      "description": "MERN Stack Development Intern building REST APIs, implementing JWT authentication, and performing unit testing with Mocha/Chai.",
+      "description": "MERN Stack Development Intern building REST APIs, implementing JWT authentication, and performing unit testing.",
       "link": "https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf"
     },
     {
       "category": "Experience",
       "title": "Self-Directed Learning & Development",
       "period": "Sep 2022 - Present",
-      "description": "Independent development of 10+ full-stack MERN applications applying OOP, data structures, and iterative TDD workflows.",
+      "description": "Independent development of 10+ full-stack MERN applications using TDD and Git workflows.",
       "link": ""
     },
     {
@@ -69,14 +69,14 @@
       "category": "Certification",
       "title": "IBM Full-Stack JavaScript Developer",
       "period": "Sep 2026",
-      "description": "Professional Certificate issued by IBM via Coursera.",
+      "description": "Professional Certificate via IBM and Coursera.",
       "link": "https://coursera.org/verify/professional-cert/ACOM3SC87IX4"
     },
     {
       "category": "Training",
-      "title": "NextSkill Institute",
+      "title": "NextSkill Institute (NAVTTC/IBM-aligned)",
       "period": "Jun 2026 - Sep 2026",
-      "description": "Full Stack Development Training (NAVTTC/IBM-aligned) covering HTML5, CSS3, JavaScript, and React.",
+      "description": "Full Stack Development Training covering HTML5, CSS3, JavaScript, and React.",
       "link": ""
     },
     {
