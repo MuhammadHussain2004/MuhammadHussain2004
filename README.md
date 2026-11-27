@@ -5,7 +5,7 @@
 <!-- AUTO-HEADER:END -->
 
 <!-- AUTO-TAGLINE:START -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Full-Stack+MERN+Developer;BSCS+Graduate+%7C+3.7+CGPA;IBM+Certified+JavaScript+Developer;RESTful+API+%26+Database+Specialist;Building+Scalable+Web+Solutions)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Full-Stack+MERN+Software+Engineer;BSCS+Graduate+with+3.7%2F4.0+CGPA;Specializing+in+RESTful+API+Design;IBM+Certified+JavaScript+Developer;Building+Scalable+Web+Applications)](https://git.io/typing-svg)
 <!-- AUTO-TAGLINE:END -->
 
 <img src="https://komarev.com/ghpvc/?username=MuhammadHussain2004&style=for-the-badge&color=00d9ff" alt="Profile Views"/>
@@ -27,8 +27,8 @@
     <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
     <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" />
     <img src="https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white" />
-    <img src="https://img.shields.io/badge/-C%2B%2B-00599C?style=flat&logo=cplusplus&logoColor=white" />
     <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" />
+    <img src="https://img.shields.io/badge/-C%2B%2B-00599C?style=flat&logo=cplusplus&logoColor=white" />
     <img src="https://img.shields.io/badge/-Java-ED8B00?style=flat&logo=openjdk&logoColor=white" />
     <img src="https://img.shields.io/badge/-C-00599C?style=flat&logo=c&logoColor=white" />
     <img src="https://img.shields.io/badge/-JSX-61DAFB?style=flat&logo=react&logoColor=black" />
@@ -110,14 +110,14 @@
 ## About Me
 
 <!-- AUTO-ABOUT:START -->
-Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with expertise in JWT/RBAC, automated testing, and recommendation systems.
+Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with expertise in JWT/RBAC, automated testing, and deterministic recommendation systems.
 
 - 🎓 BS in Computer Science from **Sindh Madressatul Islam University** (3.7/4.0 CGPA).
-- 📜 IBM Full-Stack JavaScript Developer Professional Certificate holder.
-- 💼 Experience as a **MERN Stack Intern** at 10Pearls.
-- 🚀 Built and deployed 10+ full-stack MERN applications including marketplaces and management systems.
-- 🛠️ Focus on TDD, RESTful architecture, and secure authentication (JWT/RBAC).
-- 📧 Available for collaboration at **muhammadhussaintech@gmail.com**.
+- 📜 IBM Full-Stack JavaScript Developer Professional Certificate.
+- 💼 Experience as a MERN Stack Intern at **10Pearls**.
+- 💻 Engineering full-stack solutions with React, Node.js, and MongoDB.
+- 🧪 Focus on TDD, Mocha/Chai testing, and SonarQube code quality.
+- 📧 Reach me at [muhammadhussaintech@gmail.com](mailto:muhammadhussaintech@gmail.com).
 <!-- AUTO-ABOUT:END -->
 
 ---
@@ -125,11 +125,11 @@ Software Engineer and full-stack MERN developer with a BSCS foundation in data s
 ## Experience & Credentials
 
 <!-- AUTO-RESUME-HIGHLIGHTS:START -->
-- **Experience: [10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — MERN Stack Development Intern focused on REST API design, MySQL integration, and automated testing.
+- **Experience: [10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — MERN Stack Development Intern building REST APIs, JWT authentication, and implementing Mocha/Chai tests.
 - **Experience: Self-Directed Learning & Development** · Sep 2022 - Present — Independent development of 10+ full-stack MERN applications using Git and test-driven development.
-- **Education: Sindh Madressatul Islam University** · Sep 2022 - Jun 2026 — Bachelor of Science in Computer Science, CGPA: 3.7/4.0.
-- **Certification: [IBM Full-Stack JavaScript Developer](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Professional Certificate issued by IBM via Coursera.
-- **Training: NextSkill Institute** · Jun 2026 - Sep 2026 — Full Stack Development Training (NAVTTC/IBM-aligned) covering React and modern web stacks.
+- **Education: Sindh Madressatul Islam University** · Sep 2022 - Jun 2026 — Bachelor of Science in Computer Science; CGPA: 3.7/4.0.
+- **Certification: [IBM Full-Stack JavaScript Developer](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Professional Certificate via IBM and Coursera.
+- **Training: NextSkill Institute** · Jun 2026 - Sep 2026 — Full Stack Development Training (NAVTTC/IBM-aligned) covering React and Git workflows.
 - **Training: Saylani Mass IT Training (SMIT)** · Mar 2026 - Present — Modern Web & App Development Training.
 <!-- AUTO-RESUME-HIGHLIGHTS:END -->
 
