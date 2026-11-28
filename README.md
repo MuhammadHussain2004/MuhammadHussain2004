@@ -5,7 +5,7 @@
 <!-- AUTO-HEADER:END -->
 
 <!-- AUTO-TAGLINE:START -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Full-Stack+MERN+Software+Engineer;BSCS+Graduate+with+3.7%2F4.0+CGPA;Specializing+in+RESTful+API+Design;IBM+Certified+JavaScript+Developer;Building+Scalable+Web+Applications)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Software+Engineer+%26+MERN+Stack+Developer;BS+Computer+Science+Candidate+(CGPA+3.7);IBM+Certified+Full-Stack+JS+Developer;Former+MERN+Intern+at+10Pearls)](https://git.io/typing-svg)
 <!-- AUTO-TAGLINE:END -->
 
 <img src="https://komarev.com/ghpvc/?username=MuhammadHussain2004&style=for-the-badge&color=00d9ff" alt="Profile Views"/>
@@ -110,14 +110,13 @@
 ## About Me
 
 <!-- AUTO-ABOUT:START -->
-Software Engineer and full-stack MERN developer with a BSCS foundation in data structures, object-oriented design, databases, and software engineering. I build RESTful APIs and database-backed applications using React, Node.js, Express, MongoDB, and MySQL, with expertise in JWT/RBAC, automated testing, and deterministic recommendation systems.
+Software Engineer and full-stack MERN developer with a strong BSCS foundation in data structures, object-oriented design, database engineering, and software design. Experienced in building scalable RESTful APIs, modern web frontends, and database-backed applications using React, Node.js, Express, MongoDB, and MySQL with robust authentication, automated testing, and clean architecture.
 
-- 🎓 BS in Computer Science from **Sindh Madressatul Islam University** (3.7/4.0 CGPA).
-- 📜 IBM Full-Stack JavaScript Developer Professional Certificate.
-- 💼 Experience as a MERN Stack Intern at **10Pearls**.
-- 💻 Engineering full-stack solutions with React, Node.js, and MongoDB.
-- 🧪 Focus on TDD, Mocha/Chai testing, and SonarQube code quality.
-- 📧 Reach me at [muhammadhussaintech@gmail.com](mailto:muhammadhussaintech@gmail.com).
+- 🎓 Pursuing **BS in Computer Science** at Sindh Madressatul SMI University (CGPA 3.7/4.0, Sep 2022 – Jun 2026).
+- 💼 Completed **MERN Stack Development Internship** at 10Pearls (10Shine Program).
+- 📜 Holds **IBM Full-Stack JavaScript Developer** Professional Certification via Coursera.
+- 🛠️ Specializes in **MERN Stack**, TypeScript, SQL/NoSQL databases, RESTful APIs, and automated testing (Mocha/Chai).
+- 📍 Based in **Karachi, Pakistan** • Open to Software Engineering and Full-Stack opportunities.
 <!-- AUTO-ABOUT:END -->
 
 ---
@@ -125,12 +124,12 @@ Software Engineer and full-stack MERN developer with a BSCS foundation in data s
 ## Experience & Credentials
 
 <!-- AUTO-RESUME-HIGHLIGHTS:START -->
-- **Experience: [10Pearls - 10Shine Program](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — MERN Stack Development Intern building REST APIs, JWT authentication, and implementing Mocha/Chai tests.
-- **Experience: Self-Directed Learning & Development** · Sep 2022 - Present — Independent development of 10+ full-stack MERN applications using Git and test-driven development.
-- **Education: Sindh Madressatul Islam University** · Sep 2022 - Jun 2026 — Bachelor of Science in Computer Science; CGPA: 3.7/4.0.
-- **Certification: [IBM Full-Stack JavaScript Developer](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Professional Certificate via IBM and Coursera.
-- **Training: NextSkill Institute** · Jun 2026 - Sep 2026 — Full Stack Development Training (NAVTTC/IBM-aligned) covering React and Git workflows.
-- **Training: Saylani Mass IT Training (SMIT)** · Mar 2026 - Present — Modern Web & App Development Training.
+- **Experience: [MERN Stack Development Intern — 10Pearls (10Shine Program)](https://github.com/MuhammadHussain2004/resume/blob/master/certificates/10Pearls_10Shine_Internship_Certificate.pdf)** · Apr 2026 - May 2026 — Built data models and REST APIs for a Notes application using React, Node.js, Express, MySQL, JWT authentication, and email verification; added Mocha/Chai tests and addressed SonarQube findings.
+- **Experience: Independent Study — Self-Directed Learning & Development** · Sep 2022 - Present — Built and deployed 10+ full-stack MERN applications using React, Node.js, and MongoDB/MySQL applying core CS concepts, OOP, and modern Git workflows.
+- **Education: Bachelor of Science in Computer Science — Sindh Madressatul Islam University** · Sep 2022 - Jun 2026 — Maintained a CGPA of 3.7/4.0 with coursework covering Data Structures, OOP, Database Systems, Software Engineering, Networks, and Operating Systems.
+- **Certification: [IBM Full-Stack JavaScript Developer (Professional Certificate) — IBM / Coursera](https://coursera.org/verify/professional-cert/ACOM3SC87IX4)** · Sep 2026 — Professional certificate program covering end-to-end full-stack web development with JavaScript, React, Node.js, Express, and cloud deployment.
+- **Training: Full Stack Development Training (NAVTTC/IBM-aligned) — NextSkill Institute** · Jun 2026 - Sep 2026 — Completed full-stack training covering HTML5, CSS3, JavaScript, React, Git/GitHub, expense trackers, and multi-page e-commerce development.
+- **Training: Modern Web & App Development Training — Saylani Mass IT Training (SMIT)** · Mar 2026 - Present — Hands-on training in modern web development practices and application stack building.
 <!-- AUTO-RESUME-HIGHLIGHTS:END -->
 
 ---
